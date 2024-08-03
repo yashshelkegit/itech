@@ -3,6 +3,7 @@ import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { Herosection, Events, Team, Timeline, Contact, Sponsers, Gallery } from "./components/Pages";
+
 import img1 from "./images/1.jpeg";
 import img2 from "./images/2.jpeg";
 import img3 from "./images/3.jpeg";

@@ -445,9 +445,9 @@ const PersonCard = ({ person, index }) => {
 		<motion.div
 			ref={ref}
 			animate={controls}
-			className="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300"
+			className="border rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300"
 		>
-			<h3 className="text-xl font-bold mb-2">{person.name}</h3>
+			<h3 className="text-xl text-gray-200 font-bold mb-2">{person.name}</h3>
 			<p className="text-gray-600 mb-1">{person.position}</p>
 			<p className="text-gray-500 mb-1">
 				{person.branch} - {person.year} Year
@@ -469,14 +469,14 @@ const Team = () => {
 	);
 
 	return (
-		<motion.section ref={ref} className="container mx-auto py-16">
-			<div className="px-4">
+		<motion.section ref={ref} className="bg-black py-16">
+			<div className="container mx-auto  px-4">
 				<motion.h2
 					className="text-5xl font-bold my-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500"
 					initial={{ opacity: 0, y: -50 }}
 					animate={{ opacity: 1, y: 0 }}
 				>
-					Our Team
+					Heads
 				</motion.h2>
 
 				<motion.div
@@ -484,7 +484,6 @@ const Team = () => {
 					initial={{ opacity: 0, x: -50 }}
 					animate={{ opacity: 1, x: 0 }}
 				>
-					<h3 className="text-3xl font-bold mb-6 text-gray-800">Heads</h3>
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 						{heads.map((head, index) => (
 							<PersonCard key={index} person={head} index={index} />
@@ -497,7 +496,13 @@ const Team = () => {
 					initial={{ opacity: 0, x: -50 }}
 					animate={{ opacity: 1, x: 0 }}
 				>
-					<h3 className="text-3xl font-bold mb-6 text-gray-800">Co-Heads</h3>
+					<motion.h2
+						className="text-5xl font-bold my-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500"
+						initial={{ opacity: 0, y: -50 }}
+						animate={{ opacity: 1, y: 0 }}
+					>
+						Co Heads
+					</motion.h2>
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 						{coheads.map((cohead, index) => (
 							<PersonCard key={index} person={cohead} index={index} />
