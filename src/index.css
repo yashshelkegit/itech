@@ -19,9 +19,6 @@
     --timeline-item-text-bg-color: #696969;
     --timeline-item-text-color: #f0f8ff;
 }
-*{
-    /* border: 1px solid green; */
-}
 .gear{
     color: rgb(202, 202, 202);
 }

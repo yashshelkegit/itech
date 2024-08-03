@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import AnimatedButton from "./AnimatedButton";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
-import * as THREE from "three";
 
 const pageVariants = {
 	initial: {
