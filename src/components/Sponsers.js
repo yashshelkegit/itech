@@ -53,8 +53,8 @@ const Sponsors = () => {
 	}, [inView, controls, headingControls]);
 
 	return (
-		<div className="sponsors-container py-12 z-30">
-			<div className="container mx-auto text-center">
+		<div className="container mx-auto p-4 py-12 z-30">
+			<div className="container mx-auto">
 				<motion.h2
 					className="text-4xl font-bold mb-8 z-50 font-mono text-gray-700 tracking-wide"
 					variants={headingVariants}

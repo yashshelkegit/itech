@@ -463,7 +463,7 @@ const PersonCard = ({ person, index }) => {
 };
 
 const Team = () => {
-	const { ref, controls } = useScrollAnimation(
+	const { ref } = useScrollAnimation(
 		{ opacity: 0, y: 50 },
 		{ opacity: 1, y: 0, transition: { duration: 0.5, staggerChildren: 0.1 } }
 	);
@@ -474,7 +474,7 @@ const Team = () => {
 				<motion.h2
 					className="text-5xl font-bold my-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500"
 					initial={{ opacity: 0, y: -50 }}
-					animate={controls}
+					animate={{ opacity: 1, y: 0 }}
 				>
 					Our Team
 				</motion.h2>

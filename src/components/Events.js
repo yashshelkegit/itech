@@ -90,19 +90,12 @@ const Events = () => {
 	return (
 		<section ref={ref} className="container mx-auto py-16">
 			<div className="px-4">
-				{/* <motion.h2
-					className="text-4xl font-bold mb-12 mt-12"
-					initial={{ opacity: 0, x: 50 }}
-					animate={{ opacity: 1, x: 0 }}
-				>
-					Events
-				</motion.h2> */}
 				{eventCategories.map((category, index) => (
 					<div key={index} className="mt-16">
 						<motion.h2
 							className="text-2xl font-bold mb-6 text-cyan-700"
 							initial={{ opacity: 0, y: 100 }}
-							animate={{ opacity: 1, y: 0 }}
+							animate={controls}
 							transition={{ duration: 0.5 }}
 						>
 							{category.title}

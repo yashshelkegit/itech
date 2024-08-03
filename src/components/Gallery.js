@@ -72,7 +72,13 @@ const Gallery = ({ images }) => {
 				>
 					Our Gallery
 				</motion.h2>
-				<div className="grid h-96 md:h-52 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+				<motion.div
+					className="grid h-96 md:h-52 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+					variants={headingVariants}
+					initial="hidden"
+					animate={headingControls}
+					ref={ref}
+				>
 					{images.map((image, index) => (
 						<ImageCard
 							key={index}
@@ -81,7 +87,7 @@ const Gallery = ({ images }) => {
 							onClick={() => setSelectedImage(image)}
 						/>
 					))}
-				</div>
+				</motion.div>
 				{selectedImage && (
 					<Lightbox
 						src={selectedImage.src}

@@ -28,10 +28,10 @@ const GearIcon = ({ size, initialRotation, position }) => (
 	<motion.svg
 		className={
 			position === 1
-				? "-z-10 absolute top-11 left-1/4 gear"
+				? "-z-10 absolute top-11 left-1/4 gear rounded-full overflow-hidden"
 				: position === 2
-				? " -z-10 absolute top-72 md:left-1/4 left-1/4 gear"
-				: " -z-10 absolute top-2/3 md:left-3/4 left-14 gear"
+				? " -z-10 absolute top-72 md:left-1/4 sm:w- left-3/2 gear rounded-full overflow-hidden"
+				: " -z-10 absolute top-2/3 md:left-3/4 left-14 gear rounded-full overflow-hidden"
 		}
 		width={size}
 		height={size}
@@ -58,15 +58,15 @@ const Herosection = () => {
 			exit="out"
 			variants={pageVariants}
 			transition={pageTransition}
-			className=""
+			className="container mx-auto"
 		>
 			<div className="hero-container">
-				<GearIcon size={230} initialRotation={0} position={1} />
+				{/* <GearIcon size={230} initialRotation={0} position={1} />
 				<GearIcon size={340} initialRotation={30} position={2} />
-				<GearIcon size={150} initialRotation={15} position={3} />
+				<GearIcon size={150} initialRotation={15} position={3} /> */}
 
 				<motion.div
-					className="hero-content flex flex-col align-middle gap-3 justify-center h-screen z-50"
+					className="hero-content flex flex-col align-middle gap-3 justify-center h-screen z-30"
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 1 }}
@@ -86,7 +86,7 @@ const Herosection = () => {
 					>
 						Where the past meets the future of technology. lorem xplore the
 						xplore the future of computing with leading quantum physicists and
-						engineers. 
+						engineers.
 					</motion.p>
 					<AnimatedButton />
 				</motion.div>
@@ -104,7 +104,7 @@ const TypingAnimation = () => {
 			opacity: 1,
 			transition: {
 				delay: 0.5,
-				staggerChildren: 0.08,
+				staggerChildren: 0.15,
 			},
 		},
 	};
@@ -119,7 +119,7 @@ const TypingAnimation = () => {
 
 	return (
 		<motion.h1
-			className="h1 md:text-8xl text-6xl text-center font-mono font-extrabold"
+			className="h1 md:text-8xl sm:text-6xl text-4xl text-center font-mono font-extrabold"
 			variants={sentenceVariant}
 			initial="hidden"
 			animate="visible"

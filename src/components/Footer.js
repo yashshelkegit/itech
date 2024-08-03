@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 
-const initialProps = { opacity: 0, y: -100 };
-const inViewProps = { opacity: 2, y: 0 };
+const initialProps = { opacity: 0, y: 50 };
+const inViewProps = { opacity: 1, y: 0 };
 
 const Footer = () => {
 	const { ref, controls } = useScrollAnimation(initialProps, inViewProps);
@@ -23,7 +23,10 @@ const Footer = () => {
 					<h4 className="text-sm ">IT Dept @ YCCE, Nagpur</h4>
 				</div>
 				<p className="text-sm mt-11">
-					Made with 🖤 by <a href="mailto:contact.yashshelke@gmail.com" className="underline">Yash Shelke</a>
+					Made with 🖤 by{" "}
+					<a href="mailto:contact.yashshelke@gmail.com" className="underline">
+						Yash Shelke
+					</a>
 				</p>
 			</div>
 		</motion.div>
