@@ -7,6 +7,8 @@ import {
 	FaInfoCircle,
 	FaBars,
 	FaTimes,
+	FaTeamspeak,
+	FaClock,
 } from "react-icons/fa";
 
 const Navbar = () => {
@@ -29,13 +31,13 @@ const Navbar = () => {
 					<NavItem to="/events" icon={<FaCalendar />}>
 						Events
 					</NavItem>
-					<NavItem to="/about" icon={<FaInfoCircle />}>
-						About
+					<NavItem to="/team" icon={<FaTeamspeak />}>
+						Team
 					</NavItem>
 					<NavItem to="/contacts" icon={<FaInfoCircle />}>
 						Contact
 					</NavItem>
-					<NavItem to="/timeline" icon={<FaInfoCircle />}>
+					<NavItem to="/timeline" icon={<FaClock />}>
 						Timeline
 					</NavItem>
 				</div>
@@ -70,12 +72,12 @@ const Navbar = () => {
 							Events
 						</NavItem>
 						<NavItem
-							to="/about"
-							icon={<FaInfoCircle />}
+							to="/team"
+							icon={<FaTeamspeak />}
 							mobile
 							onClick={toggleMenu}
 						>
-							About
+							Team
 						</NavItem>
 						<NavItem
 							to="/contacts"
@@ -87,7 +89,7 @@ const Navbar = () => {
 						</NavItem>
 						<NavItem
 							to="/timeline"
-							icon={<FaInfoCircle />}
+							icon={<FaClock />}
 							mobile
 							onClick={toggleMenu}
 						>

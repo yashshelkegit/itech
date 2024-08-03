@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import {Footer, Navbar, ScrollToTop} from "./components/Pages";
 import AnimatedRoutes from "./AnimatedRoutes";
 
+
 function App() {
 	return (
 		<Router>
