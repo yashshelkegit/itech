@@ -15,10 +15,10 @@ const Navbar = () => {
 	const toggleMenu = () => setIsOpen(!isOpen);
 
 	return (
-		<nav className="bg-gray-900 p-4 relative">
+		<nav className="bg-gray-900 p-4 fixed top-0 w-full z-50 ">
 			<div className="container mx-auto flex justify-between items-center">
 				<Link to="/" className="text-white text-2xl font-bold">
-					<span className="text-blue-500">iTech</span>roots
+					iTech<span className="text-yellow-600">roots</span>
 				</Link>
 
 				{/* Desktop Menu */}
@@ -57,7 +57,7 @@ const Navbar = () => {
 					exit={{ opacity: 0, y: -20 }}
 					className="md:hidden absolute top-full left-0 right-0 bg-gray-800"
 				>
-					<div className="flex flex-col items-center py-2">
+					<div className="flex flex-col py-2">
 						<NavItem to="/" icon={<FaRocket />} mobile onClick={toggleMenu}>
 							Home
 						</NavItem>

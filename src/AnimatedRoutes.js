@@ -2,7 +2,7 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import { Herosection, Events, About, Timeline, Contact } from "./components/Pages";
+import { Herosection, Events, About, Timeline, Contact, Sponsers } from "./components/Pages";
 
 const AnimatedRoutes = () => {
 	const location = useLocation();
@@ -15,6 +15,7 @@ const AnimatedRoutes = () => {
 					element={
 						<>
 							<Herosection />
+							<Sponsers/>
 						</>
 					}
 				/>
