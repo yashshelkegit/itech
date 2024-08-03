@@ -1,6 +1,5 @@
 // src/components/Hero.js
 import React from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import AnimatedButton from "./AnimatedButton";
 
@@ -64,10 +63,10 @@ const Herosection = () => {
 			<div className="hero-container">
 				<GearIcon size={230} initialRotation={0} position={1} />
 				<GearIcon size={340} initialRotation={30} position={2} />
-				<GearIcon size={100} initialRotation={15} position={3} />
+				<GearIcon size={150} initialRotation={15} position={3} />
 
 				<motion.div
-					className="hero-content flex flex-col align-middle gap-2 justify-center h-screen z-50"
+					className="hero-content flex flex-col align-middle gap-3 justify-center h-screen z-50"
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 1 }}
@@ -83,9 +82,11 @@ const Herosection = () => {
 						initial={{ y: 50, opacity: 0 }}
 						animate={{ y: 0, opacity: 1 }}
 						transition={{ delay: 0.4, duration: 0.8 }}
-						className="text-center z-40 font-bold underline"
+						className="text-center z-40 font-bold underline text-lg md:w-1/2 mx-auto"
 					>
-						Where the past meets the future of technology
+						Where the past meets the future of technology. lorem xplore the
+						xplore the future of computing with leading quantum physicists and
+						engineers. 
 					</motion.p>
 					<AnimatedButton />
 				</motion.div>
@@ -95,7 +96,7 @@ const Herosection = () => {
 };
 
 const TypingAnimation = () => {
-	const text = "_iTechroots 14.0";
+	const text = "_iTechRoots 14.0";
 
 	const sentenceVariant = {
 		hidden: { opacity: 1 },

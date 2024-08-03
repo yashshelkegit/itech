@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-// import "./TimeLine.css";
 
 const timelineEvents = [
 	{
@@ -43,8 +42,8 @@ const Timeline = () => {
 			exit={{ opacity: 0 }}
 			transition={{ duration: 0.5 }}
 		>
-			<div className="timeline-container">
-				<h2>Fest Through Tech</h2>
+			<div className="container mx-auto timeline-container">
+				<h2 className="text-4xl font-extrabold text-gray-600 font-mono">Fest Through Tech</h2>
 				<div className="timeline">
 					{timelineEvents.map((event, index) => (
 						<motion.div

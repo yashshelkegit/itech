@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import {Navbar, ScrollToTop} from "./components/Pages";
+import {Footer, Navbar, ScrollToTop} from "./components/Pages";
 import AnimatedRoutes from "./AnimatedRoutes";
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
 				<ScrollToTop>
 					<Navbar />
 					<AnimatedRoutes />
+					<Footer/>
 				</ScrollToTop>
 				{/* ... other components and routes */}
 			</div>
