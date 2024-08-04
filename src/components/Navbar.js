@@ -20,7 +20,7 @@ const Navbar = () => {
 		<nav className=" p-4 fixed top-0 w-full z-50 ">
 			<div className="container mx-auto flex justify-between items-center">
 				<Link to="/" className="text-white text-2xl font-bold">
-					iTech<span className="text-yellow-600">roots</span>
+					iTech<span className="text-blue-600">Roots</span>
 				</Link>
 
 				{/* Desktop Menu */}

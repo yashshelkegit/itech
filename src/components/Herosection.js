@@ -39,7 +39,7 @@ const Herosection = () => {
 			>
 				<div className="hero-container p-4">
 					<motion.div
-						className="hero-content flex flex-col gap-2 justify-center h-screen z-30"
+						className="hero-content flex flex-col justify-center h-screen z-30"
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 1 }}
@@ -103,7 +103,7 @@ const BlockchainBackground = () => {
 					array={positions}
 				/>
 			</bufferGeometry>
-			<pointsMaterial size={0.01} color="cyan" transparent opacity={0.8} />
+			<pointsMaterial size={0.01} color="white" transparent opacity={0.8} />
 		</points>
 	);
 };
