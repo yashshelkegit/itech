@@ -437,8 +437,8 @@ const coheads = [
 
 const PersonCard = ({ person, index }) => {
 	const { ref, controls } = useScrollAnimation(
-		{ opacity: 0, y: 10 },
-		{ opacity: 1, y: 0, transition: { duration: 1 } }
+		{ opacity: 0, y: 50 },
+		{ opacity: 1, y: 0, transition: { duration: 0.4 } }
 	);
 
 	return (
