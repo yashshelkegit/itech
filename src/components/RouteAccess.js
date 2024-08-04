@@ -85,7 +85,7 @@ const RouteAccess = () => {
 					buttonText="Explore Timeline"
 					route="/timeline"
 					bgGradient="border "
-					initialX={100}
+					initialX={-100}
 				/>
 			</div>
 		</div>

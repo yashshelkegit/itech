@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import AnimatedButton from "./AnimatedButton";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
+import SvgFrame from "./SvgFrame";
 
 const pageVariants = {
 	initial: { opacity: 0, y: 50 },
@@ -20,6 +21,7 @@ const pageTransition = {
 const Herosection = () => {
 	return (
 		<div className="relative bg-black min-h-screen flex items-center justify-center overflow-hidden">
+			<SvgFrame/>
 			<motion.div
 				initial="initial"
 				animate="in"
