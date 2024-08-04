@@ -10,12 +10,12 @@ const Footer = () => {
 
 	return (
 		<motion.div
-			className="p-8 bg-amber-100 grid gap-2"
+			className="p-8 bg-gray-300 grid gap-2"
 			ref={ref}
 			animate={controls}
 			transition={{ duration: 1 }}
 		>
-			<div className="container mx-auto flex flex-col justify-between">
+			<div className="container mx-auto flex flex-col justify-between ">
 				<div>
 					<h3 className="text-3xl font-mono tracking-widest font-extrabold">
 						We R iTechRoots

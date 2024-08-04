@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 import EventCard from "./EventCard";
+import GearIcon from "./GearIcon";
 import img1 from "../images/1.jpeg";
 import img2 from "../images/2.jpeg";
 import img3 from "../images/3.jpeg";
@@ -88,12 +89,13 @@ const Events = () => {
 	);
 
 	return (
-		<section ref={ref} className="container mx-auto py-16">
-			<div className="px-4">
+		<section ref={ref} className="bg-black py-16">
+			<GearIcon size={730} initialRotation={0} position={1} />
+			<div className="container mx-auto px-4">
 				{eventCategories.map((category, index) => (
 					<div key={index} className="mt-16">
 						<motion.h2
-							className="text-2xl font-bold mb-6 text-cyan-700"
+							className="text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-br from-blue-500 to-purple-500 font-mono"
 							initial={{ opacity: 0, y: 100 }}
 							animate={controls}
 							transition={{ duration: 0.5 }}

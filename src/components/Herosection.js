@@ -85,11 +85,9 @@ const Herosection = () => {
 							initial={{ y: 50, opacity: 0 }}
 							animate={{ y: 0, opacity: 1 }}
 							transition={{ delay: 0.4, duration: 0.8 }}
-							className="text-center text-gray-200 z-30 font-bold underline text-lg md:w-1/2 mx-auto"
+							className="text-center text-gray-500 z-30 font-mono underline text-lg md:w-1/2 mx-auto"
 						>
-							Where the past meets the future of technology. lorem xplore the
-							xplore the future of computing with leading quantum physicists and
-							engineers.
+							Where the past meets the future of technology.
 						</motion.p>
 					</motion.div>
 				</div>
@@ -141,12 +139,13 @@ const BlockchainBackground = () => {
 };
 
 const TypingAnimation = () => {
-	const text = "_iTechRoots 14.0";
+	const text = "_iTechRoots \n14.0";
 
 	const sentenceVariant = {
-		hidden: { opacity: 1 },
+		hidden: { opacity: 0, y:100 },
 		visible: {
 			opacity: 1,
+			y:0,
 			transition: {
 				delay: 0.5,
 				staggerChildren: 0.15,
@@ -164,7 +163,7 @@ const TypingAnimation = () => {
 
 	return (
 		<motion.h1
-			className="h1 md:text-8xl sm:text-6xl text-4xl text-center font-mono font-extrabold"
+			className="h1 md:text-8xl text-6xl text-center font-mono font-extrabold"
 			variants={sentenceVariant}
 			initial="hidden"
 			animate="visible"
@@ -172,7 +171,9 @@ const TypingAnimation = () => {
 			{text.split("").map((char, index) => (
 				<motion.span
 					className={
-						index > 5 && index < 11 ? "text-green-400" : " text-gray-200"
+						index > 5 && index < 11
+							? "bg-clip-text text-transparent bg-gradient-to-t from-blue-600"
+							: "bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-slate-800"
 					}
 					key={char + "-" + index}
 					variants={letterVariant}

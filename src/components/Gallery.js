@@ -62,7 +62,7 @@ const Gallery = ({ images }) => {
 
 	return (
 		<>
-			<div className="container mx-auto px-4 py-8">
+			<div className="px-4 py-8">
 				<motion.h2
 					className="text-4xl font-bold mb-8 z-50 font-mono text-gray-700 tracking-wide"
 					variants={headingVariants}

@@ -445,7 +445,7 @@ const PersonCard = ({ person, index }) => {
 		<motion.div
 			ref={ref}
 			animate={controls}
-			className="border rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300"
+			className="border border-gray-500 rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300"
 		>
 			<h3 className="text-xl text-gray-200 font-bold mb-2">{person.name}</h3>
 			<p className="text-gray-600 mb-1">{person.position}</p>
@@ -475,14 +475,16 @@ const Team = () => {
 					className="text-5xl font-bold my-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500"
 					initial={{ opacity: 0, y: -50 }}
 					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 1 }}
 				>
 					Heads
 				</motion.h2>
 
 				<motion.div
 					className=" mb-16"
-					initial={{ opacity: 0, x: -50 }}
+					initial={{ opacity: 0, x: -100 }}
 					animate={{ opacity: 1, x: 0 }}
+					transition={{ duration: 1 }}
 				>
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 						{heads.map((head, index) => (

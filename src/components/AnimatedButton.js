@@ -20,17 +20,20 @@ const buttonVariants = {
 
 const AnimatedButton = () => (
 	<div className="flex justify-center">
-		<motion.button
-			className="p-2  border w-60 mx-auto rounded-lg text-gray-200 font-semibold absolute bottom-1/4"
+		<motion.div
+			className=" w-52 mx-auto rounded-lg text-gray-200 font-semibold absolute bottom-1/4"
 			variants={buttonVariants}
 			animate="animate"
 			whileHover={{ scale: 1.05 }}
 			whileTap={{ scale: 0.95 }}
 		>
-			<Link to="./TimeLine" className="link">
-				Explore the Timeline
+			<Link
+				to="./home"
+				className="link p-2 text-center border w-52 rounded-lg text-gray-200 font-semibold absolute bottom-1/4 shadow-md shadow-gray-500"
+			>
+				Explore
 			</Link>
-		</motion.button>
+		</motion.div>
 	</div>
 );
 

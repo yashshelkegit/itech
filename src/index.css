@@ -7,31 +7,33 @@
     /* Indigo */
     --secondary-color: #9370db;
     /* Medium Purple */
-    --accent-color: #b0c4de;
+    --accent-color: #000000;
     /* Light Steel Blue */
-    --background-color: #f0f8ff;
+    --background-color: #000000;
     /* Alice Blue */
-    --text-color: #464646;
-    --timeline-line-color: #474747;
+    --text-color: #ebebeb;
+    --timeline-line-color: #aaa7a7;
     --timeline-item-bg-color: #f0eff1;
     --timeline-item-border-color: #2c333a;
     --timeline-item-accent-color: #ffffff; /*circle*/
     --timeline-item-text-bg-color: #696969;
     --timeline-item-text-color: #f0f8ff;
 }
+/* *{
+    border: 1px solid;
+} */
 .gear{
-    color: rgb(202, 202, 202);
+    color: rgba(255, 255, 255, 0.243);
 }
 
 .timeline-container {
-    padding: 6rem 2rem;
-    background-color: #ffffff;
+    padding: 6rem 0rem;
+    background-color: #000000;
 }
 
 
 .timeline-container h2 {
     margin-bottom: 3rem;
-    text-align: center;
 }
 
 .timeline {
@@ -54,7 +56,6 @@
 .timeline-item {
     padding: 10px 40px;
     position: relative;
-    background-color: inherit;
     width: 50%;
     
 }
@@ -113,8 +114,8 @@
 
 .timeline-content {
     padding: 20px 30px;
-    /* background-color: var(--timeline-item-bg-color); */
     position: relative;
+    background: rgba(255, 255, 255, 0.142);
     border-radius: 6px;
     box-shadow: 0px 6px 10px rgb(87, 87, 87);
 }
