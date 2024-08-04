@@ -17,7 +17,7 @@ const Navbar = () => {
 	const toggleMenu = () => setIsOpen(!isOpen);
 
 	return (
-		<nav className=" p-4 fixed top-0 w-full z-50 bg-slate-900">
+		<nav className=" p-4 fixed top-0 w-full z-50 backdrop-filter backdrop-blur-md">
 			<div className="container mx-auto flex justify-between items-center">
 				<Link to="/" className="text-white text-2xl font-bold">
 					iTech<span className="text-blue-600">Roots</span>

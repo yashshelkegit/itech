@@ -1,5 +1,5 @@
 import React from 'react'
-import {Gallery, Sponsers } from './Pages'
+import {Featured, Gallery, Sponsers } from './Pages'
 
 import img1 from "../images/1.jpeg";
 import img2 from "../images/2.jpeg";
@@ -19,6 +19,7 @@ const Home = () => {
   return (
 		<div className="bg-black py-16">
 			<div className=" md:container mx-auto  grid gap-y-24">
+				<Featured/>
 				<Gallery images={images} />
 				<Sponsers />
 			</div>

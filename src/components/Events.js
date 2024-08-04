@@ -96,7 +96,7 @@ const Events = () => {
 					<div key={index} className="mt-16">
 						<motion.h2
 							className="text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-br from-blue-500 to-purple-500 font-mono"
-							initial={{ opacity: 0, y: 100 }}
+							initial={{ opacity: 0, y: 50 }}
 							animate={controls}
 							transition={{ duration: 0.5 }}
 						>
