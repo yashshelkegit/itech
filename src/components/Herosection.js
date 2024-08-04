@@ -54,7 +54,7 @@ const Herosection = () => {
 					<BlockchainBackground />
 				</Canvas>
 			</div>
-			<div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+			<div className="absolute bottom-24 left-1/2 transform -translate-x-1/2">
 				<AnimatedButton />
 			</div>
 		</div>
