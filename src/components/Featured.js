@@ -13,7 +13,7 @@ const FeatureCard = ({ icon, title, description, delay }) => {
 		<motion.div
 			ref={ref}
             // bg-gradient-to-br from-slate-800 to-gray-700
-			className="border p-6 rounded-lg shadow-lg text-white"
+			className="border border-gray-300 p-6 rounded-lg shadow-lg text-white"
 			initial={{ opacity: 0, y: 50 }}
 			animate={controls}
 			transition={{ duration: 0.5, delay }}
@@ -84,7 +84,7 @@ const Featured = () => {
 	];
 
 	return (
-		<div className="container mx-auto mt-11 py-16 px-4 sm:px-6 lg:px-8">
+		<div className="container mx-auto mt-11 px-4 sm:px-6 lg:px-8">
 			<motion.div
 				ref={ref}
 				initial={{ opacity: 0 }}

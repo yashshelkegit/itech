@@ -2,7 +2,7 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import { Herosection, Events, Team, Timeline, Contact, Home } from "./components/Pages";
+import { Herosection, Events, Timeline, Contact, Home, CoreTeam, GalleryPage } from "./components/Pages";
 
 
 const AnimatedRoutes = () => {
@@ -21,8 +21,10 @@ const AnimatedRoutes = () => {
 				/>
 				<Route path="/home" element={<Home />} />
 				<Route path="/events" element={<Events />} />
-				<Route path="/team" element={<Team />} />
 				<Route path="/timeline" element={<Timeline />} />
+				{/* <Route path="/team" element={<Team />} /> */}
+				<Route path="/coreteam" element={<CoreTeam />} />
+				<Route path="/gallery" element={<GalleryPage />} />
                 <Route path="/contacts" element={<Contact/>}/>
 			</Routes>
 		</AnimatePresence>

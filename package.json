@@ -3,22 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "@craco/craco": "^7.1.0",
+    "@react-google-maps/api": "^2.19.3",
     "@react-three/drei": "^9.109.2",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^11.3.21",
+    "leaflet": "^1.9.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-fiber": "^0.2.101",
     "react-icons": "^5.2.1",
     "react-intersection-observer": "^9.13.0",
+    "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.26.0",
     "react-scripts": "5.0.1",
     "three": "^0.167.1",
-    "web-vitals": "^2.1.4",
-    "@babel/plugin-proposal-private-property-in-object":"7.21.11"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

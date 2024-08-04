@@ -24,7 +24,10 @@ const Footer = () => {
 				</div>
 				<p className="text-sm mt-11">
 					Made with 🖤 by{" "}
-					<a href="mailto:contact.yashshelke@gmail.com" className="underline">
+					<a
+						href="https://www.linkedin.com/in/yashshelke/"
+						className="underline"
+					>
 						Yash Shelke
 					</a>
 				</p>

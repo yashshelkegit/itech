@@ -10,5 +10,8 @@ import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
 import Home from './Home'
 import Featured from "./Featured";
+import CoreTeam from "./CoreTeam";
+import GalleryPage from "./GalleryPage";
+import RouteAccess from "./RouteAccess";
 
-export {Navbar, Herosection, Timeline, Team, Gallery, Contact, Events, Sponsers, Footer, ScrollToTop, Home, Featured};
+export {Navbar, Herosection, Timeline, Team, Gallery, Contact, Events, Sponsers, Footer, ScrollToTop, Home, Featured, CoreTeam, GalleryPage, RouteAccess};

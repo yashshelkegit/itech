@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 import EventCard from "./EventCard";
 import GearIcon from "./GearIcon";
-import img1 from "../images/1.jpeg";
-import img2 from "../images/2.jpeg";
-import img3 from "../images/3.jpeg";
-import img4 from "../images/4.jpeg";
-import img5 from "../images/5.jpeg";
-import img6 from "../images/6.jpeg";
+import img1 from "../posters/1.jpeg";
+import img2 from "../posters/2.jpeg";
+import img3 from "../posters/3.jpeg";
+import img4 from "../posters/4.jpeg";
+import img5 from "../posters/5.jpeg";
+import img6 from "../posters/6.jpeg";
 
 const eventData = [
 	{

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 
 const ImageCard = ({ src, alt, onClick }) => (
 	<motion.div
@@ -31,6 +32,7 @@ const Lightbox = ({ src, alt, onClose }) => (
 				className="max-w-full max-h-full object-contain"
 			/>
 		</motion.div>
+		
 	</AnimatePresence>
 );
 const headingVariants = {
@@ -88,6 +90,19 @@ const Gallery = ({ images }) => {
 						/>
 					))}
 				</motion.div>
+
+				<Link to="/gallery">
+					<motion.div
+						variants={headingVariants}
+						initial="hidden"
+						animate={headingControls}
+						ref={ref}
+						className="border bg-gradient-to-r mt-6 rounded-md md:w-72 bg-clip-text text-transparent text-center font-bold from-blue-400 to-fuchsia-400 p-4"
+					>
+						See more
+					</motion.div>
+				</Link>
+
 				{selectedImage && (
 					<Lightbox
 						src={selectedImage.src}

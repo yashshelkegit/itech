@@ -31,7 +31,7 @@ const Navbar = () => {
 					<NavItem to="/events" icon={<FaCalendar />}>
 						Events
 					</NavItem>
-					<NavItem to="/team" icon={<FaTeamspeak />}>
+					<NavItem to="/coreteam" icon={<FaTeamspeak />}>
 						Team
 					</NavItem>
 					<NavItem to="/contacts" icon={<FaInfoCircle />}>
@@ -72,7 +72,7 @@ const Navbar = () => {
 							Events
 						</NavItem>
 						<NavItem
-							to="/team"
+							to="/coreteam"
 							icon={<FaTeamspeak />}
 							mobile
 							onClick={toggleMenu}
