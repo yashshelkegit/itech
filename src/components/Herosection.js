@@ -6,18 +6,9 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 
 const pageVariants = {
-	initial: {
-		opacity: 0,
-		x: "-100vw",
-	},
-	in: {
-		opacity: 1,
-		x: 0,
-	},
-	out: {
-		opacity: 0,
-		x: "100vw",
-	},
+	initial: { opacity: 0, y: 50 },
+	in: { opacity: 1, y: 0 },
+	out: { opacity: 0, y: -50 },
 };
 
 const pageTransition = {
@@ -28,41 +19,34 @@ const pageTransition = {
 
 const Herosection = () => {
 	return (
-		<div className="bg-black">
+		<div className="relative bg-black min-h-screen flex items-center justify-center overflow-hidden">
 			<motion.div
 				initial="initial"
 				animate="in"
 				exit="out"
 				variants={pageVariants}
 				transition={pageTransition}
-				className="container mx-auto z-30"
+				className="container mx-auto px-4 z-10"
 			>
-				<div className="hero-container p-4">
+				<div className="text-center">
 					<motion.div
-						className="hero-content flex flex-col justify-center h-screen z-30"
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 1 }}
 					>
-						<motion.div
-							initial={{ y: -50 }}
-							animate={{ y: 0 }}
-							transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
-						>
-							<TypingAnimation />
-						</motion.div>
-						<motion.p
-							initial={{ y: 50, opacity: 0 }}
-							animate={{ y: 0, opacity: 1 }}
-							transition={{ delay: 0.4, duration: 0.8 }}
-							className="text-center text-gray-500 z-30 font-mono underline text-lg md:w-1/2 mx-auto"
-						>
-							Where the past meets the future of technology.
-						</motion.p>
+						<TypingAnimation />
 					</motion.div>
+					<motion.p
+						initial={{ y: 50, opacity: 0 }}
+						animate={{ y: 0, opacity: 1 }}
+						transition={{ delay: 0.4, duration: 0.8 }}
+						className="text-gray-500 font-mono underline text-lg mt-4 max-w-2xl mx-auto"
+					>
+						Where the past meets the future of technology.
+					</motion.p>
 				</div>
 			</motion.div>
-			<div className="absolute inset-0 z-0 ">
+			<div className="absolute inset-0 z-0">
 				<Canvas>
 					<OrbitControls enableZoom={false} />
 					<ambientLight intensity={0.5} />
@@ -70,7 +54,9 @@ const Herosection = () => {
 					<BlockchainBackground />
 				</Canvas>
 			</div>
-			<AnimatedButton />
+			<div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+				<AnimatedButton />
+			</div>
 		</div>
 	);
 };
@@ -112,10 +98,9 @@ const TypingAnimation = () => {
 	const text = "iTechRoots \n14.0";
 
 	const sentenceVariant = {
-		hidden: { opacity: 0, y:100 },
+		hidden: { opacity: 0 },
 		visible: {
 			opacity: 1,
-			y:0,
 			transition: {
 				delay: 0.5,
 				staggerChildren: 0.15,
@@ -133,7 +118,7 @@ const TypingAnimation = () => {
 
 	return (
 		<motion.h1
-			className="h1 md:text-8xl text-6xl text-center font-mono font-extrabold"
+			className="text-6xl md:text-8xl font-mono font-extrabold"
 			variants={sentenceVariant}
 			initial="hidden"
 			animate="visible"
@@ -141,9 +126,9 @@ const TypingAnimation = () => {
 			{text.split("").map((char, index) => (
 				<motion.span
 					className={
-						index > 5 && index < 11
-							? "bg-clip-text text-transparent bg-gradient-to-t from-blue-600"
-							: "bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-slate-800"
+						index > 4 && index < 11
+							? "bg-clip-text text-transparent bg-gradient-to-t from-green-500 "
+							: "bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-slate-300"
 					}
 					key={char + "-" + index}
 					variants={letterVariant}

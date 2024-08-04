@@ -17,7 +17,7 @@ const Navbar = () => {
 	const toggleMenu = () => setIsOpen(!isOpen);
 
 	return (
-		<nav className=" p-4 fixed top-0 w-full z-50 backdrop-filter backdrop-blur-md">
+		<nav className=" p-4 fixed top-0 w-full z-50 backdrop-filter backdrop-blur-xl">
 			<div className="container mx-auto flex justify-between items-center">
 				<Link to="/" className="text-white text-2xl font-bold">
 					iTech<span className="text-blue-600">Roots</span>
@@ -57,7 +57,7 @@ const Navbar = () => {
 					initial={{ opacity: 0, y: -20 }}
 					animate={{ opacity: 1, y: 0 }}
 					exit={{ opacity: 0, y: -20 }}
-					className="md:hidden absolute top-full h-screen left-0 right-0 bg-slate-900"
+					className="md:hidden absolute top-full h-screen left-0 right-0 bg-black"
 				>
 					<div className="flex flex-col py-2">
 						<NavItem to="/" icon={<FaRocket />} mobile onClick={toggleMenu}>

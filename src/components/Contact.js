@@ -25,7 +25,7 @@ const RotatingPlanet = () => {
 
 const Contact = () => {
   return (
-    <div className="relative w-full overflow-hidden bg-slate-900 text-gray-300">
+    <div className="relative w-full overflow-hidden bg-black text-gray-300">
       <div className="absolute inset-0 z-0">
         <Canvas camera={{ position: [0, 0, 10], fov: 50 }}>
           <ambientLight intensity={0.5} />
@@ -36,7 +36,7 @@ const Contact = () => {
       </div>
       
       {/* Rest of the component remains the same */}
-	  <div className="relative z-10 h-full flex flex-col items-center justify-center space-y-8 min-h-screen font-mono">
+	  <div className="relative p-4 z-10 h-full flex flex-col items-center justify-center space-y-8 min-h-screen font-mono">
 				<motion.h1
 					initial={{ y: -50, opacity: 0 }}
 					animate={{ y: 0, opacity: 1 }}
