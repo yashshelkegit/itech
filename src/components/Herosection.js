@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import AnimatedButton from "./AnimatedButton";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
-import SvgFrame from "./SvgFrame";
+// import SvgFrame from "./SvgFrame";
 
 const pageVariants = {
 	initial: { opacity: 0, y: 50 },
 	in: { opacity: 1, y: 0 },
-	out: { opacity: 0, y: -50 },
+	out: { opacity: 0, x: 100 },
 };
 
 const pageTransition = {
@@ -21,7 +21,7 @@ const pageTransition = {
 const Herosection = () => {
 	return (
 		<div className="relative bg-black min-h-screen flex items-center justify-center overflow-hidden">
-			<SvgFrame/>
+			{/* <SvgFrame/> */}
 			<motion.div
 				initial="initial"
 				animate="in"
@@ -42,7 +42,7 @@ const Herosection = () => {
 						initial={{ y: 50, opacity: 0 }}
 						animate={{ y: 0, opacity: 1 }}
 						transition={{ delay: 0.4, duration: 0.8 }}
-						className="text-gray-500 font-mono underline text-lg mt-4 max-w-2xl mx-auto"
+						className="text-gray-400 font-mono font-bold text-lg mt-4 max-w-2xl mx-auto"
 					>
 						Where the past meets the future of technology.
 					</motion.p>
@@ -130,7 +130,7 @@ const TypingAnimation = () => {
 					className={
 						index > 4 && index < 11
 							? "bg-clip-text text-transparent bg-gradient-to-t from-green-500 "
-							: "bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-slate-300"
+							: "bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500"
 					}
 					key={char + "-" + index}
 					variants={letterVariant}

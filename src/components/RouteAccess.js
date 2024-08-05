@@ -43,15 +43,15 @@ const Section = ({
 				>
 					{description}
 				</motion.p>
+					<button className="bg-gray-200 text-gray-800 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition duration-300">
+						{buttonText}
+					</button>
 				<motion.div
 					className="mt-6"
 					initial={{ scale: 0 }}
 					animate={controls}
 					transition={{ delay: 0.5, type: "spring" }}
 				>
-					<button className="bg-white text-gray-800 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition duration-300">
-						{buttonText}
-					</button>
 				</motion.div>
 			</Link>
 		</motion.div>
@@ -80,7 +80,7 @@ const RouteAccess = () => {
 					Confused with Timings ?
 				</h1>
 				<Section
-					title="Journey Through Time"
+					title="Journey through tech"
 					description="Experience the evolution of technology from its inception to the modern day. Delve into the history of significant tech milestones, innovations, and the visionaries who shaped the digital landscape. Learn about the transformative events and groundbreaking discoveries that have revolutionized the way we live, work, and communicate."
 					buttonText="Explore Timeline"
 					route="/timeline"

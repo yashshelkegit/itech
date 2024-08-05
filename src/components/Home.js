@@ -18,7 +18,7 @@ const images = [
 const Home = () => {
   return (
 		<div className="bg-black py-16">
-			<div className=" md:container mx-auto  grid gap-y-24">
+			<div className=" md:container mx-auto grid gap-y-20">
 				<RouteAccess/>
 				<Featured/>
 				<Gallery images={images} />
