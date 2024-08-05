@@ -114,7 +114,7 @@ const Contact = () => {
 					<ambientLight intensity={2} />
 					<pointLight position={[10, 10, 10]} intensity={1} />
 					<Stars />
-					<RotatingPlanet />
+					{/* <RotatingPlanet /> */}
 				</Canvas>
 			</div>
 
@@ -153,7 +153,7 @@ const Contact = () => {
 						Wanadongri, Nagpur- 441110
 					</p>
 					{/*  presidents cards here */}
-					<h2 className="text-4xl bg-clip-text text-transparent bg-gradient-to-t from-blue-500 to-green-500 font-bold">
+					<h2 className="text-4xl pt-14 bg-clip-text text-transparent bg-gradient-to-t from-blue-500 to-green-500 font-bold">
 						Presidents
 					</h2>
 					<div className="grid md:grid-cols-3 grid-cols-1 max-w-1/2 justify-center gap-8 mt-8">
@@ -181,7 +181,7 @@ const Contact = () => {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1, delay: 1.5 }}
-					className="space-y-4 text-center"
+					className="space-y-4 text-center py-14"
 				>
 					<h2 className="text-4xl bg-clip-text text-transparent bg-gradient-to-t from-blue-500 to-green-500 font-bold">
 						Technical Support
@@ -189,7 +189,7 @@ const Contact = () => {
 					<p className="text-lg">
 						If you encounter any technical issues, please contact
 					</p>
-					<div className="grid md:grid-cols-2 grid-cols-1 gap-8 mt-4">
+					<div className="grid md:grid-cols-1 grid-cols-1 gap-8">
 						<TechnicalSupportCard
 							name="Abhishek Bhoyar"
 							role="Technical Head"
@@ -198,7 +198,7 @@ const Contact = () => {
 						/>
 						{/* <TechnicalSupportCard
 							name="Yash Shelke"
-							role="Technical Co head"
+							role="Technical Cohead"
 							email=""
 							phone="+91 XXXXXXXXXX"
 						/> */}
