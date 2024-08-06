@@ -96,54 +96,56 @@ const Herosection = () => {
 // 	);
 // };
 
+
 const BlockchainBackground = () => {
-	const particlesRef = useRef(null);
-	const particleCount = 4000;
+  const particlesRef = useRef(null);
+  const particleCount = 4000;
 
-	const particles = useMemo(() => {
-		const temp = [];
-		for (let i = 0; i < particleCount; i++) {
-			const x = (Math.random() - 0.5) * 10;
-			const y = (Math.random() - 0.5) * 10;
-			const z = (Math.random() - 0.5) * 10;
+  const particles = useMemo(() => {
+    const temp = [];
+    for (let i = 0; i < particleCount; i++) {
+      const x = (Math.random() - 0.5) * 10;
+      const y = (Math.random() - 0.5) * 10;
+      const z = (Math.random() - 0.5) * 10;
 
-			// Create a color gradient
-			const r = Math.abs(x / 5); // Red increases with x
-			const g = Math.abs(y / 5); // Green increases with y
-			const b = Math.abs(z / 5); // Blue increases with z
+      // Create a color gradient
+      const r = Math.abs(x / 5);
+      const g = Math.abs(y / 5);
+      const b = Math.abs(z / 5);
 
-			temp.push({ position: [x, y, z], color: [r, g, b] });
-		}
-		return temp;
-	}, []);
+      temp.push({ position: [x, y, z], color: [r, g, b] });
+    }
+    return temp;
+  }, []);
 
-	useFrame((state) => {
-		if (particlesRef.current) {
-			particlesRef.current.rotation.y += 0.0005;
-			particlesRef.current.rotation.x += 0.0005;
-		}
-	});
+  useFrame((state) => {
+    if (particlesRef.current) {
+      particlesRef.current.rotation.y += 0.001; 
+      particlesRef.current.rotation.x += 0.0005; 
+    }
+  });
 
-	return (
-		<points ref={particlesRef}>
-			<bufferGeometry>
-				<bufferAttribute
-					attach="attributes-position"
-					count={particleCount}
-					itemSize={3}
-					array={Float32Array.from(particles.flatMap((p) => p.position))}
-				/>
-				<bufferAttribute
-					attach="attributes-color"
-					count={particleCount}
-					itemSize={3}
-					array={Float32Array.from(particles.flatMap((p) => p.color))}
-				/>
-			</bufferGeometry>
-			<pointsMaterial size={0.02} vertexColors />
-		</points>
-	);
+  return (
+    <points ref={particlesRef}>
+      <bufferGeometry>
+        <bufferAttribute
+          attach="attributes-position"
+          count={particleCount}
+          itemSize={3}
+          array={Float32Array.from(particles.flatMap((p) => p.position))}
+        />
+        <bufferAttribute
+          attach="attributes-color"
+          count={particleCount}
+          itemSize={3}
+          array={Float32Array.from(particles.flatMap((p) => p.color))}
+        />
+      </bufferGeometry>
+      <pointsMaterial size={0.01} vertexColors transparent opacity={0.8} /> {/* Changed size to 0.01 and added opacity */}
+    </points>
+  );
 };
+
 
 const TypingAnimation = () => {
 	const text = "iTechRoots \n14.0";

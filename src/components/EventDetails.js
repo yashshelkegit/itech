@@ -194,7 +194,7 @@ const EventDetails = () => {
 				>
 					&larr; Back to Events
 				</Link>
-				<div className="bg-slate-900 text-gray-200 rounded-lg shadow-lg p-6">
+				<div className=" text-gray-200 rounded-lg shadow-lg py-4">
 					<h1 className="text-3xl font-bold mb-4">{event.title}</h1>
 					<p className="py-2 capitalize text-green-500">
 						<strong>{event.category} Event</strong>
