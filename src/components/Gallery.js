@@ -41,7 +41,7 @@ const headingVariants = {
 		opacity: 1,
 		x: 0,
 		transition: {
-			duration: 1,
+			duration: 0.8,
 			ease: "easeInOut",
 		},
 	},
@@ -89,19 +89,18 @@ const Gallery = ({ images }) => {
 							onClick={() => setSelectedImage(image)}
 						/>
 					))}
+					<Link to="/gallery">
+						<motion.div
+							variants={headingVariants}
+							initial="hidden"
+							animate={headingControls}
+							ref={ref}
+							className="border bg-gradient-to-r sm:h-full h-14 rounded-md bg-clip-text text-transparent text-center font-bold from-blue-400 to-fuchsia-400 grid"
+						>
+							<div className="self-center">See more</div>
+						</motion.div>
+					</Link>
 				</motion.div>
-
-				<Link to="/gallery">
-					<motion.div
-						variants={headingVariants}
-						initial="hidden"
-						animate={headingControls}
-						ref={ref}
-						className="border bg-gradient-to-r mt-6 rounded-md md:w-72 bg-clip-text text-transparent text-center font-bold from-blue-400 to-fuchsia-400 p-4"
-					>
-						See more
-					</motion.div>
-				</Link>
 
 				{selectedImage && (
 					<Lightbox

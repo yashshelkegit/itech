@@ -30,7 +30,7 @@ const FeatureCard = ({ icon, title, description, delay }) => {
 					type: "spring",
 					stiffness: 260,
 					damping: 20,
-					delay: delay + 0.2,
+					// delay: delay + 0.1,
 				}}
 			>
 				{icon}
@@ -39,14 +39,14 @@ const FeatureCard = ({ icon, title, description, delay }) => {
 				className="text-xl font-bold mb-2"
 				initial={{ opacity: 0 }}
 				animate={controls}
-				transition={{ delay: delay + 0.5 }}
+				// transition={{ delay: delay + 0.1 }}
 			>
 				{title}
 			</motion.h3>
 			<motion.p
 				initial={{ opacity: 0 }}
 				animate={controls}
-				transition={{ delay: delay + 0.7 }}
+				// transition={{ delay: delay + 0.1 }}
 			>
 				{description}
 			</motion.p>
@@ -111,7 +111,7 @@ const Featured = () => {
 			</motion.div>
 			<div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
 				{features.map((feature, index) => (
-					<FeatureCard key={index} {...feature} delay={index * 0.2} />
+					<FeatureCard key={index} {...feature} delay={index * 0.1} />
 				))}
 			</div>
 		</div>

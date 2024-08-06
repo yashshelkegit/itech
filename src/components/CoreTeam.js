@@ -70,28 +70,28 @@ const members = [
 		post: "Treasurer",
 	},
 	{
-		name: "Prutha Raut",
-		phone: "7038123771",
-		email: "prutha.mraut16@gmail.com",
-		post: "",
-	},
-	{
-		name: "Sandesh Shinde",
-		phone: "9209159056",
-		email: "sandesh.99.shinde@gmail.com",
-		post: "",
-	},
-	{
 		name: "Kedar Poul",
 		phone: "7972254823",
 		email: "kedarpoul123@gmail.com",
-		post: "",
+		post: "Joint Secretary",
 	},
 	{
 		name: "Somesh Anish Sharma",
 		phone: "9561442224",
 		email: "sharmasomesh2611@gmail.com",
-		post: "",
+		post: "Joint Secretary",
+	},
+	{
+		name: "Prutha Raut",
+		phone: "7038123771",
+		email: "prutha.mraut16@gmail.com",
+		post: "Joint Secretary",
+	},
+	{
+		name: "Sandesh Shinde",
+		phone: "9209159056",
+		email: "sandesh.99.shinde@gmail.com",
+		post: "Joint Treasurer",
 	},
 ];
 

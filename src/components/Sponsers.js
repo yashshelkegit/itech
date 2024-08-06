@@ -54,9 +54,9 @@ const Sponsors = () => {
 
 	return (
 		<div className="w-screen md:container p-4 py-12 z-30">
-			<div className="">
+			<div className="bg-slate-900 rounded-md p-5">
 				<motion.h2
-					className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-fuchsia-500 text-4xl font-bold mb-8 z-50 font-mono text-gray-700 tracking-wide"
+					className=" text-gray-300 text-4xl font-bold mb-8 z-50 font-mono tracking-wide"
 					variants={headingVariants}
 					initial="hidden"
 					animate={headingControls}
@@ -78,7 +78,9 @@ const Sponsors = () => {
 								alt={sponsor.name}
 								className="mx-auto mb-4 h-28 w-28 object-cover rounded-full"
 							/>
-							<p className="text-xl font-medium">{sponsor.name}</p>
+							<p className="text-xl font-medium text-gray-300">
+								{sponsor.name}
+							</p>
 						</motion.div>
 					))}
 				</Marquee>

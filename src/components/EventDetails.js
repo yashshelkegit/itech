@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import useScrollAnimation from "../hooks/useScrollAnimation";
-import EventCard from "./EventCard";
-import GearIcon from "./GearIcon";
+import { useParams, Link } from "react-router-dom";
+// import { eventData } from "./Events";
+
 import img1 from "../posters/1.jpeg";
 import img2 from "../posters/2.jpeg";
 import img3 from "../posters/3.jpeg";
@@ -163,38 +163,82 @@ const eventData = [
 	// },
 ];
 
-const Events = () => {
-	const { ref, controls } = useScrollAnimation(
-		{ opacity: 0, y: 50 },
-		{ opacity: 1, y: 0, transition: { duration: 0.5, staggerChildren: 0.1 } }
-	);
+const EventDetails = () => {
+	const { id } = useParams();
+	const event = eventData[id];
+	const pageVariants = {
+		initial: { opacity: 0, x: "-100vw" },
+		in: { opacity: 1, x: 0 },
+		out: { opacity: 0, x: "100vw" },
+	};
+
+	const pageTransition = {
+		type: "tween",
+		ease: "anticipate",
+		duration: 0.5,
+	};
 
 	return (
-		<section ref={ref} className="bg-black py-24">
-			<GearIcon size={730} initialRotation={0} position={1} />
-			<div className="container mx-auto px-4">
-				<motion.h2
-					className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-br from-blue-500 to-purple-500 font-mono"
-					initial={{ opacity: 0, y: 50 }}
-					animate={controls}
-					transition={{ duration: 0.5 }}
+		<div className="bg-black py-16">
+			<motion.div
+				initial="initial"
+				animate="in"
+				exit="out"
+				variants={pageVariants}
+				transition={pageTransition}
+				className="container mx-auto px-4 py-8"
+			>
+				<Link
+					to="/events"
+					className="text-blue-500 hover:underline mb-4 inline-block"
 				>
-					Events
-				</motion.h2>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-					{eventData.map((event, eventIndex) => (
-						<EventCard
-							key={eventIndex}
-							event={event}
-							index={eventIndex}
-							controls={controls}
-						/>
-					))}
+					&larr; Back to Events
+				</Link>
+				<div className="bg-slate-900 text-gray-200 rounded-lg shadow-lg p-6">
+					<h1 className="text-3xl font-bold mb-4">{event.title}</h1>
+					<p className="py-2 capitalize text-green-500">
+						<strong>{event.category} Event</strong>
+					</p>
+					<img
+						src={event.image}
+						alt={event.title}
+						className="w-full h-64 object-cover rounded-lg mb-4"
+					/>
+					<p className="text-gray-400 mb-4">{event.description}</p>
+					<div className="mb-4">
+						<h2 className="text-xl font-semibold mb-2">Event Details</h2>
+						<p>
+							<strong>Date:</strong> {event.date}
+						</p>
+					</div>
+					<div className="mb-4">
+						<h2 className="text-xl font-semibold mb-2">Organizer Details</h2>
+						<p>
+							<strong>Name:</strong> {event.organizer.name}
+						</p>
+						<p>
+							<strong>Email:</strong> {event.organizer.email}
+						</p>
+						<p>
+							<strong>Phone:</strong> {event.organizer.phone}
+						</p>
+					</div>
+					{event.category !== "past" && (
+						<motion.a
+							href={event.formLink}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="inline-block border text-white px-4 py-2 rounded hover:bg-gray-600 transition duration-300"
+							whileHover={{ scale: 1.05 }}
+							whileTap={{ scale: 0.95 }}
+						>
+							Register Now
+						</motion.a>
+					)}
 				</div>
-			</div>
-		</section>
+			</motion.div>
+		</div>
 	);
 };
 
-export default Events;
-export {eventData};
+export default EventDetails;

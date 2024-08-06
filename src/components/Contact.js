@@ -1,115 +1,46 @@
-import React, { useRef, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import { Stars, Sphere } from "@react-three/drei";
-import { TextureLoader } from "three";
+import React from "react";
+// import React, { useRef, useState } from "react";
+import { motion } from "framer-motion";
+import { Canvas } from "@react-three/fiber";
+// import { Canvas, useFrame, useLoader } from "@react-three/fiber";
+// import { Stars, Sphere } from "@react-three/drei";
+import { Stars } from "@react-three/drei";
+// import { TextureLoader } from "three";
 import { Link } from "react-router-dom";
 import MapComponent from "./MapComponent";
 import { FaMap } from "react-icons/fa";
+import { TechnicalSupportCard, PresidentCard } from "./Pages";
 
+import img1 from "../presidents/1.jpeg";
+import img2 from "../presidents/2.jpeg";
+import img3 from "../presidents/3.jpeg";
 
-import img1 from "../presidents/1.jpeg"
-import img2 from "../presidents/2.jpeg"
-import img3 from "../presidents/3.jpeg"
+// const RotatingPlanet = () => {
+// 	const meshRef = useRef();
+// 	const texture = useLoader(
+// 		TextureLoader,
+// 		"https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/earth_atmos_2048.jpg"
+// 	);
+// 	const normalMap = useLoader(
+// 		TextureLoader,
+// 		"https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/earth_normal_2048.jpg"
+// 	);
 
-const RotatingPlanet = () => {
-	const meshRef = useRef();
-	const texture = useLoader(
-		TextureLoader,
-		"https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/earth_atmos_2048.jpg"
-	);
-	const normalMap = useLoader(
-		TextureLoader,
-		"https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/earth_normal_2048.jpg"
-	);
+// 	useFrame(({ clock }) => {
+// 		meshRef.current.rotation.y = clock.getElapsedTime() * 0.3;
+// 	});
 
-	useFrame(({ clock }) => {
-		meshRef.current.rotation.y = clock.getElapsedTime() * 0.1;
-	});
+// 	return (
+// 		<Sphere ref={meshRef} args={[2, 64, 64]} position={[0, 0, -5]}>
+// 			<meshStandardMaterial map={texture} normalMap={normalMap} />
+// 		</Sphere>
+// 	);
+// };
 
-	return (
-		<Sphere ref={meshRef} args={[2, 64, 64]} position={[0, 0, -5]}>
-			<meshStandardMaterial map={texture} normalMap={normalMap} />
-		</Sphere>
-	);
-};
-const FullScreenImage = ({ image, name, isOpen, onClose }) => {
-	return (
-		<AnimatePresence>
-			{isOpen && (
-				<motion.div
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					exit={{ opacity: 0 }}
-					className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90"
-					onClick={onClose}
-				>
-					<motion.img
-						src={image}
-						alt={name}
-						initial={{ scale: 0.8 }}
-						animate={{ scale: 1 }}
-						exit={{ scale: 0.8 }}
-						className="max-w-full max-h-full object-contain"
-					/>
-				</motion.div>
-			)}
-		</AnimatePresence>
-	);
-};
-
-
-const TechnicalSupportCard = ({ name, role, phone, email }) => {
-	return (
-		<div className="bg-slate-900 p-4 rounded-lg shadow-lg text-center">
-			<h3 className="text-xl font-semibold">
-				<a href={`mailto:${email}`} className="text-blue-500 hover:underline">
-					{name}
-				</a>
-			</h3>
-			<p className="text-gray-400">{role}</p>
-			<p className="text-gray-400">{phone}</p>
-		</div>
-	);
-};
-
-const PresidentCard = ({ name, post, phone, image }) => {
-	const [isFullScreen, setIsFullScreen] = useState(false);
-
-	const toggleFullScreen = () => {
-		setIsFullScreen(!isFullScreen);
-	};
-
-	return (
-		<>
-			<motion.div
-				className="bg-slate-900 p-4 rounded-lg shadow-lg text-center"
-				whileHover={{ scale: 1.01 }}
-			>
-				<img
-					src={image}
-					alt={name}
-					className="w-32 h-32 rounded-full mx-auto mb-4 cursor-pointer object-cover"
-					onClick={toggleFullScreen}
-				/>
-				<h3 className="text-xl font-semibold">{name}</h3>
-				<p className="text-gray-400">{post}</p>
-				<p className="text-gray-400">{phone}</p>
-			</motion.div>
-			<FullScreenImage
-				image={image}
-				name={name}
-				isOpen={isFullScreen}
-				onClose={toggleFullScreen}
-			/>
-		</>
-	);
-};
 const Contact = () => {
-	
 	return (
 		<div className="relative w-full bg-black text-gray-300 overflow-hidden">
-			<div className="absolute -top-1/2 inset-0 z-0">
+			<div className="fixed inset-0 z-0">
 				<Canvas camera={{ position: [0, 0, 10], fov: 50 }}>
 					<ambientLight intensity={2} />
 					<pointLight position={[10, 10, 10]} intensity={1} />
@@ -152,11 +83,18 @@ const Contact = () => {
 						Address: Yeshwantrao Chavan College of Engineering Hingna Road,
 						Wanadongri, Nagpur- 441110
 					</p>
-					{/*  presidents cards here */}
+				</motion.div>
+				{/*  presidents cards here */}
+				<motion.div
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 1, delay: 1 }}
+					className="space-y-4 text-center container mx-auto"
+				>
 					<h2 className="text-4xl pt-14 bg-clip-text text-transparent bg-gradient-to-t from-blue-500 to-green-500 font-bold">
 						Presidents
 					</h2>
-					<div className="grid md:grid-cols-3 grid-cols-1 max-w-1/2 justify-center gap-8 mt-8">
+					<div className="grid md:grid-cols-3 grid-cols-1 gap-8">
 						<PresidentCard
 							name="Varsha Bramhankar"
 							post="President CSI"
@@ -177,31 +115,32 @@ const Contact = () => {
 						/>
 					</div>
 				</motion.div>
+
 				<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1, delay: 1.5 }}
 					className="space-y-4 text-center py-14"
 				>
-					<h2 className="text-4xl bg-clip-text text-transparent bg-gradient-to-t from-blue-500 to-green-500 font-bold">
+					<h2 className="text-4xl mt-11 text-white font-bold">
 						Technical Support
 					</h2>
 					<p className="text-lg">
 						If you encounter any technical issues, please contact
 					</p>
-					<div className="grid md:grid-cols-1 grid-cols-1 gap-8">
+					<div className="grid md:grid-cols-2 grid-cols-1 gap-8">
 						<TechnicalSupportCard
 							name="Abhishek Bhoyar"
 							role="Technical Head"
-							email=""
-							phone="+91 XXXXXXXXXX"
+							email="abhishekbhoyar141@gmail.com"
+							phone="+91 7709869270"
 						/>
-						{/* <TechnicalSupportCard
+						<TechnicalSupportCard
 							name="Yash Shelke"
-							role="Technical Cohead"
-							email=""
-							phone="+91 XXXXXXXXXX"
-						/> */}
+							role="Technical CoHead"
+							email="contact.yashshelke@gmail.com"
+							phone="23030198@ycce.in"
+						/>
 					</div>
 				</motion.div>
 				<motion.div

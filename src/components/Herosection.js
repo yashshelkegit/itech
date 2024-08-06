@@ -1,5 +1,5 @@
 // src/components/Hero.js
-import React, { useRef } from "react";
+import React, { useRef, useMemo } from "react";
 import { motion } from "framer-motion";
 import AnimatedButton from "./AnimatedButton";
 import { OrbitControls } from "@react-three/drei";
@@ -63,20 +63,63 @@ const Herosection = () => {
 	);
 };
 
+// const BlockchainBackground = () => {
+// 	const particlesRef = useRef(null);
+// 	const particleCount = 5000;
+// 	const positions = new Float32Array(particleCount * 3);
+
+// 	for (let i = 0; i < particleCount; i++) {
+// 		positions[i * 3] = (Math.random() - 0.5) * 10;
+// 		positions[i * 3 + 1] = (Math.random() - 0.5) * 10;
+// 		positions[i * 3 + 2] = (Math.random() - 0.5) * 10;
+// 	}
+
+// 	useFrame((state) => {
+// 		if (particlesRef.current) {
+// 			particlesRef.current.rotation.y += 0.001;
+// 			particlesRef.current.rotation.x += 0.0005;
+// 		}
+// 	});
+
+// 	return (
+// 		<points ref={particlesRef}>
+// 			<bufferGeometry>
+// 				<bufferAttribute
+// 					attach="attributes-position"
+// 					count={particleCount}
+// 					itemSize={3}
+// 					array={positions}
+// 				/>
+// 			</bufferGeometry>
+// 			<pointsMaterial size={0.01} color="white" transparent opacity={0.8} />
+// 		</points>
+// 	);
+// };
+
 const BlockchainBackground = () => {
 	const particlesRef = useRef(null);
-	const particleCount = 5000;
-	const positions = new Float32Array(particleCount * 3);
+	const particleCount = 4000;
 
-	for (let i = 0; i < particleCount; i++) {
-		positions[i * 3] = (Math.random() - 0.5) * 10;
-		positions[i * 3 + 1] = (Math.random() - 0.5) * 10;
-		positions[i * 3 + 2] = (Math.random() - 0.5) * 10;
-	}
+	const particles = useMemo(() => {
+		const temp = [];
+		for (let i = 0; i < particleCount; i++) {
+			const x = (Math.random() - 0.5) * 10;
+			const y = (Math.random() - 0.5) * 10;
+			const z = (Math.random() - 0.5) * 10;
+
+			// Create a color gradient
+			const r = Math.abs(x / 5); // Red increases with x
+			const g = Math.abs(y / 5); // Green increases with y
+			const b = Math.abs(z / 5); // Blue increases with z
+
+			temp.push({ position: [x, y, z], color: [r, g, b] });
+		}
+		return temp;
+	}, []);
 
 	useFrame((state) => {
 		if (particlesRef.current) {
-			particlesRef.current.rotation.y += 0.001;
+			particlesRef.current.rotation.y += 0.0005;
 			particlesRef.current.rotation.x += 0.0005;
 		}
 	});
@@ -88,10 +131,16 @@ const BlockchainBackground = () => {
 					attach="attributes-position"
 					count={particleCount}
 					itemSize={3}
-					array={positions}
+					array={Float32Array.from(particles.flatMap((p) => p.position))}
+				/>
+				<bufferAttribute
+					attach="attributes-color"
+					count={particleCount}
+					itemSize={3}
+					array={Float32Array.from(particles.flatMap((p) => p.color))}
 				/>
 			</bufferGeometry>
-			<pointsMaterial size={0.01} color="white" transparent opacity={0.8} />
+			<pointsMaterial size={0.02} vertexColors />
 		</points>
 	);
 };
@@ -129,8 +178,8 @@ const TypingAnimation = () => {
 				<motion.span
 					className={
 						index > 4 && index < 11
-							? "bg-clip-text text-transparent bg-gradient-to-t from-green-500 "
-							: "bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500"
+							? "bg-clip-text text-transparent bg-gradient-to-t from-green-400 "
+							: "bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-600"
 					}
 					key={char + "-" + index}
 					variants={letterVariant}
