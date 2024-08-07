@@ -70,19 +70,23 @@ const Contact = () => {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1, delay: 1 }}
-					className="space-y-4 text-center"
+					className="pt-12 space-y-4 text-center"
 				>
-					<h2 className="text-3xl font-semibold">Contact Us</h2>
+					<p className="p-2">
+						Address: Yeshwantrao Chavan College of Engineering Hingna Road,
+						Wanadongri, Nagpur- 441110
+					</p>
 					<a
-						className="text-blue-500 font-bold hover:underline"
+						className="font-bold hover:underline"
 						href="mailto:itechroots.it@gmail.com"
 					>
 						Email: itechroots.it@gmail.com
 					</a>
-					<p>
-						Address: Yeshwantrao Chavan College of Engineering Hingna Road,
-						Wanadongri, Nagpur- 441110
-					</p>
+					<Link to="/contact-form">
+							<h3 className="text-3xl text-blue-500 font-semibold underline p-4">
+								Contact Us
+							</h3>
+					</Link>
 				</motion.div>
 				{/*  presidents cards here */}
 				<motion.div

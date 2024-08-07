@@ -18,5 +18,6 @@ import EventDetails from "./EventDetails";
 import TechnicalSupportCard from "./TechnicalSupportCard";
 import PresidentCard from "./PresidentCard";
 import FullScreenImage from "./FullScreenImage";
+import ContactForm from "./ContactForm";
 
-export {Navbar, Herosection, Timeline, Team, Gallery, Contact, Events, Sponsers, Footer, ScrollToTop, Home, Featured, CoreTeam, GalleryPage, RouteAccess, FAQ, EventDetails, TechnicalSupportCard, PresidentCard, FullScreenImage};
+export {Navbar, Herosection, Timeline, Team, Gallery, Contact, Events, Sponsers, Footer, ScrollToTop, Home, Featured, CoreTeam, GalleryPage, RouteAccess, FAQ, EventDetails, TechnicalSupportCard, PresidentCard, FullScreenImage, ContactForm};

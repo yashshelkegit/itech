@@ -91,6 +91,7 @@ const EventCard = ({ event, index }) => {
 					<h3 className="text-xl text-gray-100 font-bold mb-2">
 						{event.title}
 					</h3>
+					<p className="capitalize text-red-200 mb-4">{event.category} Event</p>
 					<p className="text-gray-200 mb-4">{event.description}</p>
 				</motion.div>
 			</Link>

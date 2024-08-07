@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useScrollAnimation from "../hooks/useScrollAnimation";
-import {FaInstagram, FaLinkedin, FaWhatsapp} from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 import logo1 from "../logo/1.jpeg";
 // import logo2 from "../logo/2.png";
@@ -24,17 +24,27 @@ const Footer = () => {
 		>
 			<div className="container mx-auto">
 				<div className="flex flex-col mb-8">
-					<img src={logo1} alt="iTechRoots Logo" className="rounded-full w-24 h-24 mb-4 border border-gray-600" />
+					<img
+						src={logo1}
+						alt="iTechRoots Logo"
+						className="rounded-full w-24 h-24 mb-4 border border-gray-600"
+					/>
 					<h3 className="text-3xl font-mono tracking-widest font-extrabold">
 						We R iTech<span className="text-green-500">Roots</span>
 					</h3>
 					<div className="flex text-2xl gap-3 py-5">
-						<a href="asl" className="text-green-500"><FaWhatsapp/></a>
-						<a href="asl" className="text-blue-500"><FaLinkedin/></a>
-						<a href="asl" className="text-pink-500"><FaInstagram/></a>
+						<a href="asl" className="text-green-500">
+							<FaWhatsapp />
+						</a>
+						<a href="asl" className="text-blue-500">
+							<FaLinkedin />
+						</a>
+						<a href="asl" className="text-pink-500">
+							<FaInstagram />
+						</a>
 					</div>
 					<h4 className="text-sm">IT Dept @ YCCE, Nagpur</h4>
-					<Link to="/contacts" className="text-blue-400">
+					<Link to="/contact-form" className="text-blue-400">
 						Contact Us
 					</Link>
 				</div>
