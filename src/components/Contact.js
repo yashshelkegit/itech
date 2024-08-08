@@ -83,9 +83,9 @@ const Contact = () => {
 						Email: itechroots.it@gmail.com
 					</a>
 					<Link to="/contact-form">
-							<h3 className="text-3xl text-blue-500 font-semibold underline p-4">
-								Contact Us
-							</h3>
+						<h3 className="text-3xl font-serif text-blue-500 font-semibold underline p-4">
+							Contact Form
+						</h3>
 					</Link>
 				</motion.div>
 				{/*  presidents cards here */}
@@ -143,7 +143,7 @@ const Contact = () => {
 							name="Yash Shelke"
 							role="Technical CoHead"
 							email="contact.yashshelke@gmail.com"
-							phone="23030198@ycce.in"
+							phone="+91 7030502701"
 						/>
 					</div>
 				</motion.div>

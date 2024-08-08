@@ -10,6 +10,7 @@ import {
 	FaTimes,
 	FaTeamspeak,
 	FaClock,
+	FaUser
 } from "react-icons/fa";
 
 const Navbar = () => {
@@ -57,6 +58,13 @@ const Navbar = () => {
 						currentPath={location.pathname}
 					>
 						Timeline
+					</NavItem>
+					<NavItem
+						to="/admin"
+						icon={<FaUser />}
+						currentPath={location.pathname}
+					>
+						Admin
 					</NavItem>
 				</div>
 
@@ -122,6 +130,15 @@ const Navbar = () => {
 							currentPath={location.pathname}
 						>
 							Timeline
+						</NavItem>
+						<NavItem
+							to="/admin"
+							icon={<FaUser />}
+							mobile
+							onClick={toggleMenu}
+							currentPath={location.pathname}
+						>
+							Admin
 						</NavItem>
 					</div>
 				</motion.div>

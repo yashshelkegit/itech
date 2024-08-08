@@ -22,6 +22,7 @@ const TechnicalSupportCard = ({ name, role, phone, email }) => {
 			</h3>
 			<p className="text-gray-200">{role}</p>
 			<p className="text-gray-400">{phone}</p>
+			<p className="text-blue-400">{email}</p>
 		</motion.div>
 	);
 };

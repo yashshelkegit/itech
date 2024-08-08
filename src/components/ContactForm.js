@@ -49,7 +49,7 @@ const ContactForm = () => {
 	};
 
 	return (
-		<div className="bg-slate-950 md:p-24 p-2 py-24">
+		<div className="bg-slate-950 md:p-24 p-2 py-16">
 			<div className="max-w-6xl mx-auto mt-8 p-2 rounded-lg shadow-lg">
 				<div className="flex flex-col md:flex-row gap-8">
 					{/* First Column - Content */}

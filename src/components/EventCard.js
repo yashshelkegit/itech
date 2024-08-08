@@ -73,7 +73,7 @@ const EventCard = ({ event, index }) => {
 			whileHover={{ scale: 1.03 }}
 			transition={{ duration: 0.5 }}
 		>
-			<Link to={`/events/${index}`}>
+			<Link to={`/events/${index+1}`}>
 				<motion.img
 					src={event.image}
 					alt={event.title}
@@ -91,8 +91,9 @@ const EventCard = ({ event, index }) => {
 					<h3 className="text-xl text-gray-100 font-bold mb-2">
 						{event.title}
 					</h3>
-					<p className="capitalize text-red-200 mb-4">{event.category} Event</p>
+					<p className="capitalize text-blue-200 mb-4">{event.category} Event</p>
 					<p className="text-gray-200 mb-4">{event.description}</p>
+					<button className="border text-gray-400 rounded-md p-2">See Details</button>
 				</motion.div>
 			</Link>
 		</motion.div>

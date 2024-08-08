@@ -1,466 +1,213 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useScrollAnimation from "../hooks/useScrollAnimation";
+import Accordion from "./Accordion";
 
 const heads = [
 	{
-		name: "Aditya Jadhav",
-		position: "Cultural Secretary",
-		branch: "CSE",
-		year: "3rd",
-		email: "aditya.jadhav@example.com",
+		id: 1,
+		post: "Cultural Secretary",
+		heads: [
+			{
+				name: "Aditya Jadhav",
+				email: "asjadhav512@gmail.com",
+				phone: "7028373062",
+			},
+		],
 	},
 	{
-		name: "Vrushabh Dahikar",
-		position: "Flashmob Coordinator",
-		branch: "ECE",
-		year: "2nd",
-		email: "vrushabh.dahikar@example.com",
+		id: 2,
+		post: "Flashmob Coordinator",
+		heads: [
+			{
+				name: "Vrushabh Dahikar",
+				email: "rishidahikar388@gmail.com",
+				phone: "9699795243",
+			},
+		],
 	},
 	{
-		name: "Aniket Shekar Bhati",
-		position: "Cultural Head",
-		branch: "CSE",
-		year: "4th",
-		email: "aniket.bhati@example.com",
+		id: 3,
+		post: "Cultural Head",
+		heads: [
+			{
+				name: "Aniket Shekar Bhati",
+				email: "",
+				phone: "",
+			},
+			{
+				name: "Kajal Jora",
+				email: "",
+				phone: "",
+			},
+		],
 	},
 	{
-		name: "Kajal Jora",
-		position: "Cultural Head",
-		branch: "ECE",
-		year: "4th",
-		email: "kajal.jora@example.com",
+		id: 4,
+		post: "Database Head",
+		heads: [
+			{
+				name: "Ayush Gundawar",
+				email: "ayushgundawar21144@gmail.com",
+				phone: "7219429896",
+			},
+			{
+				name: "Chaitali Naghbidkar",
+				email: "chaitalinagbhidkar@gmail.com",
+				phone: "9307984568",
+			},
+		],
 	},
 	{
-		name: "Ayush Gundawar",
-		position: "Database Head",
-		branch: "IT",
-		year: "4th",
-		email: "ayush.gundawar@example.com",
+		id: 5,
+		post: "Decoration Head",
+		heads: [
+			{
+				name: "Trisha Kasumbiwal",
+				email: "trishakasumbiwal@gmail.com",
+				phone: "9359555184",
+			},
+			{
+				name: "Vrundali Rahangdale",
+				email: "rahangdalevrundali@gmail.com",
+				phone: "7559126657",
+			},
+		],
 	},
 	{
-		name: "Chaitali Naghbidkar",
-		position: "Database Head",
-		branch: "CSE",
-		year: "3rd",
-		email: "chaitali.naghbidkar@example.com",
+		id: 6,
+		post: "Design and Videography Head",
+		heads: [
+			{
+				name: "Prajat Jibhe",
+				email: "prajatjibhe@gmail.com",
+				phone: "8432800636",
+			},
+			{
+				name: "Tejas Kinge",
+				email: "tejaskinge29@gmail.com",
+				phone: "9146630915",
+			},
+		],
 	},
 	{
-		name: "Trisha Kasumbiwal",
-		position: "Decoration Head",
-		branch: "CSE",
-		year: "4th",
-		email: "trisha.kasumbiwal@example.com",
+		id: 7,
+		post: "Event Management Head",
+		heads: [
+			{
+				name: "Akash Kuware",
+				email: "aakashkuware@gmail.com",
+				phone: "9322881266",
+			},
+			{
+				name: "Sajesh Atkare",
+				email: "sajeshatkare67@gmail.com",
+				phone: "9860321398",
+			},
+		],
 	},
 	{
-		name: "Vrundali Rahangdale",
-		position: "Decoration Head",
-		branch: "ECE",
-		year: "4th",
-		email: "vrundali.rahangdale@example.com",
+		id: 8,
+		post: "Event Coordination Head",
+		heads: [
+			{
+				name: "Pooja Parate",
+				email: "poojagparate193@gmail.com",
+				phone: "9403601193",
+			},
+			{
+				name: "Rehan Khan",
+				email: "rehankhanbe123@gmail.com",
+				phone: "8208948815",
+			},
+			{
+				name: "Moin Raza Khan",
+				email: "",
+				phone: "",
+			},
+		],
 	},
 	{
-		name: "Prajat Jibhe",
-		position: "Design and Videography Head",
-		branch: "CSE",
-		year: "3rd",
-		email: "prajat.jibhe@example.com",
+		id: 9,
+		post: "Publicity Head",
+		heads: [
+			{
+				name: "Hitesh Soni",
+				email: "hitesh2002soni@gmail.com",
+				phone: "9665894293",
+			},
+			{
+				name: "Devanshu Soni",
+				email: "devanshumsoni@gmail.com",
+				phone: "6305229849",
+			},
+		],
 	},
 	{
-		name: "Tejas Kinge",
-		position: "Design and Videography Head",
-		branch: "IT",
-		year: "3rd",
-		email: "tejas.kinge@example.com",
+		id: 10,
+		post: "Social Media Head",
+		heads: [
+			{
+				name: "Iravati Saraf",
+				email: "iravati.27@gmail.com",
+				phone: "9168547529",
+			},
+			{
+				name: "Anurag Gundamwar",
+				email: "gaddamwaranurag@gmail.com",
+				phone: "8080172824",
+			},
+		],
 	},
 	{
-		name: "Akash Kuware",
-		position: "Event Management Head",
-		branch: "CSE",
-		year: "3rd",
-		email: "akash.kuware@example.com",
+		id: 11,
+		post: "Sports Head",
+		heads: [
+			{
+				name: "Harsh Joshi",
+				email: "harshsjoshi2704@gmail.com",
+				phone: "8767242867",
+			},
+			{
+				name: "Harshal Dhengale",
+				email: "dhengaleharshal@gmail.com",
+				phone: "9022734703",
+			},
+		],
 	},
 	{
-		name: "Sajesh Atkare",
-		position: "Event Management Head",
-		branch: "ECE",
-		year: "3rd",
-		email: "sajesh.atkare@example.com",
+		id: 12,
+		post: "Technical Head",
+		heads: [
+			{
+				name: "Aniket Rakhade",
+				email: "",
+				phone: "",
+			},
+			{
+				name: "Abhishek Bhoyar",
+				email: "abhibhoyar141@gmail.com",
+				phone: "7709869270",
+			},
+		],
 	},
 	{
-		name: "Pooja Parate",
-		position: "Event Coordination Head",
-		branch: "CSE",
-		year: "4th",
-		email: "pooja.parate@example.com",
-	},
-	{
-		name: "Rehan Khan",
-		position: "Event Coordination Head",
-		branch: "ECE",
-		year: "4th",
-		email: "rehan.khan@example.com",
-	},
-	{
-		name: "Moin Raza Khan",
-		position: "Event Coordination Head",
-		branch: "IT",
-		year: "4th",
-		email: "moin.raza.khan@example.com",
-	},
-	{
-		name: "Hitesh Soni",
-		position: "Publicity Head",
-		branch: "CSE",
-		year: "3rd",
-		email: "hitesh.soni@example.com",
-	},
-	{
-		name: "Devanshu Soni",
-		position: "Publicity Head",
-		branch: "ECE",
-		year: "3rd",
-		email: "devanshu.soni@example.com",
-	},
-	{
-		name: "Iravati Saraf",
-		position: "Social Media Head",
-		branch: "CSE",
-		year: "4th",
-		email: "iravati.saraf@example.com",
-	},
-	{
-		name: "Anurag Gundamwar",
-		position: "Social Media Head",
-		branch: "ECE",
-		year: "4th",
-		email: "anurag.gundamwar@example.com",
-	},
-	{
-		name: "Harsh Joshi",
-		position: "Sports Head",
-		branch: "CSE",
-		year: "3rd",
-		email: "harsh.joshi@example.com",
-	},
-	{
-		name: "Harshal Dhengale",
-		position: "Sports Head",
-		branch: "ECE",
-		year: "3rd",
-		email: "harshal.dhengale@example.com",
-	},
-	{
-		name: "Aniket Rakhade",
-		position: "Technical Head",
-		branch: "CSE",
-		year: "3rd",
-		email: "aniket.rakhade@example.com",
-	},
-	{
-		name: "Abhishek Bhoyar",
-		position: "Technical Head",
-		branch: "ECE",
-		year: "3rd",
-		email: "abhishek.bhoyar@example.com",
-	},
-	{
-		name: "Tanay Ajankar",
-		position: "Sponsorship Head",
-		branch: "CSE",
-		year: "4th",
-		email: "tanay.ajankar@example.com",
-	},
-	{
-		name: "Harsh Meshram",
-		position: "Sponsorship Head",
-		branch: "ECE",
-		year: "4th",
-		email: "harsh.meshram@example.com",
+		id: 13,
+		post: "Sponsorship Head",
+		heads: [
+			{
+				name: "Tanay Ajankar",
+				email: "ajankartanay@gmail.com",
+				phone: "9146375066",
+			},
+			{
+				name: "Harsh Meshram",
+				email: "",
+				phone: "",
+			},
+		],
 	},
 ];
-
-const coheads = [
-	{
-		name: "Kedar Poul",
-		position: "Co-Head",
-		branch: "IT",
-		year: "2nd",
-		email: "kedar.poul@example.com",
-	},
-	{
-		name: "Prutha Raut",
-		position: "Co-Head",
-		branch: "CSE",
-		year: "3rd",
-		email: "prutha.raut@example.com",
-	},
-	{
-		name: "Somesh Sharma",
-		position: "Co-Head",
-		branch: "CSE",
-		year: "2nd",
-		email: "somesh.sharma@example.com",
-	},
-	{
-		name: "Sandesh Shinde",
-		position: "Joint Secretary",
-		branch: "CSE",
-		year: "3rd",
-		email: "sandesh.shinde@example.com",
-	},
-	{
-		name: "Upasna Ukey",
-		position: "Joint Treasurer",
-		branch: "ECE",
-		year: "2nd",
-		email: "upasna.ukey@example.com",
-	},
-	{
-		name: "Vanashree Parbat",
-		position: "Cultural Co-Head",
-		branch: "IT",
-		year: "3rd",
-		email: "vanashree.parbat@example.com",
-	},
-	{
-		name: "Nidhi Nilewar",
-		position: "Cultural Co-Head",
-		branch: "CSE",
-		year: "2nd",
-		email: "nidhi.nilewar@example.com",
-	},
-	{
-		name: "Prasanna Punwatkar",
-		position: "Database Co-Head",
-		branch: "ECE",
-		year: "3rd",
-		email: "prasanna.punwatkar@example.com",
-	},
-	{
-		name: "Kashmira Chaoji",
-		position: "Database Co-Head",
-		branch: "IT",
-		year: "2nd",
-		email: "kashmira.chaoji@example.com",
-	},
-	{
-		name: "Prasad Selokar",
-		position: "Decoration Co-Head",
-		branch: "CSE",
-		year: "3rd",
-		email: "prasad.selokar@example.com",
-	},
-	{
-		name: "Raunak Kalamkhede",
-		position: "Decoration Co-Head",
-		branch: "ECE",
-		year: "2nd",
-		email: "raunak.kalamkhede@example.com",
-	},
-	{
-		name: "Shruti Khathale",
-		position: "Design and Videography Co-Head",
-		branch: "IT",
-		year: "3rd",
-		email: "shruti.khathale@example.com",
-	},
-	{
-		name: "Aditya Raut",
-		position: "Design and Videography Co-Head",
-		branch: "CSE",
-		year: "2nd",
-		email: "aditya.raut@example.com",
-	},
-	{
-		name: "Sujal Burande",
-		position: "Event Management Co-Head",
-		branch: "ECE",
-		year: "3rd",
-		email: "sujal.burande@example.com",
-	},
-	{
-		name: "Prabhat Bondre",
-		position: "Event Management Co-Head",
-		branch: "IT",
-		year: "2nd",
-		email: "prabhat.bondre@example.com",
-	},
-	{
-		name: "Nishika Mohad",
-		position: "Event Management Co-Head",
-		branch: "CSE",
-		year: "3rd",
-		email: "nishika.mohad@example.com",
-	},
-	{
-		name: "Devanshu Bhure",
-		position: "Event Coordination Co-Head",
-		branch: "ECE",
-		year: "2nd",
-		email: "devanshu.bhure@example.com",
-	},
-	{
-		name: "Taniya Borkar",
-		position: "Event Coordination Co-Head",
-		branch: "CSE",
-		year: "3rd",
-		email: "taniya.borkar@example.com",
-	},
-	{
-		name: "Parth Kolhe",
-		position: "Publicity Co-Head",
-		branch: "IT",
-		year: "2nd",
-		email: "parth.kolhe@example.com",
-	},
-	{
-		name: "Girish Yendole",
-		position: "Publicity Co-Head",
-		branch: "CSE",
-		year: "3rd",
-		email: "girish.yendole@example.com",
-	},
-	{
-		name: "Rohit Gautam",
-		position: "Sports Co-Head",
-		branch: "ECE",
-		year: "2nd",
-		email: "rohit.gautam@example.com",
-	},
-	{
-		name: "Priyanshu Dange",
-		position: "Sports Co-Head",
-		branch: "CSE",
-		year: "3rd",
-		email: "priyanshu.dange@example.com",
-	},
-	{
-		name: "Gaurav Rakhde",
-		position: "Sports Co-Head",
-		branch: "IT",
-		year: "2nd",
-		email: "gaurav.rakhde@example.com",
-	},
-	{
-		name: "Yash Shelke",
-		position: "Technical Co-Head",
-		branch: "CSE",
-		year: "3rd",
-		email: "yash.shelke@example.com",
-	},
-	{
-		name: "Rohan Bhendale",
-		position: "Technical Co-Head",
-		branch: "ECE",
-		year: "2nd",
-		email: "rohan.bhendale@example.com",
-	},
-	{
-		name: "Janvi Bhaise",
-		position: "Sponsorship Co-Head",
-		branch: "IT",
-		year: "3rd",
-		email: "janvi.bhaise@example.com",
-	},
-	{
-		name: "Riddhi Dongarwar",
-		position: "Sponsorship Co-Head",
-		branch: "CSE",
-		year: "2nd",
-		email: "riddhi.dongarwar@example.com",
-	},
-	{
-		name: "Khushi Lanke",
-		position: "Decor Co-ordinator",
-		branch: "ECE",
-		year: "3rd",
-		email: "khushi.lanke@example.com",
-	},
-	{
-		name: "Dhanashree Kshirsagar",
-		position: "Decor Co-ordinator",
-		branch: "IT",
-		year: "2nd",
-		email: "dhanashree.kshirsagar@example.com",
-	},
-	{
-		name: "Vishal Kotnod",
-		position: "Decor Co-ordinator",
-		branch: "CSE",
-		year: "3rd",
-		email: "vishal.kotnod@example.com",
-	},
-	{
-		name: "Divyansh Katakwar",
-		position: "Decor Co-ordinator",
-		branch: "ECE",
-		year: "2nd",
-		email: "divyansh.katakwar@example.com",
-	},
-	{
-		name: "Atharva Kumbre",
-		position: "Event Co-ordinator",
-		branch: "IT",
-		year: "3rd",
-		email: "atharva.kumbre@example.com",
-	},
-	{
-		name: "Adil Dhote",
-		position: "Event Co-ordinator",
-		branch: "CSE",
-		year: "2nd",
-		email: "adil.dhote@example.com",
-	},
-	{
-		name: "Guruvesh Wankhede",
-		position: "Event Co-ordinator",
-		branch: "ECE",
-		year: "3rd",
-		email: "guruvesh.wankhede@example.com",
-	},
-	{
-		name: "Prayas Umate",
-		position: "Social Media Co-Head",
-		branch: "IT",
-		year: "2nd",
-		email: "prayas.umate@example.com",
-	},
-	{
-		name: "Anvi Gadge",
-		position: "Social Media Co-Head",
-		branch: "CSE",
-		year: "3rd",
-		email: "anvi.gadge@example.com",
-	},
-];
-
-const PersonCard = ({ person, index }) => {
-	const { ref, controls } = useScrollAnimation(
-		{ opacity: 0, y: 50 },
-		{ opacity: 1, y: 0, transition: { duration: 0.4 } }
-	);
-
-	return (
-		<motion.div
-			ref={ref}
-			animate={controls}
-			className="border border-gray-500 rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300"
-		>
-			<h3 className="text-xl text-gray-200 font-bold mb-2">{person.name}</h3>
-			<p className="text-gray-600 mb-1">{person.position}</p>
-			<p className="text-gray-500 mb-1">
-				{person.branch} - {person.year} Year
-			</p>
-			<a
-				href={`mailto:${person.email}`}
-				className="text-blue-500 hover:underline"
-			>
-				{person.email}
-			</a>
-		</motion.div>
-	);
-};
 
 const Team = () => {
 	const { ref } = useScrollAnimation(
@@ -469,45 +216,26 @@ const Team = () => {
 	);
 
 	return (
-		<motion.section ref={ref} className="bg-black py-16">
-			<div className="container mx-auto  px-4">
+		<motion.section ref={ref} className="bg-black py-5">
+			<div className="container mx-auto">
 				<motion.h2
 					className="text-5xl font-bold my-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500"
 					initial={{ opacity: 0, y: -50 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 1 }}
 				>
-					Heads
+					Our Heads Team
 				</motion.h2>
 
 				<motion.div
-					className=" mb-16"
+					className="mb-16"
 					initial={{ opacity: 0, x: -100 }}
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 1 }}
 				>
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div className="space-y-4">
 						{heads.map((head, index) => (
-							<PersonCard key={index} person={head} index={index} />
-						))}
-					</div>
-				</motion.div>
-
-				<motion.div
-					className="mb-16"
-					initial={{ opacity: 0, x: -50 }}
-					animate={{ opacity: 1, x: 0 }}
-				>
-					<motion.h2
-						className="text-5xl font-bold my-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500"
-						initial={{ opacity: 0, y: -50 }}
-						animate={{ opacity: 1, y: 0 }}
-					>
-						Co Heads
-					</motion.h2>
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-						{coheads.map((cohead, index) => (
-							<PersonCard key={index} person={cohead} index={index} />
+							<Accordion key={index} head={head} />
 						))}
 					</div>
 				</motion.div>

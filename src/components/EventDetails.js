@@ -1,171 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useParams, Link } from "react-router-dom";
-// import { eventData } from "./Events";
-
-import img1 from "../posters/1.jpeg";
-import img2 from "../posters/2.jpeg";
-import img3 from "../posters/3.jpeg";
-import img4 from "../posters/4.jpeg";
-import img5 from "../posters/5.jpeg";
-import img6 from "../posters/6.jpeg";
-
-const eventData = [
-	{
-		id: 1,
-		title: "Web Design",
-		description:
-			"Explore the future of computing with leading quantum physicists and engineers.",
-		image: img1,
-		formLink: "https://forms.google.com/hackathon",
-		category: "past",
-		date: "01/12/2024",
-		organizer: {
-			name: "yash",
-			email: "info@gmail.com",
-			phone: "+91 XXXXX XXXXX",
-		},
-	},
-	{
-		id: 2,
-		title: "Web Design",
-		description:
-			"Explore the future of computing with leading quantum physicists and engineers.",
-		image: img2,
-		formLink: "https://forms.google.com/hackathon",
-		category: "past",
-		date: "01/12/2024",
-		organizer: {
-			name: "yash",
-			email: "info@gmail.com",
-			phone: "+91 XXXXXXXXXX",
-		},
-	},
-	{
-		id: 3,
-		title: "Web Design",
-		description:
-			"Explore the future of computing with leading quantum physicists and engineers.",
-		image: img3,
-		formLink: "https://forms.google.com/hackathon",
-		category: "past",
-		date: "01/12/2024",
-		organizer: {
-			name: "yash",
-			email: "info@gmail.com",
-			phone: "+91 XXXXXXXXXX",
-		},
-	},
-	{
-		id: 4,
-		title: "Web Design",
-		description:
-			"Explore the future of computing with leading quantum physicists and engineers.",
-		image: img4,
-		formLink: "https://forms.google.com/hackathon",
-		category: "upcoming",
-		date: "01/12/2024",
-		organizer: {
-			name: "yash",
-			email: "info@gmail.com",
-			phone: "+91 XXXXXXXXXX",
-		},
-	},
-	{
-		id: 5,
-		title: "Web Design",
-		description:
-			"Explore the future of computing with leading quantum physicists and engineers.",
-		image: img5,
-		formLink: "https://forms.google.com/hackathon",
-		category: "upcoming",
-		date: "01/12/2024",
-		organizer: {
-			name: "yash",
-			email: "info@gmail.com",
-			phone: "+91 XXXXXXXXXX",
-		},
-	},
-	{
-		id: 6,
-		title: "Web Design",
-		description:
-			"Explore the future of computing with leading quantum physicists and engineers.",
-		image: img6,
-		formLink: "https://forms.google.com/hackathon",
-		category: "ongoing",
-		date: "01/12/2024",
-		organizer: {
-			name: "yash",
-			email: "info@gmail.com",
-			phone: "+91 XXXXXXXXXX",
-		},
-	},
-	{
-		id: 7,
-		title: "Web Design",
-		description:
-			"Explore the future of computing with leading quantum physicists and engineers.",
-		image: img2,
-		formLink: "https://forms.google.com/hackathon",
-		category: "ongoing",
-		date: "01/12/2024",
-		organizer: {
-			name: "yash",
-			email: "info@gmail.com",
-			phone: "+91 XXXXXXXXXX",
-		},
-	},
-	// {
-	// 	title: "AI Ethics Symposium",
-	// 	description:
-	// 		"Discuss the ethical implications of artificial intelligence in society.",
-	// 	image: img2,
-	// 	formLink: "https://forms.google.com/aiethics2023",
-	// 	category: "past",
-	// 	date: "01/12/2024",
-	// },
-	// {
-	// 	title: "Space Exploration Conference",
-	// 	description:
-	// 		"Join astronauts and space agency representatives to learn about upcoming missions.",
-	// 	image: img3,
-	// 	formLink: "https://forms.google.com/spaceexploration2024",
-	// 	category: "ongoing",
-	// 	date: "01/12/2024",
-	// },
-	// {
-	// 	title: "Cybersecurity Hackathon",
-	// 	description:
-	// 		"Test your skills against other hackers in this 48-hour cybersecurity challenge.",
-	// 	image: img4,
-	// 	formLink: "https://forms.google.com/cyberhackathon2024",
-	// 	category: "ongoing",
-	// 	date: "01/12/2024",
-	// },
-	// {
-	// 	title: "Biotechnology Innovation Fair",
-	// 	description:
-	// 		"Discover groundbreaking advancements in biotechnology and genetic engineering.",
-	// 	image: img5,
-	// 	formLink: "https://forms.google.com/biotechfair2024",
-	// 	category: "upcoming",
-	// 	date: "01/12/2024",
-	// },
-	// {
-	// 	title: "Virtual Reality Developer Conference",
-	// 	description:
-	// 		"Learn about the latest VR technologies and development techniques.",
-	// 	image: img6,
-	// 	formLink: "https://forms.google.com/vrdevcon2024",
-	// 	category: "upcoming",
-	// 	date: "01/12/2024",
-	// },
-];
+import eventData from "./eventData";
 
 const EventDetails = () => {
 	const { id } = useParams();
-	const event = eventData[id];
+	const event = eventData.find((e) => e.id === parseInt(id));
+
 	const pageVariants = {
 		initial: { opacity: 0, x: "-100vw" },
 		in: { opacity: 1, x: 0 },
@@ -195,7 +36,7 @@ const EventDetails = () => {
 					&larr; Back to Events
 				</Link>
 				<div className=" text-gray-200 rounded-lg shadow-lg py-4">
-					<h1 className="text-3xl font-bold mb-4">{event.title}</h1>
+					<h1 className="text-3xl font-bold mb-4 underline">{event.title}</h1>
 					<p className="py-2 capitalize text-green-500">
 						<strong>{event.category} Event</strong>
 					</p>
@@ -205,36 +46,67 @@ const EventDetails = () => {
 						className="w-full h-64 object-cover rounded-lg mb-4"
 					/>
 					<p className="text-gray-400 mb-4">{event.description}</p>
+					<div className="py-4">
+						{event.category !== "past" && (
+							<motion.a
+								href={event.formLink}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="inline-block border text-white bg-gray-700 px-4 py-2 rounded hover:bg-gray-500 transition duration-300"
+								whileHover={{ scale: 1.05 }}
+								whileTap={{ scale: 0.95 }}
+							>
+								Register Now
+							</motion.a>
+						)}
+					</div>
 					<div className="mb-4">
-						<h2 className="text-xl font-semibold mb-2">Event Details</h2>
+						<h2 className="text-xl border-b py-3 font-semibold mb-2">
+							Event Details
+						</h2>
 						<p>
 							<strong>Date:</strong> {event.date}
 						</p>
 					</div>
-					<div className="mb-4">
-						<h2 className="text-xl font-semibold mb-2">Organizer Details</h2>
-						<p>
-							<strong>Name:</strong> {event.organizer.name}
-						</p>
-						<p>
-							<strong>Email:</strong> {event.organizer.email}
-						</p>
-						<p>
-							<strong>Phone:</strong> {event.organizer.phone}
-						</p>
+
+					<div className="grid md:grid-cols-5 text-gray-400">
+						<div className="mb-4">
+							<h2 className="text-xl font-semibold mb-2">Organizers</h2>
+							<div className="">
+								{event.organizers.map((organizer, index) => (
+									<div key={index} className="mb-2">
+										<p>{organizer.name}</p>
+										{/* <p>
+											<strong>Email:</strong> {organizer.email}
+										</p> */}
+										{/*<p>
+										<strong>Phone:</strong> {organizer.phone}
+									</p> */}
+									</div>
+								))}
+							</div>
+						</div>
+						<div>
+							{event.coOrganizers.length > 0 && (
+								<div className="mb-4">
+									<h2 className="text-xl font-semibold mb-2">Co-Organizers</h2>
+									<div className="">
+										{event.coOrganizers.map((coOrganizer, index) => (
+											<div key={index} className="mb-2">
+												<p>{coOrganizer.name}</p>
+												{/* <p>
+													<strong>Email:</strong> {coOrganizer.email}
+												</p> */}
+												{/* <p>
+											<strong>Phone:</strong> {coOrganizer.phone}
+										</p> */}
+											</div>
+										))}
+									</div>
+								</div>
+							)}
+						</div>
 					</div>
-					{event.category !== "past" && (
-						<motion.a
-							href={event.formLink}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="inline-block border text-white px-4 py-2 rounded hover:bg-gray-600 transition duration-300"
-							whileHover={{ scale: 1.05 }}
-							whileTap={{ scale: 0.95 }}
-						>
-							Register Now
-						</motion.a>
-					)}
 				</div>
 			</motion.div>
 		</div>

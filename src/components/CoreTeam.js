@@ -130,8 +130,8 @@ const CoreTeam = () => {
 	);
 
 	return (
-		<motion.section ref={ref} className="bg-black py-16">
-			<div className="container mx-auto  px-4">
+		<motion.section ref={ref} className="bg-black py-5">
+			<div className="container mx-auto">
 				<motion.h2
 					className="text-5xl font-bold my-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500"
 					initial={{ opacity: 0, y: -50 }}
