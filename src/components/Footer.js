@@ -74,7 +74,7 @@ const Footer = () => {
 
 				<div className="text-sm border-t pt-3 border-gray-600">
 					<p className="inline bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-400">
-						Made with ❤️ by{" "}
+						Developed with ❤️ by{" "}
 					</p>
 					<a
 						href="https://www.linkedin.com/in/yashshelke/"
