@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useScrollAnimation from "../hooks/useScrollAnimation";
-import { FaAirbnb, FaCalculator, FaSpaceShuttle } from "react-icons/fa";
+import { FaAirbnb, FaCalculator, FaCapsules, FaSpaceShuttle } from "react-icons/fa";
 
 const FeatureCard = ({ icon, title, description, delay }) => {
 	const { ref, controls } = useScrollAnimation(
@@ -62,8 +62,8 @@ const Featured = () => {
 
 	const features = [
 		{
-			icon: <FaSpaceShuttle />,
-			title: "Future Tech Demos",
+			icon: <FaCapsules />,
+			title: "Blood Donation",
 			description: "Experience cutting-edge technology firsthand",
 		},
 		{

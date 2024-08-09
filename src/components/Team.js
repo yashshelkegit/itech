@@ -32,12 +32,12 @@ const heads = [
 		heads: [
 			{
 				name: "Aniket Shekar Bhati",
-				email: "",
+				email: "abhishekbhati7219@gmail.com",
 				phone: "",
 			},
 			{
 				name: "Kajal Jora",
-				email: "",
+				email: "kajaljora90@gmail.com",
 				phone: "",
 			},
 		],
@@ -100,9 +100,9 @@ const heads = [
 				phone: "9322881266",
 			},
 			{
-				name: "Sajesh Atkare",
-				email: "sajeshatkare67@gmail.com",
-				phone: "9860321398",
+				name: "Harshal Gaikwad",
+				email: "gaikwadharshal111@gmail.com",
+				phone: "9356318870",
 			},
 		],
 	},
@@ -116,14 +116,9 @@ const heads = [
 				phone: "9403601193",
 			},
 			{
-				name: "Rehan Khan",
-				email: "rehankhanbe123@gmail.com",
-				phone: "8208948815",
-			},
-			{
-				name: "Moin Raza Khan",
-				email: "",
-				phone: "",
+				name: "Anand Gadhekar",
+				email: "anandgdhekar11@gmail.com",
+				phone: "9175986112",
 			},
 		],
 	},
@@ -153,7 +148,7 @@ const heads = [
 				phone: "9168547529",
 			},
 			{
-				name: "Anurag Gundamwar",
+				name: "Anurag Gaddamwar",
 				email: "gaddamwaranurag@gmail.com",
 				phone: "8080172824",
 			},
@@ -180,9 +175,9 @@ const heads = [
 		post: "Technical Head",
 		heads: [
 			{
-				name: "Aniket Rakhade",
-				email: "",
-				phone: "",
+				name: "Rehan Khan Moin Raza Khan",
+				email: "rehankhanbe123@gmail.com",
+				phone: "8208948815",
 			},
 			{
 				name: "Abhishek Bhoyar",
@@ -201,9 +196,9 @@ const heads = [
 				phone: "9146375066",
 			},
 			{
-				name: "Harsh Meshram",
-				email: "",
-				phone: "",
+				name: "Sajesh Atkare",
+				email: "sajeshatkare67@gmail.com",
+				phone: "9860321398",
 			},
 		],
 	},

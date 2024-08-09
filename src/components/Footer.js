@@ -27,7 +27,7 @@ const Footer = () => {
 					<img
 						src={logo1}
 						alt="iTechRoots Logo"
-						className="rounded-full w-24 h-24 mb-4 border border-gray-600"
+						className="rounded-full w-16 h-16 mb-4 border border-gray-600"
 					/>
 					<h3 className="text-3xl font-mono tracking-widest font-extrabold">
 						We R iTech<span className="text-green-500">Roots</span>

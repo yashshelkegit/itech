@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import supabase from "../config/supabaseClient";
 import { Link } from "react-router-dom";
+import { FaUser } from "react-icons/fa";
 
 const SubmissionCard = ({ submission, onDelete }) => {
 	return (
@@ -90,7 +91,7 @@ const AdminDashboard = () => {
 				<div className="p-5 rounded-lg shadow-lg grid grid-cols-1 md:w-1/2 w-screen">
 					<div className="">
 						<h2 className="text-4xl font-bold text-gray-300 mb-4">
-							Admin Dashboard
+							<FaUser className="inline-block"/> Admin Dashboard
 						</h2>
 						<div className="mb-6">
 							<label

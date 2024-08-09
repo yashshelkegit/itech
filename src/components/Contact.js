@@ -56,7 +56,7 @@ const Contact = () => {
 					transition={{ duration: 1 }}
 					className="pt-24 text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500"
 				>
-					iTechRoots 2024
+					iTechRoots 14.0
 				</motion.h1>
 				<motion.p
 					initial={{ opacity: 0, x: 50 }}

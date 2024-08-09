@@ -5,6 +5,7 @@ import logo1 from "../logos/logo1.jpeg";
 import logo2 from "../logos/logo2.png";
 import logo3 from "../logos/logo3.jpeg";
 import logo4 from "../logos/logo5.png";
+import { Link } from "react-router-dom";
 
 const sponsors = [
 	{ id: 1, name: "Sponsor One", logo: logo1 },
@@ -54,16 +55,16 @@ const Sponsors = () => {
 
 	return (
 		<div className="w-screen md:container p-4 py-12 z-30">
+			<motion.h2
+				className=" text-gray-300 text-4xl font-bold mb-8 z-50 font-mono tracking-wide"
+				variants={headingVariants}
+				initial="hidden"
+				animate={headingControls}
+				ref={ref}
+			>
+				Our Sponsors
+			</motion.h2>
 			<div className="bg-slate-900 rounded-md p-5">
-				<motion.h2
-					className=" text-gray-300 text-4xl font-bold mb-8 z-50 font-mono tracking-wide"
-					variants={headingVariants}
-					initial="hidden"
-					animate={headingControls}
-					ref={ref}
-				>
-					Our Sponsors
-				</motion.h2>
 				<Marquee>
 					{sponsors.map((sponsor) => (
 						<motion.div
@@ -84,6 +85,20 @@ const Sponsors = () => {
 						</motion.div>
 					))}
 				</Marquee>
+			</div>
+			<div className="text-center my-4">
+				<motion.h2
+					className=" text-gray-300 text center p-5 text-xl z-50 font-mono tracking-wide"
+					variants={headingVariants}
+					initial="hidden"
+					animate={headingControls}
+					ref={ref}
+				>
+					Sponser vibrant community of over 500 students at YCCE, Nagpur
+				</motion.h2>
+				<Link to="/contact-form" className="text-blue-500 hover:underline">
+					Sponser now
+				</Link>
 			</div>
 		</div>
 	);

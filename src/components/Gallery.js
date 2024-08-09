@@ -7,7 +7,7 @@ const ImageCard = ({ src, alt, onClick }) => (
 	<motion.div
 		whileHover={{ scale: 1.05 }}
 		whileTap={{ scale: 0.95 }}
-		className="cursor-pointer overflow-hidden rounded-lg shadow-md"
+		className="cursor-pointer border overflow-hidden min-h-16 rounded-lg shadow-md"
 		onClick={onClick}
 	>
 		<img src={src} alt={alt} className="w-full h-full object-cover" />
