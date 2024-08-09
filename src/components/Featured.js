@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useScrollAnimation from "../hooks/useScrollAnimation";
-import { FaAirbnb, FaCalculator, FaCapsules, FaSpaceShuttle } from "react-icons/fa";
+import {FaCalculator, FaCapsules } from "react-icons/fa";
 
 const FeatureCard = ({ icon, title, description, delay }) => {
 	const { ref, controls } = useScrollAnimation(
@@ -68,18 +68,8 @@ const Featured = () => {
 		},
 		{
 			icon: <FaCalculator />,
-			title: "AI Workshops",
+			title: "Workshops",
 			description: "Learn from leading experts in artificial intelligence",
-		},
-		{
-			icon: <FaAirbnb/>,
-			title: "VR Space Exploration",
-			description: "Journey through virtual galaxies",
-		},
-		{
-			icon: <FaSpaceShuttle />,
-			title: "Time Travel Simulation",
-			description: "Witness the past and future through advanced simulations",
 		},
 	];
 
@@ -109,7 +99,7 @@ const Featured = () => {
 					Discover the wonders of tomorrow at iTechRoots 14.0
 				</motion.p>
 			</motion.div>
-			<div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+			<div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
 				{features.map((feature, index) => (
 					<FeatureCard key={index} {...feature} delay={index * 0.1} />
 				))}

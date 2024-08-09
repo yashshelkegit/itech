@@ -9,6 +9,8 @@ import img5 from '../images/5.jpeg'
 import img6 from '../images/6.jpeg'
 import img7 from '../images/7.jpg'
 import img8 from '../images/8.jpg'
+import img9 from '../images/9.jpeg'
+import img10 from '../images/10.jpeg'
 
 const images = [
 	img1,
@@ -19,6 +21,8 @@ const images = [
 	img6,
 	img7,
 	img8,
+	img9,
+	img10
 ];
 
 const GalleryPage = () => {
