@@ -1,10 +1,19 @@
-
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import { Herosection, Events, Timeline, Contact, Home, GalleryPage, EventDetails, ContactForm, TeamTab } from "./components/Pages";
+import {
+	Herosection,
+	Events,
+	Timeline,
+	Contact,
+	Home,
+	GalleryPage,
+	EventDetails,
+	ContactForm,
+	TeamTab,
+} from "./components/Pages";
 import AdminDashboard from "./components/AdminDashboard";
-
+import NotFound from "./components/NotFound"; // Import the NotFound component
 
 const AnimatedRoutes = () => {
 	const location = useLocation();
@@ -28,9 +37,12 @@ const AnimatedRoutes = () => {
 				<Route path="/gallery" element={<GalleryPage />} />
 				<Route path="/contacts" element={<Contact />} />
 				{/* <Route path="/events/:id" component={<EventDetails/>} /> */}
-				<Route path="/events/:id" element={<EventDetails/>} />
-				<Route path="/contact-form" element={<ContactForm/>} />
-				<Route path="/admin" element={<AdminDashboard/>} />
+				<Route path="/events/:id" element={<EventDetails />} />
+				<Route path="/contact-form" element={<ContactForm />} />
+				<Route path="/admin" element={<AdminDashboard />} />
+
+				{/* 404 Route */}
+				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</AnimatePresence>
 	);

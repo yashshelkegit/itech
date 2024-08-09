@@ -4,36 +4,54 @@ import GearIcon from "./GearIcon";
 
 const timelineEvents = [
 	{
-		year: "09/08/2024",
+		year: "08/08/2024",
 		title: "Blood Donation Camp",
-		description: "Donated 8 liters of blood together",
+		description:
+			"Organized a blood donation camp and collected 15 liters of blood.",
 	},
 	{
 		year: "12/08/2024",
-		title: "Events",
-		description: "Events will commence",
+		title: "Coding Hackathon",
+		description:
+			"A 24-hour coding hackathon focused on innovative problem-solving.",
 	},
 	{
-		year: "03/08/2024",
-		title: "Blood Donation Camp",
-		description: "Donated 8 liters of blood together",
+		year: "15/08/2024",
+		title: "Guest Lecture on Blockchain",
+		description:
+			"An informative session on blockchain technology by industry experts.",
 	},
 	{
-		year: "03/08/2024",
-		title: "Blood Donation Camp",
-		description: "Donated 8 liters of blood together",
+		year: "25/08/2024",
+		title: "Technical Workshop",
+		description: "Conducted a workshop on Web Development and Cloud Computing.",
 	},
 	{
-		year: "03/08/2024",
-		title: "Blood Donation Camp",
-		description: "Donated 8 liters of blood together",
+		year: "12/08/2024",
+		title: "Annual Cultural Events",
+		description:
+			"A week-long series of cultural events including music, dance, and drama.",
 	},
 	{
-		year: "03/08/2024",
-		title: "Blood Donation Camp",
-		description: "Donated 8 liters of blood together",
+		year: "22/08/2024",
+		title: "Leadership Workshop",
+		description:
+			"A leadership development workshop focusing on team building and management.",
+	},
+	{
+		year: "23/08/2024",
+		title: "Community Service",
+		description:
+			"Volunteered at a local community center, helping with various activities.",
+	},
+	{
+		year: "25/08/2024",
+		title: "Alumni Meet",
+		description:
+			"Organized an alumni meet to reconnect with former students and faculty.",
 	},
 ];
+
 
 const Timeline = () => {
 	return (
