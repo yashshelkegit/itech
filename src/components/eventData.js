@@ -22,19 +22,22 @@ const eventData = [
 		description:
 			"Dive into a fast-paced hackathon: team up, innovate, and showcase your solutions in a thrilling, time-limited challenge.",
 		image: img1,
-		formLink: "https://forms.google.com/hackathon",
+		formLink: "https://forms.gle/75fwPcQDXLBmqUFp6",
 		category: "upcoming",
+		price: "Rs. $$$",
+		entryFees: "Rs.50",
+		memberCount : "individual",
 		date: "01/12/2024",
 		organizers: [
 			{
 				name: "Rehan Khan",
 				email: "info.rehan@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 8208948815",
 			},
 			{
 				name: "Hitanshu Dadhich",
 				email: "info.hitanshu@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 8949122605",
 			},
 		],
 		coOrganizers: [
@@ -56,19 +59,22 @@ const eventData = [
 		description:
 			"Join the Fixathon and solve intricate problems individually. Challenge yourself and refine your skills.",
 		image: img2,
-		formLink: "https://forms.google.com/fixathon",
+		formLink: "https://forms.gle/cd237k3iLPuK2r9g6",
 		category: "upcoming",
+		price: "Rs. $$$",
+		entryFees: "Rs.50",
+		memberCount : "individual",
 		date: "02/12/2024",
 		organizers: [
 			{
 				name: "Abhishek Bhoyar",
 				email: "info.abhishek@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 7709869270",
 			},
 			{
 				name: "Sahil Ninawe",
 				email: "info.sahil@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 8767993086",
 			},
 		],
 		coOrganizers: [
@@ -90,19 +96,22 @@ const eventData = [
 		description:
 			"Test your knowledge in a series of challenging quizzes. Compete solo and see how much you know!",
 		image: img3,
-		formLink: "https://forms.google.com/quizmania",
+		formLink: "https://forms.gle/f8ZiNLwv2aEECKeH9",
 		category: "upcoming",
+		price: "Rs. $$$",
+		entryFees: "Rs.50",
+		memberCount : "individual",
 		date: "03/12/2024",
 		organizers: [
 			{
 				name: "Chaitali Nagbhidkar",
 				email: "info.chaitali@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 9307984568",
 			},
 			{
 				name: "Trisha Kasumbiwal",
 				email: "info.trisha@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 9359555184",
 			},
 		],
 		coOrganizers: [
@@ -126,17 +135,20 @@ const eventData = [
 		image: img4,
 		formLink: "https://forms.google.com/posterdesigning",
 		category: "upcoming",
+		price: "Rs. $$$",
+		entryFees: "Rs.50",
+		memberCount : "individual",
 		date: "04/12/2024",
 		organizers: [
 			{
 				name: "Anurag Gaddamwar",
 				email: "info.anurag@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 8080172824",
 			},
 			{
 				name: "Tejas Punwatkar",
 				email: "info.tejas@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 8999517056",
 			},
 		],
 		coOrganizers: [
@@ -158,19 +170,22 @@ const eventData = [
 		description:
 			"Capture the moment in the Photo Arena event. Show your photography skills and compete for the best shot.",
 		image: img5,
-		formLink: "https://forms.google.com/photoarena",
+		formLink: "https://forms.gle/A5DwEsWyZhLu6236A",
 		category: "upcoming",
+		price: "Rs. $$$",
+		entryFees: "Rs.50",
+		memberCount : "individual",
 		date: "05/12/2024",
 		organizers: [
 			{
 				name: "Varsha Bramhankar",
 				email: "info.varsha@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 8080946005",
 			},
 			{
 				name: "Manaswi Padole",
 				email: "info.manaswi@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 7262887773",
 			},
 		],
 		coOrganizers: [
@@ -192,24 +207,27 @@ const eventData = [
 		description:
 			"Get your team together and compete in the Box Cricket event. It's fast, fun, and full of action!",
 		image: img6,
-		formLink: "https://forms.google.com/boxcricket",
+		formLink: "https://forms.gle/aKYEhFeNCDwnLfCC7",
 		category: "upcoming",
+		price: "Rs. $$$",
+		entryFees: "Rs.50",
+		memberCount : "individual",
 		date: "06/12/2024",
 		organizers: [
 			{
 				name: "Abhishek Ghule",
 				email: "info.abhishekghule@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 7057530377",
 			},
 			{
 				name: "Kartik Pohekar",
 				email: "info.kartik@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 XXXXXXXXXX",
 			},
 			{
 				name: "Harsh Joshi",
 				email: "info.harsh@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 8767242867",
 			},
 		],
 		coOrganizers: [
@@ -241,14 +259,17 @@ const eventData = [
 		description:
 			"Compete in a fast-paced Futsal tournament. Show your skills and teamwork in this exciting event.",
 		image: img7,
-		formLink: "https://forms.google.com/futsal",
+		formLink: "https://forms.gle/38E8g8VJd99cWQg27",
 		category: "upcoming",
+		price: "Rs. $$$",
+		entryFees: "Rs.50",
+		memberCount : "individual",
 		date: "07/12/2024",
 		organizers: [
 			{
 				name: "Harshal Dhengale",
 				email: "info.harshal@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 9022734703",
 			},
 			{
 				name: "Gaurav Kalbhut",
@@ -275,19 +296,22 @@ const eventData = [
 		description:
 			"Show your strategic prowess in the Chess tournament. Compete with or without a board.",
 		image: img8,
-		formLink: "https://forms.google.com/chess",
+		formLink: "https://forms.gle/CWZVZvC1GYWKMKFFA",
 		category: "upcoming",
+		price: "Rs. $$$",
+		entryFees: "Rs.50",
+		memberCount : "individual",
 		date: "08/12/2024",
 		organizers: [
 			{
 				name: "Chiranjeet Roy",
 				email: "info.chiranjeet@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 7498765517",
 			},
 			{
 				name: "Prajat Jibhe",
 				email: "info.prajat@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 8432800636",
 			},
 		],
 		coOrganizers: [],
@@ -298,19 +322,22 @@ const eventData = [
 		description:
 			"Join the ultimate adventure in Pirates Map. Form a team, follow the clues, and find the treasure!",
 		image: img9,
-		formLink: "https://forms.google.com/piratesmap",
+		formLink: "https://forms.gle/dgyrvmJ35wBVBEFR9",
 		category: "upcoming",
+		price: "Rs. $$$",
+		entryFees: "Rs.50",
+		memberCount : "individual",
 		date: "09/12/2024",
 		organizers: [
 			{
 				name: "Aditya Hande",
 				email: "info.aditya@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 8766801667",
 			},
 			{
 				name: "Shivkumar Magar",
 				email: "info.shivkumar@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 9307489625",
 			},
 		],
 		coOrganizers: [
@@ -332,24 +359,27 @@ const eventData = [
 		description:
 			"Form your squad and dominate the virtual battlefield in the BGMI E-Sports tournament.",
 		image: img10,
-		formLink: "https://forms.google.com/esportsbgmi",
+		formLink: "https://forms.gle/UwDuJjePkFaG7rsK7",
 		category: "upcoming",
+		price: "Rs. $$$",
+		entryFees: "Rs.50",
+		memberCount : "individual",
 		date: "10/12/2024",
 		organizers: [
 			{
 				name: "Tanay Ajankar",
 				email: "info.tanay@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 9146375066",
 			},
 			{
 				name: "Satyam Mahajan",
 				email: "info.satyam@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 9309721287",
 			},
 			{
 				name: "Sarthak Tupkar",
 				email: "info.sarthak@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 7755999877",
 			},
 		],
 		coOrganizers: [
@@ -371,19 +401,22 @@ const eventData = [
 		description:
 			"Challenge yourself to beat the mark in this exciting individual competition.",
 		image: img11,
-		formLink: "https://forms.google.com/beatthemark",
+		formLink: "https://forms.gle/iig8GrqMD6st9wZh9",
 		category: "upcoming",
+		price: "Rs. $$$",
+		entryFees: "Rs.50",
+		memberCount : "individual",
 		date: "11/12/2024",
 		organizers: [
 			{
 				name: "Akash Kuware",
 				email: "info.akash@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 9322881266",
 			},
 			{
 				name: "Devanshu Soni",
 				email: "info.devanshu@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 6305229849",
 			},
 		],
 		coOrganizers: [
@@ -405,14 +438,17 @@ const eventData = [
 		description:
 			"Show your strength in the Arm Wrestling competition. Who will be the strongest?",
 		image: img12,
-		formLink: "https://forms.google.com/armwrestling",
+		formLink: "https://forms.gle/W1m28xrnsrZuAfu68",
 		category: "upcoming",
+		price: "Rs. $$$",
+		entryFees: "Rs.50",
+		memberCount : "individual",
 		date: "12/12/2024",
 		organizers: [
 			{
 				name: "Ojas Modak",
 				email: "info.ojas@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 7620186476",
 			},
 		],
 		coOrganizers: [
@@ -431,12 +467,15 @@ const eventData = [
 		image: img13,
 		formLink: "https://forms.google.com/mysticrhythm",
 		category: "upcoming",
+		price: "Rs. $$$",
+		entryFees: "Rs.50",
+		memberCount : "individual",
 		date: "13/12/2024",
 		organizers: [
 			{
 				name: "Aditya Jadhav",
 				email: "info.aditya@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 7028373062",
 			},
 		],
 		coOrganizers: [
@@ -458,19 +497,22 @@ const eventData = [
 		description:
 			"Gear up for intense tactical action in the Valorant team-based competition.",
 		image: img14,
-		formLink: "https://forms.google.com/valorant",
+		formLink: "https://forms.gle/CyZB4Wcd9ViR173s6",
 		category: "upcoming",
+		price: "Rs. $$$",
+		entryFees: "Rs.50",
+		memberCount : "individual",
 		date: "14/12/2024",
 		organizers: [
 			{
 				name: "Sajesh Atkare",
 				email: "info.sajesh@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 9860321398",
 			},
 			{
 				name: "Tushar Sakharkar",
 				email: "info.tushar@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 9699154886",
 			},
 		],
 		coOrganizers: [
@@ -494,17 +536,20 @@ const eventData = [
 		image: img15,
 		formLink: "https://forms.google.com/webdesignjam",
 		category: "upcoming",
+		price: "Rs. $$$",
+		entryFees: "Rs.50",
+		memberCount : "individual",
 		date: "15/12/2024",
 		organizers: [
 			{
 				name: "Pralendra Behera",
 				email: "info.pralendra@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 9322560971",
 			},
 			{
 				name: "Abdul Aziz Aman",
 				email: "info.abdul@gmail.com",
-				phone: "+91 XXXXX XXXXX",
+				phone: "+91 8600073906",
 			},
 		],
 		coOrganizers: [
@@ -515,6 +560,38 @@ const eventData = [
 			},
 		],
 	},
+	// {
+	// 	id: 16,
+	// 	title: "Basketball hoops",
+	// 	description:
+	// 		"Show off your web design skills in the Web Design Jam. Create a stunning website in limited time!",
+	// 	image: img15,
+	// 	formLink: "https://forms.google.com/webdesignjam",
+	// 	category: "upcoming",
+	// 	price: "Rs. $$$",
+	// 	entryFees: "Rs.50",
+	// 	memberCount : "individual",
+	// 	date: "15/12/2024",
+	// 	organizers: [
+	// 		{
+	// 			name: "Pralendra Behera",
+	// 			email: "info.pralendra@gmail.com",
+	// 			phone: "+91 XXXXX XXXXX",
+	// 		},
+	// 		{
+	// 			name: "Abdul Aziz Aman",
+	// 			email: "info.abdul@gmail.com",
+	// 			phone: "+91 XXXXX XXXXX",
+	// 		},
+	// 	],
+	// 	coOrganizers: [
+	// 		{
+	// 			name: "Shruti Kathale",
+	// 			email: "info.shruti@gmail.com",
+	// 			phone: "+91 XXXXX XXXXX",
+	// 		},
+	// 	],
+	// },
 ];
 
 

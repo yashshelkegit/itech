@@ -47,7 +47,7 @@ const EventDetails = () => {
 					/>
 					<p className="text-gray-400 mb-4">{event.description}</p>
 					<div className="py-4">
-						{event.category !== "past" && (
+						{event.category !== "past" ? (
 							<motion.a
 								href={event.formLink}
 								target="_blank"
@@ -58,18 +58,24 @@ const EventDetails = () => {
 							>
 								Register Now
 							</motion.a>
+						) : (
+							<p className="text-gray-300">Sorry you are late...</p>
 						)}
 					</div>
 					<div className="mb-4">
-						<h2 className="text-xl border-b py-3 font-semibold mb-2">
-							Event Details
-						</h2>
+						<h2 className="text-xl py-2 font-semibold">Event Details</h2>
 						<p>
 							<strong>Date:</strong> {event.date}
 						</p>
+						<p>
+							<strong>Entry Fees:</strong> {event.entryFees}
+						</p>
+						<p>
+							<strong>Winning Price:</strong> {event.price}
+						</p>
 					</div>
 
-					<div className="grid md:grid-cols-5 text-gray-400">
+					<div className="grid md:grid-cols-5 text-gray-400 border-t py-3">
 						<div className="mb-4">
 							<h2 className="text-xl font-semibold mb-2">Organizers</h2>
 							<div className="">
@@ -79,9 +85,10 @@ const EventDetails = () => {
 										{/* <p>
 											<strong>Email:</strong> {organizer.email}
 										</p> */}
-										{/*<p>
-										<strong>Phone:</strong> {organizer.phone}
-									</p> */}
+										<p>
+											<strong>Phone:</strong>
+											<a href={`tel:${organizer.phone}`}>{organizer.phone}</a>
+										</p>
 									</div>
 								))}
 							</div>
