@@ -21,5 +21,8 @@ import { toast } from "react-toastify"
 	const notifyError = () => {
 		toast.error("Failed to submit the form");
 	};
+	const notifyTeam = () => {
+		toast("💚 Meet out prestigious team", {theme: 'light', bodyClassName:'toast-body-light', progressClassName:'toast-progress-light'});
+	};
 
-export {notifyContact, notifyTimeline, notifyEvent, notifyParticipate, notifyWarning, notifySuccess, notifyError};
+export {notifyContact, notifyTimeline, notifyEvent, notifyParticipate, notifyWarning, notifySuccess, notifyError, notifyTeam};

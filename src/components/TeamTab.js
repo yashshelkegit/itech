@@ -1,7 +1,8 @@
 // Tabs.js
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Team from "./Team";
 import CoreTeam from "./CoreTeam";
+import { notifyTeam } from "./notify";
 
 const Tabs = () => {
 	const [activeTab, setActiveTab] = useState("core-team");
@@ -9,6 +10,10 @@ const Tabs = () => {
 	const handleTabClick = (tab) => {
 		setActiveTab(tab);
 	};
+
+	useEffect(()=>{
+		notifyTeam();
+	},[])
 
 	return (
 		<div className="bg-black py-24">

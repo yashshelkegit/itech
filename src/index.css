@@ -19,6 +19,7 @@
     --timeline-item-text-bg-color: #696969;
     --timeline-item-text-color: #f0f8ff;
 }
+
 /* *{
     border: 1px solid;
 } */
@@ -280,4 +281,8 @@
 .toast-body{
     font-size: 16px;
     /* color: #fff; */
+}
+.toast-body-light{
+    color: #000000;
+    font-size: 16px;
 }

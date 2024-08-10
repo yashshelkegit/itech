@@ -61,7 +61,7 @@ const Sponsors = () => {
 			>
 				Our Sponsors
 			</motion.h2>
-			<div className="bg-slate-900 rounded-md p-5">
+			<div className="bg-slate-900 rounded-md p-3">
 				<Marquee>
 					{sponsors.map((sponsor) => (
 						<motion.div
@@ -74,7 +74,7 @@ const Sponsors = () => {
 							<img
 								src={sponsor.logo}
 								alt={sponsor.name}
-								className="mx-auto mb-4 h-28 object-cover"
+								className="mx-auto mb-1 h-32 object-cover"
 							/>
 							<p className="text-xl text-center font-medium text-gray-300">
 								{sponsor.name}
