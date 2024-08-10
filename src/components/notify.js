@@ -4,7 +4,7 @@ import { toast } from "react-toastify"
 		toast.warn("Timeline is subject to change");
 	};
 	const notifyContact = () => {
-		toast.info("We are there for you");
+		toast.info("We are always there for you");
 	};
     const notifyEvent = () => {
 		toast("🔥 10+ events for you don't miss the chance");

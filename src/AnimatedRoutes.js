@@ -13,7 +13,7 @@ import {
 	TeamTab,
 } from "./components/Pages";
 import AdminDashboard from "./components/AdminDashboard";
-import NotFound from "./components/NotFound"; // Import the NotFound component
+import NotFound from "./components/NotFound";
 
 const AnimatedRoutes = () => {
 	const location = useLocation();

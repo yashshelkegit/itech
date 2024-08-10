@@ -14,7 +14,6 @@ function App() {
 					<AnimatedRoutes />
 					<Footer />
 				</ScrollToTop>
-				{/* ... other components and routes */}
 				<ToastContainer
 					position="bottom-right"
 					autoClose={2000}

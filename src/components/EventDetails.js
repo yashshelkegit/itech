@@ -65,13 +65,16 @@ const EventDetails = () => {
 					<div className="mb-4">
 						<h2 className="text-xl py-2 font-semibold">Event Details</h2>
 						<p>
-							<strong>Date:</strong> {event.date}
+							<strong>Date :</strong> {event.date}
 						</p>
 						<p>
-							<strong>Entry Fees:</strong> {event.entryFees}
+							<strong>Entry Fees :</strong> {event.entryFees}
 						</p>
 						<p>
-							<strong>Winning Price:</strong> {event.price}
+							<strong>Winning Price 🏆 :</strong> {event.price}
+						</p>
+						<p>
+							<strong>Participants :</strong> {event.memberCount}
 						</p>
 					</div>
 

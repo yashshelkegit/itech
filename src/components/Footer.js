@@ -4,9 +4,6 @@ import useScrollAnimation from "../hooks/useScrollAnimation";
 import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 import logo1 from "../logo/1.jpeg";
-// import logo2 from "../logo/2.png";
-// import logo3 from "../logo/3.png";
-// import logo4 from "../logo/4.png";
 import { Link } from "react-router-dom";
 
 const initialProps = { opacity: 0, y: 50 };
@@ -49,32 +46,9 @@ const Footer = () => {
 					</Link>
 				</div>
 
-				{/* <div className="mb-4">
-					<h5 className="text-cl text-gray-300 font-semibold">
-						In Association With
-					</h5>
-					<div className="flex items-center border-b border-gray-500">
-						<img
-							src={logo2}
-							alt="Association Logo 2"
-							className="w-24 h-24 md:w-40 md:h-40"
-						/>
-							<img
-								src={logo3}
-								alt="Association Logo 3"
-								className="w-16 h-16 md:w-32 md:h-32"
-							/>
-						<img
-							src={logo4}
-							alt="Association Logo 4"
-							className="w-16 h-16 md:w-28 md:h-32"
-						/>
-					</div>
-				</div> */}
-
 				<div className="text-sm border-t pt-3 border-gray-600">
 					<p className="inline bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-400">
-						Developed with ❤️ by{" "}
+						<Link to='admin' className="cursor-text">Developed</Link> with ❤️ by{" "}
 					</p>
 					<a
 						href="https://www.linkedin.com/in/yashshelke/"

@@ -25,8 +25,8 @@ const eventData = [
 		formLink: "https://forms.gle/75fwPcQDXLBmqUFp6",
 		category: "upcoming",
 		price: "Rs. $$$",
-		entryFees: "Rs.50",
-		memberCount: "individual",
+		entryFees: "Rs.$$$",
+		memberCount: "Min. 3 and Max 4 members",
 		date: "01/12/2024",
 		organizers: [
 			{
@@ -62,7 +62,7 @@ const eventData = [
 		formLink: "https://forms.gle/cd237k3iLPuK2r9g6",
 		category: "upcoming",
 		price: "Rs. $$$",
-		entryFees: "Rs.50",
+		entryFees: "Rs. 70/-",
 		memberCount: "individual",
 		date: "02/12/2024",
 		organizers: [
@@ -91,7 +91,7 @@ const eventData = [
 		],
 	},
 	{
-		id: 15,
+		id: 3,
 		title: "Web Design Jam",
 		description:
 			"Show off your web design skills in the Web Design Jam. Create a stunning website in limited time!",
@@ -99,8 +99,8 @@ const eventData = [
 		formLink: "https://forms.google.com/webdesignjam",
 		category: "upcoming",
 		price: "Rs. $$$",
-		entryFees: "Rs.50",
-		memberCount: "individual",
+		entryFees: "Rs.$$$",
+		memberCount: "###",
 		date: "15/12/2024",
 		organizers: [
 			{
@@ -123,7 +123,7 @@ const eventData = [
 		],
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "Quiz Mania",
 		description:
 			"Test your knowledge in a series of challenging quizzes. Compete solo and see how much you know!",
@@ -131,7 +131,7 @@ const eventData = [
 		formLink: "https://forms.gle/f8ZiNLwv2aEECKeH9",
 		category: "upcoming",
 		price: "Rs. $$$",
-		entryFees: "Rs.50",
+		entryFees: "Rs. 50/-",
 		memberCount: "individual",
 		date: "03/12/2024",
 		organizers: [
@@ -160,7 +160,7 @@ const eventData = [
 		],
 	},
 	{
-		id: 4,
+		id: 5,
 		title: "Poster Designing",
 		description:
 			"Unleash your creativity in the Poster Designing event. Create stunning visuals that speak volumes.",
@@ -168,7 +168,7 @@ const eventData = [
 		formLink: "https://forms.google.com/posterdesigning",
 		category: "upcoming",
 		price: "Rs. $$$",
-		entryFees: "Rs.50",
+		entryFees: "Rs. 70/-",
 		memberCount: "individual",
 		date: "04/12/2024",
 		organizers: [
@@ -197,7 +197,7 @@ const eventData = [
 		],
 	},
 	{
-		id: 5,
+		id: 6,
 		title: "Photo Arena",
 		description:
 			"Capture the moment in the Photo Arena event. Show your photography skills and compete for the best shot.",
@@ -205,7 +205,7 @@ const eventData = [
 		formLink: "https://forms.gle/A5DwEsWyZhLu6236A",
 		category: "upcoming",
 		price: "Rs. $$$",
-		entryFees: "Rs.50",
+		entryFees: "Rs. 50/-",
 		memberCount: "individual",
 		date: "05/12/2024",
 		organizers: [
@@ -234,7 +234,7 @@ const eventData = [
 		],
 	},
 	{
-		id: 6,
+		id: 7,
 		title: "Box Cricket",
 		description:
 			"Get your team together and compete in the Box Cricket event. It's fast, fun, and full of action!",
@@ -242,8 +242,8 @@ const eventData = [
 		formLink: "https://forms.gle/aKYEhFeNCDwnLfCC7",
 		category: "upcoming",
 		price: "Rs. $$$",
-		entryFees: "Rs.50",
-		memberCount: "individual",
+		entryFees: "Rs. 700/- per group",
+		memberCount: "Team of 7",
 		date: "06/12/2024",
 		organizers: [
 			{
@@ -286,7 +286,7 @@ const eventData = [
 		],
 	},
 	{
-		id: 7,
+		id: 8,
 		title: "Futsal",
 		description:
 			"Compete in a fast-paced Futsal tournament. Show your skills and teamwork in this exciting event.",
@@ -294,8 +294,8 @@ const eventData = [
 		formLink: "https://forms.gle/38E8g8VJd99cWQg27",
 		category: "upcoming",
 		price: "Rs. $$$",
-		entryFees: "Rs.50",
-		memberCount: "individual",
+		entryFees: "Rs. 600/- per group",
+		memberCount: "Team of 6",
 		date: "07/12/2024",
 		organizers: [
 			{
@@ -323,7 +323,7 @@ const eventData = [
 		],
 	},
 	{
-		id: 8,
+		id: 9,
 		title: "Chess",
 		description:
 			"Show your strategic prowess in the Chess tournament. Compete with or without a board.",
@@ -331,7 +331,7 @@ const eventData = [
 		formLink: "https://forms.gle/CWZVZvC1GYWKMKFFA",
 		category: "upcoming",
 		price: "Rs. $$$",
-		entryFees: "Rs.50",
+		entryFees: "with board Rs. 50/- and without board Rs. 60/-",
 		memberCount: "individual",
 		date: "08/12/2024",
 		organizers: [
@@ -349,7 +349,7 @@ const eventData = [
 		coOrganizers: [],
 	},
 	{
-		id: 9,
+		id: 10,
 		title: "Pirates Map (Treasure Hunt)",
 		description:
 			"Join the ultimate adventure in Pirates Map. Form a team, follow the clues, and find the treasure!",
@@ -357,8 +357,8 @@ const eventData = [
 		formLink: "https://forms.gle/dgyrvmJ35wBVBEFR9",
 		category: "upcoming",
 		price: "Rs. $$$",
-		entryFees: "Rs.50",
-		memberCount: "individual",
+		entryFees: "Rs. 240/- per group",
+		memberCount: "Min 3 and Max 4 members",
 		date: "09/12/2024",
 		organizers: [
 			{
@@ -386,7 +386,7 @@ const eventData = [
 		],
 	},
 	{
-		id: 10,
+		id: 11,
 		title: "E-Sports (BGMI)",
 		description:
 			"Form your squad and dominate the virtual battlefield in the BGMI E-Sports tournament.",
@@ -394,8 +394,8 @@ const eventData = [
 		formLink: "https://forms.gle/UwDuJjePkFaG7rsK7",
 		category: "upcoming",
 		price: "Rs. $$$",
-		entryFees: "Rs.50",
-		memberCount: "individual",
+		entryFees: "Rs. 250/- per group",
+		memberCount: "Team of 4",
 		date: "10/12/2024",
 		organizers: [
 			{
@@ -428,7 +428,7 @@ const eventData = [
 		],
 	},
 	{
-		id: 11,
+		id: 12,
 		title: "Beat the Mark",
 		description:
 			"Challenge yourself to beat the mark in this exciting individual competition.",
@@ -465,7 +465,7 @@ const eventData = [
 		],
 	},
 	{
-		id: 12,
+		id: 13,
 		title: "Arm Wrestling",
 		description:
 			"Show your strength in the Arm Wrestling competition. Who will be the strongest?",
@@ -473,7 +473,7 @@ const eventData = [
 		formLink: "https://forms.gle/W1m28xrnsrZuAfu68",
 		category: "upcoming",
 		price: "Rs. $$$",
-		entryFees: "Rs.50",
+		entryFees: "Rs.60",
 		memberCount: "individual",
 		date: "12/12/2024",
 		organizers: [
@@ -492,7 +492,7 @@ const eventData = [
 		],
 	},
 	{
-		id: 13,
+		id: 14,
 		title: "Mystic Rhythm",
 		description:
 			"Feel the beat and move to the rhythm in this exhilarating group event.",
@@ -500,8 +500,8 @@ const eventData = [
 		formLink: "https://forms.google.com/mysticrhythm",
 		category: "upcoming",
 		price: "Rs. $$$",
-		entryFees: "Rs.50",
-		memberCount: "individual",
+		entryFees: "Rs. 50/- per member",
+		memberCount: "Max 4 members",
 		date: "13/12/2024",
 		organizers: [
 			{
@@ -524,7 +524,7 @@ const eventData = [
 		],
 	},
 	{
-		id: 14,
+		id: 15,
 		title: "Valorant",
 		description:
 			"Gear up for intense tactical action in the Valorant team-based competition.",
@@ -532,8 +532,8 @@ const eventData = [
 		formLink: "https://forms.gle/CyZB4Wcd9ViR173s6",
 		category: "upcoming",
 		price: "Rs. $$$",
-		entryFees: "Rs.50",
-		memberCount: "individual",
+		entryFees: "Rs. 80/- per person",
+		memberCount: "Team of 5",
 		date: "14/12/2024",
 		organizers: [
 			{
