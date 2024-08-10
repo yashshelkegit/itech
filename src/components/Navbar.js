@@ -58,13 +58,11 @@ const Navbar = () => {
 					>
 						Timeline
 					</NavItem>
-					{/* <NavItem
-						to="/admin"
-						icon={<FaUser />}
-						currentPath={location.pathname}
-					>
-						Admin
-					</NavItem> */}
+					<div className="hidden">
+						<NavItem to="/admin" currentPath={location.pathname}>
+							Admin
+						</NavItem>
+					</div>
 				</div>
 
 				{/* Mobile Menu Button */}
