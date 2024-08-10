@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import GearIcon from "./GearIcon";
+import { notifyTimeline } from "./notify";
 
 const timelineEvents = [
 	{
@@ -52,8 +53,10 @@ const timelineEvents = [
 	},
 ];
 
-
 const Timeline = () => {
+	useEffect(()=>{
+		notifyTimeline();
+	},[])
 	return (
 		<motion.div
 			className="bg-black"

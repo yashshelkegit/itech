@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import supabase from "../config/supabaseClient";
 import { useNavigate } from "react-router-dom";
+import {notifyWarning, notifyError, notifySuccess} from './notify';
 
 const ContactForm = () => {
 	const navigate = useNavigate();
@@ -13,6 +14,10 @@ const ContactForm = () => {
 	});
 	const [isSubmitting, setIsSubmitting] = useState(false);
 	const [submitStatus, setSubmitStatus] = useState(null);
+
+	useEffect(()=>{
+		notifyWarning();
+	},[])
 
 	const handleChange = (e) => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -38,11 +43,13 @@ const ContactForm = () => {
 				if (data);
 				setSubmitStatus("success");
 				setFormData({ name: "", email: "", phone: "", message: "" });
+				notifySuccess();
 				navigate("/");
 			}
 		} catch (error) {
 			console.error("Error submitting form:", error);
 			setSubmitStatus("error");
+			notifyError();
 		} finally {
 			setIsSubmitting(false);
 		}

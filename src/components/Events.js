@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 import EventCard from "./EventCard";
@@ -6,6 +6,7 @@ import GearIcon from "./GearIcon";
 
 
 import eventData from "./eventData";
+import { notifyEvent } from "./notify";
 
 
 
@@ -14,6 +15,9 @@ const Events = () => {
 		{ opacity: 0, y: 50 },
 		{ opacity: 1, y: 0, transition: { duration: 0.5, staggerChildren: 0.1 } }
 	);
+	useEffect(()=>{
+		notifyEvent();
+	},[])
 
 	return (
 		<section ref={ref} className="bg-black py-24">

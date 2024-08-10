@@ -26,7 +26,7 @@ const eventData = [
 		category: "upcoming",
 		price: "Rs. $$$",
 		entryFees: "Rs.50",
-		memberCount : "individual",
+		memberCount: "individual",
 		date: "01/12/2024",
 		organizers: [
 			{
@@ -63,7 +63,7 @@ const eventData = [
 		category: "upcoming",
 		price: "Rs. $$$",
 		entryFees: "Rs.50",
-		memberCount : "individual",
+		memberCount: "individual",
 		date: "02/12/2024",
 		organizers: [
 			{
@@ -91,6 +91,38 @@ const eventData = [
 		],
 	},
 	{
+		id: 15,
+		title: "Web Design Jam",
+		description:
+			"Show off your web design skills in the Web Design Jam. Create a stunning website in limited time!",
+		image: img15,
+		formLink: "https://forms.google.com/webdesignjam",
+		category: "upcoming",
+		price: "Rs. $$$",
+		entryFees: "Rs.50",
+		memberCount: "individual",
+		date: "15/12/2024",
+		organizers: [
+			{
+				name: "Pralendra Behera",
+				email: "info.pralendra@gmail.com",
+				phone: "+91 9322560971",
+			},
+			{
+				name: "Abdul Aziz Aman",
+				email: "info.abdul@gmail.com",
+				phone: "+91 8600073906",
+			},
+		],
+		coOrganizers: [
+			{
+				name: "Shruti Kathale",
+				email: "info.shruti@gmail.com",
+				phone: "+91 XXXXX XXXXX",
+			},
+		],
+	},
+	{
 		id: 3,
 		title: "Quiz Mania",
 		description:
@@ -100,7 +132,7 @@ const eventData = [
 		category: "upcoming",
 		price: "Rs. $$$",
 		entryFees: "Rs.50",
-		memberCount : "individual",
+		memberCount: "individual",
 		date: "03/12/2024",
 		organizers: [
 			{
@@ -137,7 +169,7 @@ const eventData = [
 		category: "upcoming",
 		price: "Rs. $$$",
 		entryFees: "Rs.50",
-		memberCount : "individual",
+		memberCount: "individual",
 		date: "04/12/2024",
 		organizers: [
 			{
@@ -174,7 +206,7 @@ const eventData = [
 		category: "upcoming",
 		price: "Rs. $$$",
 		entryFees: "Rs.50",
-		memberCount : "individual",
+		memberCount: "individual",
 		date: "05/12/2024",
 		organizers: [
 			{
@@ -211,7 +243,7 @@ const eventData = [
 		category: "upcoming",
 		price: "Rs. $$$",
 		entryFees: "Rs.50",
-		memberCount : "individual",
+		memberCount: "individual",
 		date: "06/12/2024",
 		organizers: [
 			{
@@ -263,7 +295,7 @@ const eventData = [
 		category: "upcoming",
 		price: "Rs. $$$",
 		entryFees: "Rs.50",
-		memberCount : "individual",
+		memberCount: "individual",
 		date: "07/12/2024",
 		organizers: [
 			{
@@ -300,7 +332,7 @@ const eventData = [
 		category: "upcoming",
 		price: "Rs. $$$",
 		entryFees: "Rs.50",
-		memberCount : "individual",
+		memberCount: "individual",
 		date: "08/12/2024",
 		organizers: [
 			{
@@ -326,7 +358,7 @@ const eventData = [
 		category: "upcoming",
 		price: "Rs. $$$",
 		entryFees: "Rs.50",
-		memberCount : "individual",
+		memberCount: "individual",
 		date: "09/12/2024",
 		organizers: [
 			{
@@ -363,7 +395,7 @@ const eventData = [
 		category: "upcoming",
 		price: "Rs. $$$",
 		entryFees: "Rs.50",
-		memberCount : "individual",
+		memberCount: "individual",
 		date: "10/12/2024",
 		organizers: [
 			{
@@ -405,7 +437,7 @@ const eventData = [
 		category: "upcoming",
 		price: "Rs. $$$",
 		entryFees: "Rs.50",
-		memberCount : "individual",
+		memberCount: "individual",
 		date: "11/12/2024",
 		organizers: [
 			{
@@ -442,7 +474,7 @@ const eventData = [
 		category: "upcoming",
 		price: "Rs. $$$",
 		entryFees: "Rs.50",
-		memberCount : "individual",
+		memberCount: "individual",
 		date: "12/12/2024",
 		organizers: [
 			{
@@ -469,7 +501,7 @@ const eventData = [
 		category: "upcoming",
 		price: "Rs. $$$",
 		entryFees: "Rs.50",
-		memberCount : "individual",
+		memberCount: "individual",
 		date: "13/12/2024",
 		organizers: [
 			{
@@ -501,7 +533,7 @@ const eventData = [
 		category: "upcoming",
 		price: "Rs. $$$",
 		entryFees: "Rs.50",
-		memberCount : "individual",
+		memberCount: "individual",
 		date: "14/12/2024",
 		organizers: [
 			{
@@ -528,70 +560,6 @@ const eventData = [
 			},
 		],
 	},
-	{
-		id: 15,
-		title: "Web Design Jam",
-		description:
-			"Show off your web design skills in the Web Design Jam. Create a stunning website in limited time!",
-		image: img15,
-		formLink: "https://forms.google.com/webdesignjam",
-		category: "upcoming",
-		price: "Rs. $$$",
-		entryFees: "Rs.50",
-		memberCount : "individual",
-		date: "15/12/2024",
-		organizers: [
-			{
-				name: "Pralendra Behera",
-				email: "info.pralendra@gmail.com",
-				phone: "+91 9322560971",
-			},
-			{
-				name: "Abdul Aziz Aman",
-				email: "info.abdul@gmail.com",
-				phone: "+91 8600073906",
-			},
-		],
-		coOrganizers: [
-			{
-				name: "Shruti Kathale",
-				email: "info.shruti@gmail.com",
-				phone: "+91 XXXXX XXXXX",
-			},
-		],
-	},
-	// {
-	// 	id: 16,
-	// 	title: "Basketball hoops",
-	// 	description:
-	// 		"Show off your web design skills in the Web Design Jam. Create a stunning website in limited time!",
-	// 	image: img15,
-	// 	formLink: "https://forms.google.com/webdesignjam",
-	// 	category: "upcoming",
-	// 	price: "Rs. $$$",
-	// 	entryFees: "Rs.50",
-	// 	memberCount : "individual",
-	// 	date: "15/12/2024",
-	// 	organizers: [
-	// 		{
-	// 			name: "Pralendra Behera",
-	// 			email: "info.pralendra@gmail.com",
-	// 			phone: "+91 XXXXX XXXXX",
-	// 		},
-	// 		{
-	// 			name: "Abdul Aziz Aman",
-	// 			email: "info.abdul@gmail.com",
-	// 			phone: "+91 XXXXX XXXXX",
-	// 		},
-	// 	],
-	// 	coOrganizers: [
-	// 		{
-	// 			name: "Shruti Kathale",
-	// 			email: "info.shruti@gmail.com",
-	// 			phone: "+91 XXXXX XXXXX",
-	// 		},
-	// 	],
-	// },
 ];
 
 

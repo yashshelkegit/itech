@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 // import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
@@ -14,30 +14,13 @@ import { TechnicalSupportCard, PresidentCard } from "./Pages";
 import img1 from "../presidents/1.jpeg";
 import img2 from "../presidents/2.jpeg";
 import img3 from "../presidents/3.jpeg";
+import { notifyContact } from "./notify";
 
-// const RotatingPlanet = () => {
-// 	const meshRef = useRef();
-// 	const texture = useLoader(
-// 		TextureLoader,
-// 		"https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/earth_atmos_2048.jpg"
-// 	);
-// 	const normalMap = useLoader(
-// 		TextureLoader,
-// 		"https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/earth_normal_2048.jpg"
-// 	);
-
-// 	useFrame(({ clock }) => {
-// 		meshRef.current.rotation.y = clock.getElapsedTime() * 0.3;
-// 	});
-
-// 	return (
-// 		<Sphere ref={meshRef} args={[2, 64, 64]} position={[0, 0, -5]}>
-// 			<meshStandardMaterial map={texture} normalMap={normalMap} />
-// 		</Sphere>
-// 	);
-// };
 
 const Contact = () => {
+	useEffect(()=>{
+		notifyContact();
+	},[])
 	return (
 		<div className="relative w-full bg-black text-gray-300 overflow-hidden">
 			<div className="fixed inset-0 z-0">

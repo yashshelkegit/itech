@@ -57,13 +57,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import useScrollAnimation from "../hooks/useScrollAnimation";
+import { notifyParticipate } from "./notify";
 
 const EventCard = ({ event, index }) => {
 	const { ref, controls } = useScrollAnimation(
 		{ opacity: 0, y: 50 },
 		{ opacity: 1, y: 0 }
 	);
-
+	
 	return (
 		<motion.div
 			ref={ref}
@@ -73,7 +74,7 @@ const EventCard = ({ event, index }) => {
 			whileHover={{ scale: 1.03 }}
 			transition={{ duration: 0.5 }}
 		>
-			<Link to={`/events/${index+1}`}>
+			<Link to={`/events/${index+1}`} onClick={notifyParticipate}>
 				<motion.img
 					src={event.image}
 					alt={event.title}

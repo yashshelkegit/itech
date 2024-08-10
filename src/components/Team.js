@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 import Accordion from "./Accordion";
+import {Link} from 'react-router-dom';
 
 const heads = [
 	{
@@ -214,14 +215,16 @@ const Team = () => {
 		<motion.section ref={ref} className="bg-black py-5">
 			<div className="container mx-auto">
 				<motion.h2
-					className="text-5xl font-bold my-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500"
+					className="text-5xl font-bold my-1 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500"
 					initial={{ opacity: 0, y: -50 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 1 }}
 				>
 					Our Heads Team
 				</motion.h2>
-
+				<Link to="/contact-form">
+					<div className="text-blue-500 underline py-4">Want to join the team ?</div>
+				</Link>
 				<motion.div
 					className="mb-16"
 					initial={{ opacity: 0, x: -100 }}
