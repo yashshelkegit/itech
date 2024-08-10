@@ -181,7 +181,7 @@ const TypingAnimation = () => {
 					className={
 						index > 4 && index < 11
 							? "bg-clip-text text-transparent bg-gradient-to-t from-green-400 "
-							: "bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-600"
+							: "bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-800"
 					}
 					key={char + "-" + index}
 					variants={letterVariant}
