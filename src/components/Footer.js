@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useScrollAnimation from "../hooks/useScrollAnimation";
-import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 import logo1 from "../logo/1.jpeg";
 import { Link } from "react-router-dom";
@@ -30,14 +31,17 @@ const Footer = () => {
 						We R iTech<span className="text-green-500">Roots</span>
 					</h3>
 					<div className="flex text-2xl gap-3 py-5">
-						<a href="asl" className="text-green-500">
+						{/* <a href="asl" className="text-green-500">
 							<FaWhatsapp />
-						</a>
-						<a href="asl" className="text-blue-500">
-							<FaLinkedin />
-						</a>
-						<a href="asl" className="text-pink-500">
+						</a> */}
+						<a
+							href="https://www.instagram.com/itechroots_14.0?igsh=MXJyYTZmc2tpdDM0"
+							className="text-pink-500"
+						>
 							<FaInstagram />
+						</a>
+						<a href="mailto:itechroots.it@gmail.com" className="text-yellow-500">
+							<SiGmail />
 						</a>
 					</div>
 					<h4 className="text-sm">IT Dept @ YCCE, Nagpur</h4>
@@ -48,7 +52,10 @@ const Footer = () => {
 
 				<div className="text-sm border-t pt-3 border-gray-600">
 					<p className="inline bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-400">
-						<Link to='admin' className="cursor-text">Developed</Link> with ❤️ by{" "}
+						<Link to="admin" className="cursor-text">
+							Developed
+						</Link>{" "}
+						with ❤️ by{" "}
 					</p>
 					<a
 						href="https://www.linkedin.com/in/yashshelke/"

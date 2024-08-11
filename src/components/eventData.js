@@ -96,7 +96,8 @@ const eventData = [
 		description:
 			"Show off your web design skills in the Web Design Jam. Create a stunning website in limited time!",
 		image: img15,
-		formLink: "https://forms.google.com/webdesignjam",
+		formLink:
+			"https://docs.google.com/forms/d/1r39H9BV7rAGq25NbreR8QMhrZOHrIYaXkE1llpXF2Dg/edit",
 		category: "upcoming",
 		price: "To be anounced",
 		entryFees: "To be anounced",
@@ -165,7 +166,8 @@ const eventData = [
 		description:
 			"Unleash your creativity in the Poster Designing event. Create stunning visuals that speak volumes.",
 		image: img4,
-		formLink: "https://forms.google.com/posterdesigning",
+		formLink:
+			"https://docs.google.com/forms/d/1lWibHLZl_LMM4OZ9SlxgSkKvkGneO9pbT94S9IciWW4/edit",
 		category: "upcoming",
 		price: "To be anounced",
 		entryFees: "Rs. 70/-",
@@ -346,7 +348,28 @@ const eventData = [
 				phone: "+91 8432800636",
 			},
 		],
-		coOrganizers: [],
+		coOrganizers: [
+			{
+				name: "Labh Goyal,   Harsh Ramteke",
+				email: "",
+				phone: "",
+			},
+			{
+				name: "Nandini Joshi",
+				email: "",
+				phone: "",
+			},
+			{
+				name: "Harsh Jadhav",
+				email: "",
+				phone: "",
+			},
+			{
+				name: "Harsh Ramteke",
+				email: "",
+				phone: "",
+			},
+		],
 	},
 	{
 		id: 10,
@@ -374,13 +397,8 @@ const eventData = [
 		],
 		coOrganizers: [
 			{
-				name: "Aaryan",
+				name: "Aryan Gaikwad",
 				email: "info.aaryan@gmail.com",
-				phone: "+91 XXXXX XXXXX",
-			},
-			{
-				name: "Soham",
-				email: "info.soham@gmail.com",
 				phone: "+91 XXXXX XXXXX",
 			},
 		],
@@ -421,7 +439,7 @@ const eventData = [
 				phone: "+91 XXXXX XXXXX",
 			},
 			{
-				name: "Aarsh",
+				name: "Aarsh Nimje",
 				email: "info.aarsh@gmail.com",
 				phone: "+91 XXXXX XXXXX",
 			},

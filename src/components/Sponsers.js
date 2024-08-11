@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import sponser1 from '../sponsers/kanan.jpeg';
+import sponsor1 from '../sponsers/kanan.jpeg';
+import sponsor2 from '../sponsers/iquanta.png';
 import { Link } from "react-router-dom";
 
 const sponsors = [
-	{ id: 1, name: "Kanan", logo: sponser1 },
-	// { id: 2, name: "Sponsor Two", logo: logo2 },
+	{ id: 1, name: "Kanan", logo: sponsor1 },
+	{ id: 2, name: "iQuanta", logo: sponsor2 },
 	// { id: 3, name: "Sponsor Three", logo: logo3 },
 	// { id: 4, name: "Sponsor Four", logo: logo4 },
 ];
@@ -74,7 +75,7 @@ const Sponsors = () => {
 							<img
 								src={sponsor.logo}
 								alt={sponsor.name}
-								className="mx-auto mb-1 h-32 object-cover"
+								className="mx-auto mb-1 h-24 object-cover"
 							/>
 							<p className="text-xl text-center font-medium text-gray-300">
 								{sponsor.name}

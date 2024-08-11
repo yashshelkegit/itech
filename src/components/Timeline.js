@@ -11,36 +11,36 @@ const timelineEvents = [
 			"Organized a blood donation camp and collected 15 liters of blood.",
 	},
 	{
-		year: "12/08/2024",
+		year: "23/08/2024",
 		title: "Coding Hackathon",
 		description:
 			"A 24-hour coding hackathon focused on innovative problem-solving.",
 	},
 	{
-		year: "15/08/2024",
+		year: "23/08/2024",
 		title: "Guest Lecture on Blockchain",
 		description:
 			"An informative session on blockchain technology by industry experts.",
 	},
 	{
-		year: "25/08/2024",
+		year: "23/08/2024",
 		title: "Technical Workshop",
 		description: "Conducted a workshop on Web Development and Cloud Computing.",
 	},
 	{
-		year: "12/08/2024",
+		year: "24/08/2024",
 		title: "Annual Cultural Events",
 		description:
 			"A week-long series of cultural events including music, dance, and drama.",
 	},
 	{
-		year: "22/08/2024",
+		year: "25/08/2024",
 		title: "Leadership Workshop",
 		description:
 			"A leadership development workshop focusing on team building and management.",
 	},
 	{
-		year: "23/08/2024",
+		year: "25/08/2024",
 		title: "Community Service",
 		description:
 			"Volunteered at a local community center, helping with various activities.",
