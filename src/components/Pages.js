@@ -21,5 +21,6 @@ import FullScreenImage from "./FullScreenImage";
 import ContactForm from "./ContactForm";
 import TeamTab from './TeamTab';
 import NotFound from "./NotFound";
+import MediaPartner from "./MediaPartner";
 
-export {Navbar, Herosection, Timeline, Team, Gallery, Contact, Events, Sponsers, Footer, ScrollToTop, Home, Featured, CoreTeam, GalleryPage, RouteAccess, FAQ, EventDetails, TechnicalSupportCard, PresidentCard, FullScreenImage, ContactForm, TeamTab, NotFound};
+export {Navbar, Herosection, Timeline, Team, Gallery, Contact, Events, Sponsers, Footer, ScrollToTop, Home, Featured, CoreTeam, GalleryPage, RouteAccess, FAQ, EventDetails, TechnicalSupportCard, PresidentCard, FullScreenImage, ContactForm, TeamTab, NotFound, MediaPartner};

@@ -1,14 +1,15 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import sponsor1 from '../sponsers/kanan.jpeg';
-import sponsor2 from '../sponsers/iquanta.png';
+import sponsor1 from '../sponsors/kanan.jpeg';
+import sponsor2 from '../sponsors/iquanta.png';
+import sponsor3 from '../sponsors/lokmat.jpeg';
 import { Link } from "react-router-dom";
 
 const sponsors = [
 	{ id: 1, name: "Kanan", logo: sponsor1 },
 	{ id: 2, name: "iQuanta", logo: sponsor2 },
-	// { id: 3, name: "Sponsor Three", logo: logo3 },
+	{ id: 3, name: "Lokmat Times", logo: sponsor3 },
 	// { id: 4, name: "Sponsor Four", logo: logo4 },
 ];
 
