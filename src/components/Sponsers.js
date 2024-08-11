@@ -75,7 +75,7 @@ const Sponsors = () => {
 							<img
 								src={sponsor.logo}
 								alt={sponsor.name}
-								className="mx-auto mb-1 h-24 object-cover"
+								className="mx-auto mb-1 md:h-24"
 							/>
 							<p className="text-xl text-center font-medium text-gray-300">
 								{sponsor.name}
