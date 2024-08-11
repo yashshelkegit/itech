@@ -25,7 +25,7 @@ const MediaPartner = () => {
 					<img
 						src={lokmat}
 						alt="Lokmat Times Logo"
-						className="h-auto md:w-96 mb-4 md:mr-6"
+						className="h-auto md:w-1/2 mb-4 md:mr-6"
 					/>
 					<div className="text-center">
 						<h3 className="text-xl font-semibold text-gray-700 mb-2">
