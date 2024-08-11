@@ -5,10 +5,10 @@ import { notifyTimeline } from "./notify";
 
 const timelineEvents = [
 	{
-		year: "08/08/2024",
+		year: "07/08/2024",
 		title: "Blood Donation Camp",
 		description:
-			"Organized a blood donation camp and collected 15 liters of blood.",
+			"Organized a blood donation camp where over 100+ members contributed and got featured by Lokmat Times",
 	},
 	{
 		year: "23/08/2024",
@@ -37,7 +37,7 @@ const timelineEvents = [
 		year: "24/08/2024",
 		title: "Exciting Events",
 		description:
-			"Fixathon, Quiz Mania, Quiz Mania, Beat the Mark, Arm Wrestling, Mystic Rythm and Web Design jam",
+			"Fix-a-thon, Quiz Mania, Quiz Mania, Beat the Mark, Arm Wrestling, Mystic Rythm and Web Design jam",
 	},
 	{
 		year: "25/08/2024",

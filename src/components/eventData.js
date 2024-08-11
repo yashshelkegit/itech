@@ -59,7 +59,7 @@ const eventData = [
 	},
 	{
 		id: 2,
-		title: "Fixathon",
+		title: "Fix-a-thon",
 		description:
 			"Join the Fixathon and solve intricate problems individually. Challenge yourself and refine your skills.",
 		image: img2,
@@ -106,7 +106,7 @@ const eventData = [
 		price: { pool: "Rs. 1,000", first: "Rs. 1,000", second: "NA" },
 		entryFees: "Rs. 70/- ",
 		memberCount: "individual",
-		date: "24/08/2024 (10:00 am to 1:00 pm)",
+		date: "24/08/2024",
 		organizers: [
 			{
 				name: "Pralendra Behera",
@@ -465,7 +465,7 @@ const eventData = [
 		price: { pool: "Rs. 1,000", first: "Rs. 1,000", second: "NA" },
 		entryFees: "Rs. 50/-",
 		memberCount: "individual",
-		date: "24/08/2024 (10:00 am onwards)",
+		date: "24/08/2024",
 		organizers: [
 			{
 				name: "Akash Kuware",
@@ -502,7 +502,7 @@ const eventData = [
 		price: { pool: "Rs. 600", first: "Rs. 600", second: "NA" },
 		entryFees: "Rs. 60/-",
 		memberCount: "individual",
-		date: "24/08/2024 (1st half)",
+		date: "24/08/2024",
 		organizers: [
 			{
 				name: "Ojas Modak",
