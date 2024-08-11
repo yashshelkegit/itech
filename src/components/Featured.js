@@ -1,9 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useScrollAnimation from "../hooks/useScrollAnimation";
-import {FaCalculator, FaCapsules } from "react-icons/fa";
+import { FaCalculator, FaCapsules } from "react-icons/fa";
+import img1 from '../images/10.jpeg'
+import img2 from '../event-pics/1.jpg'
 
-const FeatureCard = ({ icon, title, description, delay }) => {
+const FeatureCard = ({ icon, title, description, delay, image }) => {
 	const { ref, controls } = useScrollAnimation(
 		{ opacity: 0, y: 50 },
 		{ opacity: 1, y: 0 }
@@ -12,8 +14,7 @@ const FeatureCard = ({ icon, title, description, delay }) => {
 	return (
 		<motion.div
 			ref={ref}
-            // bg-gradient-to-br from-slate-800 to-gray-700
-			className="border border-gray-300 p-6 rounded-lg shadow-lg text-white"
+			className="border border-gray-300 p-6 rounded-lg shadow-lg text-white overflow-hidden"
 			initial={{ opacity: 0, y: 50 }}
 			animate={controls}
 			transition={{ duration: 0.5, delay }}
@@ -22,34 +23,46 @@ const FeatureCard = ({ icon, title, description, delay }) => {
 				boxShadow: "0 0 20px rgba(123, 31, 162, 0.5)",
 			}}
 		>
-			<motion.div
-				className="text-4xl mb-4"
-				initial={{ scale: 0 }}
-				animate={{scale:1}}
-				transition={{
-					type: "spring",
-					stiffness: 260,
-					damping: 20,
-					// delay: delay + 0.1,
-				}}
-			>
-				{icon}
-			</motion.div>
-			<motion.h3
-				className="text-xl font-bold mb-2"
-				initial={{ opacity: 0 }}
-				animate={controls}
-				// transition={{ delay: delay + 0.1 }}
-			>
-				{title}
-			</motion.h3>
-			<motion.p
-				initial={{ opacity: 0 }}
-				animate={controls}
-				// transition={{ delay: delay + 0.1 }}
-			>
-				{description}
-			</motion.p>
+			<div className="flex flex-col md:flex-row md:items-end">
+				<div className="md:w-1/2 mb-4 md:mb-0 md:mr-4">
+					<motion.img
+						src={image}
+						alt={title}
+						className="sm:w-full sm:h-48 object-cover rounded-lg"
+						initial={{ opacity: 0, scale: 0.8 }}
+						animate={{ opacity: 1, scale: 1 }}
+						transition={{
+							type: "spring",
+							stiffness: 260,
+							damping: 20,
+						}}
+					/>
+				</div>
+				<div className="md:w-1/2">
+					<motion.div
+						className="text-4xl mb-4"
+						initial={{ scale: 0 }}
+						animate={{ scale: 1 }}
+						transition={{
+							type: "spring",
+							stiffness: 260,
+							damping: 20,
+						}}
+					>
+						{icon}
+					</motion.div>
+					<motion.h3
+						className="text-xl font-bold mb-2"
+						initial={{ opacity: 0 }}
+						animate={controls}
+					>
+						{title}
+					</motion.h3>
+					<motion.p initial={{ opacity: 0 }} animate={controls}>
+						{description}
+					</motion.p>
+				</div>
+			</div>
 		</motion.div>
 	);
 };
@@ -64,12 +77,14 @@ const Featured = () => {
 		{
 			icon: <FaCapsules />,
 			title: "Blood Donation",
-			description: "Experience cutting-edge technology firsthand",
+			description: "Over 100+ members contributors and also got featured bt Lokmat Times",
+			image: img1
 		},
 		{
 			icon: <FaCalculator />,
 			title: "Workshops",
 			description: "Learn from leading experts in artificial intelligence",
+			image: img2
 		},
 	];
 
@@ -96,7 +111,7 @@ const Featured = () => {
 					animate={controls}
 					transition={{ type: "spring", stiffness: 100 }}
 				>
-					Discover the wonders of tomorrow at iTechRoots 14.0
+					Discover the wonders at iTechRoots 14.0
 				</motion.p>
 			</motion.div>
 			<div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
