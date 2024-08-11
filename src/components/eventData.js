@@ -342,7 +342,7 @@ const eventData = [
 		formLink: "https://forms.gle/CWZVZvC1GYWKMKFFA",
 		category: "upcoming",
 		price: { pool: "Rs. 1,500", first: "Rs. 1,000", second: "Rs. 500" },
-		entryFees: "with board Rs. 50/- and without board Rs. 60/-",
+		entryFees: "Rs. 60/-",
 		memberCount: "individual",
 		date: "23/08/2024",
 		organizers: [
@@ -359,7 +359,7 @@ const eventData = [
 		],
 		coOrganizers: [
 			{
-				name: "Labh Goyal,   Harsh Ramteke",
+				name: "Labh Goyal",
 				email: "",
 				phone: "",
 			},
