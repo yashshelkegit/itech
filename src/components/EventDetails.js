@@ -71,8 +71,13 @@ const EventDetails = () => {
 							<strong>Entry Fees :</strong> {event.entryFees}
 						</p>
 						<p>
-							<strong>Winning Price 🏆 :</strong> {event.price}
+							<strong>Winning Prices 🏆:</strong> {event.price.pool}
 						</p>
+
+						<ul>
+							<li>1st Price : {event.price.first}</li>
+							<li>2nd Price : {event.price.second}</li>
+						</ul>
 						<p>
 							<strong>Participants :</strong> {event.memberCount}
 						</p>

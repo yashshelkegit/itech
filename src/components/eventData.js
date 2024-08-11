@@ -24,10 +24,14 @@ const eventData = [
 		image: img1,
 		formLink: "https://forms.gle/75fwPcQDXLBmqUFp6",
 		category: "upcoming",
-		price: "To be anounced",
-		entryFees: "To be anounced",
-		memberCount: "Min. 3 and Max 5 members",
-		date: "01/12/2024",
+		price: {
+			pool: "Rs. 15,000 (Tentative)",
+			first: "Rs. 10,000",
+			second: "Rs. 5,000",
+		},
+		entryFees: "Rs 100/- per member",
+		memberCount: "Min 3 and Max 5 members",
+		date: "23/08/2024 (10:00 am to 5:00 pm)",
 		organizers: [
 			{
 				name: "Rehan Khan",
@@ -61,10 +65,10 @@ const eventData = [
 		image: img2,
 		formLink: "https://forms.gle/cd237k3iLPuK2r9g6",
 		category: "upcoming",
-		price: "To be anounced",
+		price: { pool: "Rs. 1,500", first: "Rs. 1,000", second: "Rs. 500" },
 		entryFees: "Rs. 70/-",
 		memberCount: "individual",
-		date: "02/12/2024",
+		date: "24/08/2024",
 		organizers: [
 			{
 				name: "Abhishek Bhoyar",
@@ -99,10 +103,10 @@ const eventData = [
 		formLink:
 			"https://docs.google.com/forms/d/1r39H9BV7rAGq25NbreR8QMhrZOHrIYaXkE1llpXF2Dg/edit",
 		category: "upcoming",
-		price: "To be anounced",
-		entryFees: "To be anounced",
-		memberCount: "###",
-		date: "15/12/2024",
+		price: { pool: "Rs. 1,000", first: "Rs. 1,000", second: "NA" },
+		entryFees: "Rs. 70/- ",
+		memberCount: "individual",
+		date: "24/08/2024 (10:00 am to 1:00 pm)",
 		organizers: [
 			{
 				name: "Pralendra Behera",
@@ -121,6 +125,11 @@ const eventData = [
 				email: "info.shruti@gmail.com",
 				phone: "+91 XXXXX XXXXX",
 			},
+			{
+				name: "Kusum Hari",
+				email: "info.kusum@gmail.com",
+				phone: "+91 XXXXX XXXXX",
+			},
 		],
 	},
 	{
@@ -131,10 +140,10 @@ const eventData = [
 		image: img3,
 		formLink: "https://forms.gle/f8ZiNLwv2aEECKeH9",
 		category: "upcoming",
-		price: "To be anounced",
-		entryFees: "Rs. 50/-",
+		price: { pool: "Rs. 1,000", first: "Rs. 1,000", second: "NA" },
+		entryFees: "Rs. 60/-",
 		memberCount: "individual",
-		date: "03/12/2024",
+		date: "24/08/2024  (online)",
 		organizers: [
 			{
 				name: "Chaitali Nagbhidkar",
@@ -169,10 +178,10 @@ const eventData = [
 		formLink:
 			"https://docs.google.com/forms/d/1lWibHLZl_LMM4OZ9SlxgSkKvkGneO9pbT94S9IciWW4/edit",
 		category: "upcoming",
-		price: "To be anounced",
+		price: { pool: "Rs. 1,000", first: "Rs. 1,000", second: "NA" },
 		entryFees: "Rs. 70/-",
 		memberCount: "individual",
-		date: "04/12/2024",
+		date: "23/08/2024",
 		organizers: [
 			{
 				name: "Anurag Gaddamwar",
@@ -206,10 +215,10 @@ const eventData = [
 		image: img5,
 		formLink: "https://forms.gle/A5DwEsWyZhLu6236A",
 		category: "upcoming",
-		price: "To be anounced",
+		price: { pool: "Rs. 700", first: "Rs. 700", second: "NA" },
 		entryFees: "Rs. 50/-",
 		memberCount: "individual",
-		date: "05/12/2024",
+		date: "24/08/2024",
 		organizers: [
 			{
 				name: "Varsha Bramhankar",
@@ -243,10 +252,10 @@ const eventData = [
 		image: img6,
 		formLink: "https://forms.gle/aKYEhFeNCDwnLfCC7",
 		category: "upcoming",
-		price: "To be anounced",
+		price: { pool: "Rs. 5,000", first: "Rs. 3,500", second: "Rs. 1,500" },
 		entryFees: "Rs. 700/- per group",
 		memberCount: "Team of 7",
-		date: "06/12/2024",
+		date: "23/08/2024 and 24/08/2024",
 		organizers: [
 			{
 				name: "Abhishek Ghule",
@@ -295,10 +304,10 @@ const eventData = [
 		image: img7,
 		formLink: "https://forms.gle/38E8g8VJd99cWQg27",
 		category: "upcoming",
-		price: "To be anounced",
+		price: { pool: "Rs. 2,500", first: "Rs. 2,500", second: "NA" },
 		entryFees: "Rs. 600/- per group",
 		memberCount: "Team of 6",
-		date: "07/12/2024",
+		date: "23/08/2024 and 24/08/2024",
 		organizers: [
 			{
 				name: "Harshal Dhengale",
@@ -332,10 +341,10 @@ const eventData = [
 		image: img8,
 		formLink: "https://forms.gle/CWZVZvC1GYWKMKFFA",
 		category: "upcoming",
-		price: "To be anounced",
+		price: { pool: "Rs. 1,500", first: "Rs. 1,000", second: "Rs. 500" },
 		entryFees: "with board Rs. 50/- and without board Rs. 60/-",
 		memberCount: "individual",
-		date: "08/12/2024",
+		date: "23/08/2024",
 		organizers: [
 			{
 				name: "Chiranjeet Roy",
@@ -379,10 +388,10 @@ const eventData = [
 		image: img9,
 		formLink: "https://forms.gle/dgyrvmJ35wBVBEFR9",
 		category: "upcoming",
-		price: "To be anounced",
+		price: { pool: "Rs. 1,200", first: "Rs. 1,200", second: "NA" },
 		entryFees: "Rs. 240/- per group",
 		memberCount: "Min 3 and Max 4 members",
-		date: "09/12/2024",
+		date: "25/08/2024",
 		organizers: [
 			{
 				name: "Aditya Hande",
@@ -411,10 +420,10 @@ const eventData = [
 		image: img10,
 		formLink: "https://forms.gle/UwDuJjePkFaG7rsK7",
 		category: "upcoming",
-		price: "To be anounced",
+		price: { pool: "To be announced", first: "NA", second: "NA" },
 		entryFees: "Rs. 250/- per group",
 		memberCount: "Team of 4",
-		date: "10/12/2024",
+		date: "23/08/2024, 25/08/2024 and 25/08/2024 (online)",
 		organizers: [
 			{
 				name: "Tanay Ajankar",
@@ -453,10 +462,10 @@ const eventData = [
 		image: img11,
 		formLink: "https://forms.gle/iig8GrqMD6st9wZh9",
 		category: "upcoming",
-		price: "To be anounced",
-		entryFees: "Rs.50",
+		price: { pool: "Rs. 1,000", first: "Rs. 1,000", second: "NA" },
+		entryFees: "Rs. 50/-",
 		memberCount: "individual",
-		date: "11/12/2024",
+		date: "24/08/2024 (10:00 am onwards)",
 		organizers: [
 			{
 				name: "Akash Kuware",
@@ -490,10 +499,10 @@ const eventData = [
 		image: img12,
 		formLink: "https://forms.gle/W1m28xrnsrZuAfu68",
 		category: "upcoming",
-		price: "To be anounced",
-		entryFees: "Rs.60",
+		price: { pool: "Rs. 600", first: "Rs. 600", second: "NA" },
+		entryFees: "Rs. 60/-",
 		memberCount: "individual",
-		date: "12/12/2024",
+		date: "24/08/2024 (1st half)",
 		organizers: [
 			{
 				name: "Ojas Modak",
@@ -502,6 +511,11 @@ const eventData = [
 			},
 		],
 		coOrganizers: [
+			{
+				name: "Sujal Burande",
+				email: "info.sujal@gmail.com",
+				phone: "+91 XXXXX XXXXX",
+			},
 			{
 				name: "Laleet Atkare",
 				email: "info.laleet@gmail.com",
@@ -517,10 +531,14 @@ const eventData = [
 		image: img13,
 		formLink: "https://forms.google.com/mysticrhythm",
 		category: "upcoming",
-		price: "To be anounced",
-		entryFees: "Rs. 50/- per member",
+		price: {
+			pool: "Rs. 1,400",
+			first: "Rs. 700(dancing) and Rs. 700(singing)",
+			second: "NA",
+		},
+		entryFees: "Rs. 60/- per member",
 		memberCount: "Max 4 members",
-		date: "13/12/2024",
+		date: "24/08/2024",
 		organizers: [
 			{
 				name: "Aditya Jadhav",
@@ -549,10 +567,10 @@ const eventData = [
 		image: img14,
 		formLink: "https://forms.gle/CyZB4Wcd9ViR173s6",
 		category: "upcoming",
-		price: "To be anounced",
+		price: { pool: "To be announced", first: "NA", second: "NA" },
 		entryFees: "Rs. 80/- per person",
 		memberCount: "Team of 5",
-		date: "14/12/2024",
+		date: "24/08/2024 and 25/08/2024",
 		organizers: [
 			{
 				name: "Sajesh Atkare",
