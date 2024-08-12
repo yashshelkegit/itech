@@ -423,7 +423,7 @@ const eventData = [
 		price: { pool: "To be announced", first: "NA", second: "NA" },
 		entryFees: "Rs. 250/- per group",
 		memberCount: "Team of 4",
-		date: "23/08/2024, 25/08/2024 and 25/08/2024",
+		date: "23/08/2024",
 		organizers: [
 			{
 				name: "Tanay Ajankar",
