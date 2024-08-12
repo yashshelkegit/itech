@@ -24,12 +24,6 @@ const timelineEvents = [
 	},
 	{
 		year: "23/08/2024",
-		title: "Guest Lecture on Blockchain",
-		description:
-			"An informative session on blockchain technology by industry experts.",
-	},
-	{
-		year: "23/08/2024",
 		title: "Technical Workshop",
 		description: "Conducted a workshop on Web Development and Cloud Computing.",
 	},
@@ -38,18 +32,6 @@ const timelineEvents = [
 		title: "Exciting Events",
 		description:
 			"Fix-a-thon, Quiz Mania, Quiz Mania, Beat the Mark, Arm Wrestling, Mystic Rythm and Web Design jam",
-	},
-	{
-		year: "25/08/2024",
-		title: "Annual Cultural Events",
-		description:
-			"A week-long series of cultural events including music, dance, and drama.",
-	},
-	{
-		year: "25/08/2024",
-		title: "Leadership Workshop",
-		description:
-			"A leadership development workshop focusing on team building and management.",
 	},
 	{
 		year: "25/08/2024",
