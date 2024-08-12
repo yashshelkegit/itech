@@ -32,7 +32,7 @@ const MediaPartner = () => {
 							Lokmat Times
 						</h3>
 						<p className="text-gray-600 mb-4">
-							Media partner of our Departmental fest
+							Proud Media partner of our Departmental fest
 						</p>
 					</div>
 				</div>
