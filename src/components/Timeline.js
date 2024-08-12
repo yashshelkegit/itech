@@ -23,7 +23,7 @@ const timelineEvents = [
 			"Poster designing, Box cricket, Futsal, Chess, E-Sports, and Valorant.",
 	},
 	{
-		year: "23/08/2024",
+		year: "To be announced",
 		title: "Technical Workshop",
 		description: "Conducted a workshop on Web Development and Cloud Computing.",
 	},
@@ -35,21 +35,9 @@ const timelineEvents = [
 	},
 	{
 		year: "25/08/2024",
-		title: "Community Service",
-		description:
-			"Volunteered at a local community center, helping with various activities.",
-	},
-	{
-		year: "25/08/2024",
 		title: "Pirates Map (Treasure Hunt)",
 		description:
 			"An event full of adventure and exciting cash prices, Explore is the key",
-	},
-	{
-		year: "25/08/2024",
-		title: "Alumni Meet",
-		description:
-			"Organized an alumni meet to reconnect with former students and faculty.",
 	},
 ];
 
