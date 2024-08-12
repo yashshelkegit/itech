@@ -14,7 +14,7 @@ const FeatureCard = ({ icon, title, description, delay, image }) => {
 	return (
 		<motion.div
 			ref={ref}
-			className="border border-gray-300 p-6 rounded-lg shadow-lg text-white overflow-hidden"
+			className="border border-gray-300  rounded-lg shadow-lg text-white overflow-hidden"
 			initial={{ opacity: 0, y: 50 }}
 			animate={controls}
 			transition={{ duration: 0.5, delay }}
@@ -23,12 +23,12 @@ const FeatureCard = ({ icon, title, description, delay, image }) => {
 				boxShadow: "0 0 20px rgba(123, 31, 162, 0.5)",
 			}}
 		>
-			<div className="flex flex-col md:flex-row md:items-end">
-				<div className="md:w-1/2 mb-4 md:mb-0 md:mr-4">
+			<div className="grid lg:grid-cols-2 md:grid-cols-1">
+				<div className="">
 					<motion.img
 						src={image}
 						alt={title}
-						className="sm:w-full sm:h-48 object-cover rounded-lg"
+						className="h-52 object-cover w-full"
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{
@@ -38,30 +38,30 @@ const FeatureCard = ({ icon, title, description, delay, image }) => {
 						}}
 					/>
 				</div>
-				<div className="md:w-1/2">
-					<motion.div
-						className="text-4xl mb-4"
-						initial={{ scale: 0 }}
-						animate={{ scale: 1 }}
-						transition={{
-							type: "spring",
-							stiffness: 260,
-							damping: 20,
-						}}
-					>
-						{icon}
-					</motion.div>
-					<motion.h3
-						className="text-xl font-bold mb-2"
-						initial={{ opacity: 0 }}
-						animate={controls}
-					>
-						{title}
-					</motion.h3>
-					<motion.p initial={{ opacity: 0 }} animate={controls}>
-						{description}
-					</motion.p>
-				</div>
+				<div className="p-4 grid items-center">
+						<motion.div
+							className="text-4xl"
+							initial={{ scale: 0 }}
+							animate={{ scale: 1 }}
+							transition={{
+								type: "spring",
+								stiffness: 260,
+								damping: 20,
+							}}
+						>
+							{icon}
+						</motion.div>
+						<motion.h3
+							className="text-xl font-bold mb-2"
+							initial={{ opacity: 0 }}
+							animate={controls}
+						>
+							{title}
+						</motion.h3>
+						<motion.p initial={{ opacity: 0 }} animate={controls}>
+							{description}
+						</motion.p>
+					</div>
 			</div>
 		</motion.div>
 	);
@@ -77,7 +77,7 @@ const Featured = () => {
 		{
 			icon: <FaCapsules />,
 			title: "Blood Donation",
-			description: "Over 100+ members contributors and also got featured bt Lokmat Times",
+			description: "Over 100+ members contributors and also got featured at Lokmat Times",
 			image: img1
 		},
 		{
