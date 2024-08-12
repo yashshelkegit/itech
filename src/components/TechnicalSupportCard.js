@@ -13,16 +13,16 @@ const TechnicalSupportCard = ({ name, role, phone, email }) => {
 			initial={{ opacity: 0, y: 100 }}
 			animate={controls}
 			transition={{ duration: 1 }}
-			className="bg-gray-900 p-4 rounded-lg shadow-lg text-center"
+			className="bg-gray-200 p-4 rounded-lg shadow-lg text-center"
 		>
 			<h3 className="text-xl font-semibold">
-				<a href={`mailto:${email}`} className="text-blue-400 hover:underline">
+				<a href={`mailto:${email}`} className="text-black hover:underline">
 					{name}
 				</a>
 			</h3>
-			<p className="text-gray-200">{role}</p>
-			<p className="text-gray-400">{phone}</p>
-			<p className="text-blue-400">{email}</p>
+			<p className="text-blue-800 font-bold">{role}</p>
+			<p className="text-gray-500">{phone}</p>
+			<p className="text-blue-700">{email}</p>
 		</motion.div>
 	);
 };

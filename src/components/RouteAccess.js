@@ -28,7 +28,7 @@ const Section = ({
 				className="block hover:bg-opacity-90 transition duration-300 p-4"
 			>
 				<motion.h2
-					className="text-3xl font-bold text-white mb-4"
+					className="text-3xl font-bold font-mono bg-gradient-to-r bg-clip-text text-transparent from-blue-500 to-green-300 mb-4"
 					initial={{ x: initialX }}
 					animate={controls}
 					transition={{ duration: 1 }}
@@ -43,16 +43,15 @@ const Section = ({
 				>
 					{description}
 				</motion.p>
-					<button className="bg-gray-200 text-gray-800 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition duration-300">
-						{buttonText}
-					</button>
+				<button className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-6 py-2 rounded-full font-semibold">
+					{buttonText}
+				</button>
 				<motion.div
 					className="mt-6"
 					initial={{ scale: 0 }}
 					animate={controls}
 					transition={{ delay: 0.5, type: "spring" }}
-				>
-				</motion.div>
+				></motion.div>
 			</Link>
 		</motion.div>
 	);
@@ -62,7 +61,7 @@ const RouteAccess = () => {
 	return (
 		<div className="container md:flex gap-5  mx-auto px-5 py-12">
 			<div>
-				<h1 className="text-4xl font-bold font-mono bg-gradient-to-r bg-clip-text text-transparent from-blue-500 to-green-300 mb-8">
+				<h1 className="text-4xl font-bold text-gray-300 font-mono mb-8">
 					Participate Now
 				</h1>
 				<Section
@@ -76,7 +75,7 @@ const RouteAccess = () => {
 				/>
 			</div>
 			<div>
-				<h1 className="text-4xl mt-16 font-bold font-mono bg-gradient-to-r bg-clip-text text-transparent from-blue-500 to-green-300 mb-8">
+				<h1 className="text-4xl mt-16 font-bold text-gray-300 font-mono mb-8">
 					Confused with Timings ?
 				</h1>
 				<Section

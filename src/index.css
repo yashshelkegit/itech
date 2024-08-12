@@ -126,7 +126,8 @@
     position: absolute;
     top: -30px;
     font-size: 0.9rem;
-    background-color: rgb(230, 202, 165);
+    background-color: rgb(110, 222, 90);
+    font-weight: bold;
     color: black;
     padding: 5px 10px;
     border-radius: 4px;
@@ -135,6 +136,7 @@
 
 .timeline-content h3 {
     margin-bottom: 10px;
+    font-weight: bold;
     color: var(--text-color);
     font-family: 'Georgia', serif;
 }

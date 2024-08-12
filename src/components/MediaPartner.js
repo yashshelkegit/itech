@@ -18,7 +18,7 @@ const MediaPartner = () => {
 				transition={{ duration: 1 }}
 				className="p-6"
 			>
-				<h2 className="text-4xl text-center font-bold text-gray-300 mb-6">
+				<h2 className="text-4xl text-center font-bold text-gray-300 mb-6 font-mono text-center">
 					Media Partner
 				</h2>
 				<div className="flex flex-col items-center bg-gray-100 p-5 rounded-md">
@@ -28,10 +28,10 @@ const MediaPartner = () => {
 						className="h-auto md:w-1/2 mb-4 md:mr-6"
 					/>
 					<div className="text-center">
-						<h3 className="text-xl font-semibold text-gray-700 mb-2">
+						<h3 className="text-xl font-semibold bg-gradient-to-r from-blue-700 to-green-700 bg-clip-text text-transparent mb-2">
 							Lokmat Times
 						</h3>
-						<p className="text-gray-600 mb-4">
+						<p className="text-gray-600 font-bold mb-4">
 							Proud Media partner of our Departmental fest
 						</p>
 					</div>

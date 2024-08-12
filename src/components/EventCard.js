@@ -20,7 +20,7 @@ const EventCard = ({ event, index }) => {
 			whileHover={{ scale: 1.03 }}
 			transition={{ duration: 0.5 }}
 		>
-			<Link to={`/events/${index+1}`} onClick={notifyParticipate}>
+			<Link to={`/events/${index + 1}`} onClick={notifyParticipate}>
 				<motion.img
 					src={event.image}
 					alt={event.title}
@@ -35,13 +35,20 @@ const EventCard = ({ event, index }) => {
 					animate={controls}
 					transition={{ delay: 0.4 }}
 				>
-					<h3 className="text-xl text-gray-100 font-bold mb-2">
+					<h3 className="text-xl text-gray-300 font-bold mb-2">
 						{event.title}
 					</h3>
-					<p className="capitalize text-xl text-green-300 mb-4">Prize Pool 🏆: {event.price.pool}</p>
-					<p className="capitalize text-blue-200 mb-4">{event.category} Event</p>
-					<p className="text-gray-200 mb-4">{event.description}</p>
-					<button className="border text-gray-400 rounded-md p-2">See Details</button>
+					<p className="capitalize text-white mb-4">
+						Prize Pool 🏆:{" "}
+						<span className="text-green-500">{event.price.pool}</span>
+					</p>
+					<p className="capitalize text-blue-200 mb-4">
+						{event.category} Event
+					</p>
+					<p className="text-gray-400 mb-4">{event.description}</p>
+					<button className="text-white bg-gradient-to-r from-blue-600 to-green-600 rounded-md p-2">
+						See Details
+					</button>
 				</motion.div>
 			</Link>
 		</motion.div>

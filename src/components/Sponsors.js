@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import sponsor1 from '../sponsors/kanan.jpeg';
-import sponsor2 from '../sponsors/iquanta.png';
+import sponsor1 from "../sponsors/kanan.jpeg";
+import sponsor2 from "../sponsors/iquanta.png";
 // import sponsor3 from '../sponsors/lokmat.jpeg';
 import { Link } from "react-router-dom";
 
@@ -31,7 +31,7 @@ const headingVariants = {
 		opacity: 1,
 		y: 0,
 		transition: {
-			duration: .5,
+			duration: 0.5,
 			ease: "easeInOut",
 		},
 	},
@@ -55,7 +55,7 @@ const Sponsors = () => {
 	return (
 		<div className="w-screen md:container p-4 py-12 z-30">
 			<motion.h2
-				className=" text-gray-300 text-4xl font-bold mb-8 z-50 font-mono tracking-wide"
+				className=" text-gray-300 text-4xl text-center font-bold mb-8 z-50 font-mono"
 				variants={headingVariants}
 				initial="hidden"
 				animate={headingControls}
@@ -78,7 +78,7 @@ const Sponsors = () => {
 								alt={sponsor.name}
 								className="mx-auto mb-1 md:h-24"
 							/>
-							<p className="text-xl text-center font-medium text-gray-300">
+							<p className="text-center font-medium text-gray-300">
 								{sponsor.name}
 							</p>
 						</motion.div>
@@ -87,7 +87,7 @@ const Sponsors = () => {
 			</div>
 			<div className="text-center my-4">
 				<motion.h2
-					className=" text-gray-300 text center p-5 text-xl z-50 font-mono tracking-wide"
+					className=" text-gray-300 text center p-3 text-md z-50 font-mono"
 					variants={headingVariants}
 					initial="hidden"
 					animate={headingControls}
@@ -95,7 +95,7 @@ const Sponsors = () => {
 				>
 					Sponser vibrant community of over 500 students at YCCE, Nagpur
 				</motion.h2>
-				<Link to="/contact-form" className="text-blue-500 hover:underline">
+				<Link to="/contact-form" className="text-blue-500 font-bold hover:underline">
 					Sponser now
 				</Link>
 			</div>

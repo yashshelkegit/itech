@@ -52,7 +52,7 @@ const FeatureCard = ({ icon, title, description, delay, image }) => {
 							{icon}
 						</motion.div>
 						<motion.h3
-							className="text-xl font-bold mb-2"
+							className="text-xl font-bold mb-2 font-mono text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-green-300"
 							initial={{ opacity: 0 }}
 							animate={controls}
 						>
@@ -98,7 +98,7 @@ const Featured = () => {
 				className="max-w-7xl mx-auto text-center"
 			>
 				<motion.h2
-					className="text-3xl font-extrabold bg-gradient-to-r bg-clip-text text-transparent from-blue-500 to-purple-500 sm:text-4xl"
+					className="text-3xl font-extrabold text-gray-300 font-mono sm:text-4xl"
 					initial={{ y: -50 }}
 					animate={controls}
 					transition={{ type: "spring", stiffness: 100 }}
@@ -106,7 +106,7 @@ const Featured = () => {
 					Journey Through Time and Technology
 				</motion.h2>
 				<motion.p
-					className="mt-4 text-xl bg-gradient-to-r bg-clip-text text-transparent from-blue-500 to-green-500"
+					className="mt-4 text-xl font-bold bg-gradient-to-r bg-clip-text text-transparent from-blue-500 to-green-500"
 					initial={{ y: 50 }}
 					animate={controls}
 					transition={{ type: "spring", stiffness: 100 }}

@@ -37,15 +37,15 @@ const Contact = () => {
 					initial={{ y: -50, opacity: 0 }}
 					animate={{ y: 0, opacity: 1 }}
 					transition={{ duration: 1 }}
-					className="pt-24 text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500"
+					className="pt-24 text-5xl font-bold text-center text-gray-300 font-mono"
 				>
-					iTechRoots 14.0
+					iTech<span className="text-green-500">Roots</span> 14.0
 				</motion.h1>
 				<motion.p
 					initial={{ opacity: 0, x: 50 }}
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 1, delay: 0.5 }}
-					className="text-2xl text-center max-w-2xl"
+					className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500 text-center max-w-2xl"
 				>
 					Journey Through Time and Space with Technology
 				</motion.p>
@@ -66,7 +66,7 @@ const Contact = () => {
 						Email: itechroots.it@gmail.com
 					</a>
 					<Link to="/contact-form">
-						<h3 className="text-3xl font-serif text-blue-500 font-semibold underline p-4">
+						<h3 className="text-2xl font-serif text-green-500 font-semibold underline p-4">
 							Contact Form
 						</h3>
 					</Link>
@@ -78,7 +78,7 @@ const Contact = () => {
 					transition={{ duration: 1, delay: 1 }}
 					className="space-y-4 text-center container mx-auto"
 				>
-					<h2 className="text-4xl pt-14 bg-clip-text text-transparent bg-gradient-to-t from-blue-500 to-green-500 font-bold">
+					<h2 className="text-4xl pt-8 text-gray-300 font-mono font-bold">
 						Presidents
 					</h2>
 					<div className="grid md:grid-cols-3 grid-cols-1 gap-8">
@@ -109,11 +109,11 @@ const Contact = () => {
 					transition={{ duration: 1, delay: 1.5 }}
 					className="space-y-4 text-center py-14"
 				>
-					<h2 className="text-4xl mt-11 text-white font-bold">
+					<h2 className="text-4xl mt-11 text-gray-300 font-mono font-bold">
 						Technical Support
 					</h2>
 					<p className="text-lg">
-						If you encounter any technical issues, please contact
+						If you encounter any technical issues, please contact our tech team
 					</p>
 					<div className="grid md:grid-cols-2 grid-cols-1 gap-8">
 						<TechnicalSupportCard

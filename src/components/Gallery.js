@@ -66,7 +66,7 @@ const Gallery = ({ images }) => {
 		<>
 			<div className="px-4 py-8">
 				<motion.h2
-					className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-fuchsia-500 text-4xl font-bold mb-8 z-50 font-mono text-gray-700 tracking-wide"
+					className="text-4xl font-bold mb-8 z-50 font-mono text-gray-300 text-center"
 					variants={headingVariants}
 					initial="hidden"
 					animate={headingControls}
@@ -97,7 +97,7 @@ const Gallery = ({ images }) => {
 							ref={ref}
 							className="border bg-gradient-to-r sm:h-full h-14 rounded-md bg-clip-text text-transparent text-center font-bold from-blue-400 to-fuchsia-400 grid"
 						>
-							<div className="self-center">See more</div>
+							<div className="text-xl self-center">See more</div>
 						</motion.div>
 					</Link>
 				</motion.div>

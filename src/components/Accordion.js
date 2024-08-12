@@ -19,7 +19,7 @@ const Accordion = ({ head }) => {
 				className="flex items-center justify-between cursor-pointer p-6"
 				onClick={() => setIsOpen(!isOpen)}
 			>
-				<h3 className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500  font-bold">
+				<h3 className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-300 font-bold">
 					{head.post}
 				</h3>
 				<motion.svg
@@ -50,8 +50,8 @@ const Accordion = ({ head }) => {
 					>
 						{head.heads.map((h, index) => (
 							<div key={index} className="px-6 pb-3">
-								<h4 className="text-gray-300 font-bold">{h.name}</h4>
-								<p className="text-gray-300">
+								<h4 className="text-gray-300 font-bold text-xl">{h.name}</h4>
+								<p className="text-gray-400">
 									Email:{" "}
 									<a
 										href={`mailto:${h.email}`}

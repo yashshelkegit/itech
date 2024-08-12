@@ -1,1 +1,6 @@
 db:B3*E5LU!3wLYuz$
+
+git checkout master   
+git branch main master -f    
+git checkout main  
+git push origin main -f

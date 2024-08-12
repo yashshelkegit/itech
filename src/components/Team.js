@@ -214,7 +214,7 @@ const Team = () => {
 		<motion.section ref={ref} className="bg-black py-5">
 			<div className="container mx-auto">
 				<motion.h2
-					className="text-5xl font-bold my-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500"
+					className="text-4xl font-bold my-4 text-center text-gray-300 font-mono"
 					initial={{ opacity: 0, y: -50 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 1 }}

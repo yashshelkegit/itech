@@ -31,12 +31,12 @@ const EventDetails = () => {
 			>
 				<Link
 					to="/events"
-					className="text-blue-500 hover:underline mb-4 inline-block"
+					className="text-blue-500 hover:underline mb-4 font-bold inline-block"
 				>
 					&larr; Back to Events
 				</Link>
 				<div className=" text-gray-200 rounded-lg shadow-lg py-4">
-					<h1 className="text-3xl font-bold mb-4 underline">{event.title}</h1>
+					<h1 className="text-3xl font-bold font-mono mb-4">{event.title}</h1>
 					<p className="py-2 capitalize text-green-500">
 						<strong>{event.category} Event</strong>
 					</p>
@@ -62,22 +62,22 @@ const EventDetails = () => {
 							<p className="text-gray-300">Sorry you are late...</p>
 						)}
 					</div>
-					<div className="mb-4">
+					<div className="mb-4 text-gray-300">
 						<h2 className="text-xl py-2 font-semibold">Event Details</h2>
+						<p className="text-yellow-500">
+							<strong>Winning Prices 🏆:</strong> {event.price.pool}
+						</p>
+						<ul>
+							<li><strong>1st Price :</strong> {event.price.first}</li>
+							<li><strong>2nd Price :</strong> {event.price.second}</li>
+						</ul>
 						<p>
 							<strong>Date :</strong> {event.date}
 						</p>
 						<p>
 							<strong>Entry Fees :</strong> {event.entryFees}
 						</p>
-						<p>
-							<strong>Winning Prices 🏆:</strong> {event.price.pool}
-						</p>
 
-						<ul>
-							<li>1st Price : {event.price.first}</li>
-							<li>2nd Price : {event.price.second}</li>
-						</ul>
 						<p>
 							<strong>Participants :</strong> {event.memberCount}
 						</p>

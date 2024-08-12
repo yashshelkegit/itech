@@ -44,10 +44,10 @@ const FAQ = () => {
 			transition={{ duration: 1 }}
 		>
 			<div className="container mx-auto">
-				<h2 className="text-3xl font-mono text-gray-300 tracking-widest font-extrabold mb-6">
+				<h2 className="text-3xl font-mono text-gray-300 text-center font-bold mb-6">
 					Frequently Asked Questions
 				</h2>
-				<div className="space-y-4">
+				<div className="space-y-2">
 					{faqItems.map((item, index) => (
 						<motion.div
 							key={index}

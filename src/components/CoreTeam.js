@@ -108,14 +108,14 @@ const PersonCard = ({ person, index }) => {
 			animate={controls}
 			className="border border-gray-500 rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300"
 		>
-			<h3 className="text-xl text-transparent bg-gradient-to-r bg-clip-text from-blue-500 to-green-500 font-bold mb-2">{person.name}</h3>
-			<p className="text-gray-200 mb-1">{person.post}</p>
-			<p className="text-gray-500 mb-1">
-				{person.phone}
+			<h3 className="text-xl text-gray-300 font-bold font-mono mb-2">{person.name}</h3>
+			<p className="text-green-300 mb-1">
+				{person.post}
 			</p>
+			<p className="text-gray-500 mb-1">{person.phone}</p>
 			<a
 				href={`mailto:${person.email}`}
-				className="text-blue-500 hover:underline"
+				className="text-blue-400 hover:underline"
 			>
 				{person.email}
 			</a>
@@ -133,7 +133,7 @@ const CoreTeam = () => {
 		<motion.section ref={ref} className="bg-black py-5">
 			<div className="container mx-auto">
 				<motion.h2
-					className="text-5xl font-bold my-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500"
+					className="text-4xl font-bold my-4 text-center text-gray-300 font-mono"
 					initial={{ opacity: 0, y: -50 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 1 }}
