@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-
 import logo1 from "../logo/1.jpeg";
 import { Link } from "react-router-dom";
 import ViewCounter from "./ViewCounter";
@@ -31,10 +30,7 @@ const Footer = () => {
 					<h3 className="text-3xl font-mono tracking-widest font-extrabold">
 						We R iTech<span className="text-green-500">Roots</span>
 					</h3>
-					<div className="flex text-2xl gap-3 py-5">
-						{/* <a href="asl" className="text-green-500">
-							<FaWhatsapp />
-						</a> */}
+					<div className="flex text-2xl gap-3 py-3">
 						<a
 							href="mailto:itechroots.it@gmail.com"
 							className="text-yellow-500"
@@ -61,7 +57,13 @@ const Footer = () => {
 					<ViewCounter pageId="page" />
 				</div>
 
+				{/* Copyright Statement */}
 				<div className="text-sm border-t pt-3 border-gray-600">
+					<p>&copy; 2024 iTechRoots. All rights reserved.</p>
+				</div>
+
+				{/* Developer Credit */}
+				<div className="text-sm pt-2 border-gray-600 ">
 					<p className="inline bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-400">
 						<Link to="admin" className="cursor-text">
 							Developed

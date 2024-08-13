@@ -59,14 +59,14 @@ const ViewCounter = ({ pageId }) => {
 	}, [pageId]);
 
 	if (error) {
-		return <span className="text-blue-300 mt-4 px-3 rounded-lg bg-blue-800 w-fit">Error: {error}</span>;
+		return <span className="border border-gray-400 text-blue-200 mt-4 px-3 rounded-sm w-fit">Error: {error}</span>;
 	}
 
 	if (viewCount === null) {
-		return <span className="text-blue-300 mt-4 px-3 rounded-lg bg-blue-800 w-fit">Loading view count...</span>;
+		return <span className="border border-gray-400 text-blue-200 mt-4 px-3 rounded-sm w-fit">Loading view count...</span>;
 	}
 
-	return <span className="text-blue-300 mt-4 px-3 rounded-lg bg-blue-800 w-fit">Total Views: {viewCount}</span>;
+	return <span className="border border-gray-400 text-blue-200 mt-4 px-3 rounded-sm w-fit">Total Views: {viewCount}</span>;
 };
 
 export default ViewCounter;
