@@ -1,4 +1,3 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -10,7 +9,7 @@ const EventCard = ({ event, index }) => {
 		{ opacity: 0, y: 50 },
 		{ opacity: 1, y: 0 }
 	);
-	
+
 	return (
 		<motion.div
 			ref={ref}
@@ -42,11 +41,11 @@ const EventCard = ({ event, index }) => {
 						Prize Pool 🏆:{" "}
 						<span className="text-green-500">{event.price.pool}</span>
 					</p>
-					<p className="capitalize text-blue-200 mb-4">
+					<p className="capitalize text-blue-300 mb-4">
 						{event.category} Event
 					</p>
 					<p className="text-gray-400 mb-4">{event.description}</p>
-					<button className="text-white bg-gradient-to-r from-blue-600 to-green-600 rounded-md p-2">
+					<button className="text-white border-b hover:bg-gray-800 rounded-lg p-2">
 						See Details
 					</button>
 				</motion.div>

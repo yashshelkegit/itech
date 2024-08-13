@@ -25,7 +25,7 @@ const Section = ({
 		>
 			<Link
 				to={route}
-				className="block hover:bg-opacity-90 transition duration-300 p-4"
+				className="block p-4"
 			>
 				<motion.h2
 					className="text-3xl font-bold font-mono bg-gradient-to-r bg-clip-text text-transparent from-blue-500 to-green-300 mb-4"
@@ -43,7 +43,7 @@ const Section = ({
 				>
 					{description}
 				</motion.p>
-				<button className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-6 py-2 rounded-full font-semibold">
+				<button className="border-b Hover:border text-white px-6 py-2 rounded-full font-semibold">
 					{buttonText}
 				</button>
 				<motion.div

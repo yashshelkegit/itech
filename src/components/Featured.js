@@ -14,7 +14,7 @@ const FeatureCard = ({ icon, title, description, delay, image }) => {
 	return (
 		<motion.div
 			ref={ref}
-			className="border border-gray-300  rounded-lg shadow-lg text-white overflow-hidden"
+			className="border border-gray-300  rounded-lg shadow-lg overflow-hidden"
 			initial={{ opacity: 0, y: 50 }}
 			animate={controls}
 			transition={{ duration: 0.5, delay }}
@@ -52,7 +52,7 @@ const FeatureCard = ({ icon, title, description, delay, image }) => {
 							{icon}
 						</motion.div>
 						<motion.h3
-							className="text-xl font-bold mb-2 font-mono text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-green-300"
+							className="text-xl font-bold mb-2 font-mono text-gray-300"
 							initial={{ opacity: 0 }}
 							animate={controls}
 						>
@@ -75,13 +75,13 @@ const Featured = () => {
 
 	const features = [
 		{
-			icon: <FaCapsules />,
+			icon: <FaCapsules className="text-green-500"/>,
 			title: "Blood Donation",
 			description: "Over 100+ members contributors and also got featured at Lokmat Times",
 			image: img1
 		},
 		{
-			icon: <FaCalculator />,
+			icon: <FaCalculator className="text-green-500"/>,
 			title: "Workshops",
 			description: "Learn from leading experts in artificial intelligence",
 			image: img2
