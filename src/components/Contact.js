@@ -66,7 +66,7 @@ const Contact = () => {
 						Email: itechroots.it@gmail.com
 					</a>
 					<Link to="/contact-form">
-						<h3 className="text-2xl font-serif text-green-500 font-semibold underline p-4">
+						<h3 className="text-2xl font-serif text-blue-500 font-semibold underline p-4">
 							Contact Form
 						</h3>
 					</Link>
@@ -78,7 +78,7 @@ const Contact = () => {
 					transition={{ duration: 1, delay: 1 }}
 					className="space-y-4 text-center container mx-auto"
 				>
-					<h2 className="text-4xl pt-8 text-gray-300 font-mono font-bold">
+					<h2 className="text-4xl pt-8 font-mono font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">
 						Presidents
 					</h2>
 					<div className="grid md:grid-cols-3 grid-cols-1 gap-8">

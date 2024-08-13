@@ -45,7 +45,7 @@ const EventCard = ({ event, index }) => {
 						{event.category} Event
 					</p>
 					<p className="text-gray-400 mb-4">{event.description}</p>
-					<button className="text-white border-b hover:bg-gray-800 rounded-lg p-2">
+					<button className="text-white border-b bg-gray-800 rounded-lg p-2">
 						See Details
 					</button>
 				</motion.div>

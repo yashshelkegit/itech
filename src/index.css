@@ -126,8 +126,8 @@
     position: absolute;
     top: -30px;
     font-size: 0.9rem;
-    background-color: rgb(247, 217, 110);
-    font-weight: bold;
+    background-color: rgb(247, 223, 175);
+    /* font-weight: bold; */
     color: black;
     padding: 5px 10px;
     border-radius: 4px;

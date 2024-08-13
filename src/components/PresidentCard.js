@@ -21,7 +21,7 @@ const PresidentCard = ({ name, post, phone, image }) => {
 				initial={{ opacity: 0, x: 50 }}
 				animate={controls}
 				transition={{ duration: 1 }}
-				className="border-b bg-slate-950 p-4 rounded-lg shadow-lg text-center"
+				className="bg-slate-900 p-4 rounded-lg shadow-lg text-center"
 				whileHover={{ scale: 1.01 }}
 			>
 				<img

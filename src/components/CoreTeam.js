@@ -108,10 +108,10 @@ const PersonCard = ({ person, index }) => {
 			animate={controls}
 			className="border border-gray-500 rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300"
 		>
-			<h3 className="text-xl text-gray-300 font-bold font-mono mb-2">{person.name}</h3>
-			<p className="text-green-300 mb-1">
-				{person.post}
-			</p>
+			<h3 className="text-xl bg-clip-text bg-gradient-to-r text-transparent from-blue-500 to-green-500  font-bold font-mono mb-2">
+				{person.name}
+			</h3>
+			<p className="text-gray-300 mb-1">{person.post}</p>
 			<p className="text-gray-500 mb-1">{person.phone}</p>
 			<a
 				href={`mailto:${person.email}`}
