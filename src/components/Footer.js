@@ -6,6 +6,7 @@ import { SiGmail } from "react-icons/si";
 
 import logo1 from "../logo/1.jpeg";
 import { Link } from "react-router-dom";
+import ViewCounter from "./ViewCounter";
 
 const initialProps = { opacity: 0, y: 50 };
 const inViewProps = { opacity: 1, y: 0 };
@@ -48,6 +49,7 @@ const Footer = () => {
 					<Link to="/contact-form" className="text-blue-400">
 						Contact Us
 					</Link>
+					<ViewCounter pageId="page"/>
 				</div>
 
 				<div className="text-sm border-t pt-3 border-gray-600">
