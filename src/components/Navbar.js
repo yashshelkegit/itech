@@ -24,7 +24,7 @@ const Navbar = () => {
 		<nav className="p-4 fixed top-0 w-full z-50 backdrop-filter backdrop-blur-xl">
 			<div className="container mx-auto flex justify-between items-center">
 				<Link to="/" className="text-white text-2xl font-bold">
-					iTech<span className="text-green-600">Roots</span>
+					iTech<span className="text-green-500">Roots</span>
 				</Link>
 
 				{/* Desktop Menu */}

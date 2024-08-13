@@ -39,7 +39,7 @@ const EventCard = ({ event, index }) => {
 					</h3>
 					<p className="capitalize text-white mb-4">
 						Prize Pool 🏆:{" "}
-						<span className="text-green-500">{event.price.pool}</span>
+						<span className="text-green-500 font-bold">{event.price.pool}</span>
 					</p>
 					<p className="capitalize text-blue-300 mb-4">
 						{event.category} Event
