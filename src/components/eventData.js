@@ -308,7 +308,7 @@ const eventData = [
 		image: img7,
 		formLink: "https://forms.gle/38E8g8VJd99cWQg27",
 		category: "upcoming",
-		price: { pool: "Upto 2k", first: "2,500", second: "NA" },
+		price: { pool: "Upto 2.5k", first: "2,500", second: "NA" },
 		entryFees: "600/- per group",
 		memberCount: "Team of 6",
 		date: "23/08/2024 and 24/08/2024",
