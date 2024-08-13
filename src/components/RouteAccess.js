@@ -43,7 +43,7 @@ const Section = ({
 				>
 					{description}
 				</motion.p>
-				<button className="border-b Hover:border text-white px-6 py-2 rounded-full font-semibold">
+				<button className="border Hover:border text-white px-6 py-2 rounded-full font-semibold">
 					{buttonText}
 				</button>
 				<motion.div
@@ -61,7 +61,7 @@ const RouteAccess = () => {
 	return (
 		<div className="container md:flex gap-5  mx-auto px-5 py-12">
 			<div>
-				<h1 className="text-4xl font-bold bg-clip-text bg-gradient-to-r text-transparent from-blue-500 to-purple-500 font-mono mb-3">
+				<h1 className="text-4xl font-bold bg-clip-text bg-gradient-to-r text-transparent from-blue-500 to-green-500 font-mono mb-3">
 					Participate Now
 				</h1>
 				<Section
@@ -75,7 +75,7 @@ const RouteAccess = () => {
 				/>
 			</div>
 			<div>
-				<h1 className="text-4xl mt-16 font-bold bg-clip-text bg-gradient-to-r text-transparent from-blue-500 to-purple-500 font-mono mb-3">
+				<h1 className="text-4xl mt-16 font-bold bg-clip-text bg-gradient-to-r text-transparent from-blue-500 to-green-500 font-mono mb-3">
 					Confused with Timings ?
 				</h1>
 				<Section
