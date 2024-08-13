@@ -65,7 +65,7 @@ const Sponsors = () => {
 			>
 				Our Sponsors
 			</motion.h2>
-			<div className="bg-slate-900 rounded-md p-3">
+			<div className="bg-slate-900 rounded-md py-5">
 				<Marquee>
 					{sponsors.map((sponsor) => (
 						<motion.div
@@ -95,7 +95,7 @@ const Sponsors = () => {
 					animate={headingControls}
 					ref={ref}
 				>
-					Sponser vibrant community of over 500 students at YCCE, Nagpur
+					Sponser vibrant community of over 1200 students at YCCE, Nagpur
 				</motion.h2>
 				<Link
 					to="/contact-form"

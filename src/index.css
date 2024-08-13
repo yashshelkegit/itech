@@ -184,7 +184,10 @@
 .marquee-content {
     display: flex;
     justify-content: space-between;
-    animation: marquee 10s linear infinite;
+    animation: marquee 15s linear infinite;
+}
+.marquee-content:hover {
+    animation: marquee;
 }
 
 @keyframes marquee {

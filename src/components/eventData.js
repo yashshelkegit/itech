@@ -252,7 +252,7 @@ const eventData = [
 		image: img6,
 		formLink: "https://forms.gle/aKYEhFeNCDwnLfCC7",
 		category: "upcoming",
-		price: { pool: "Rs. 5,000", first: "Rs. 3,500", second: "Goodies" },
+		price: { pool: "Rs. 5,000", first: "Rs. 3,500", second: "Goodies (worth upto 2k)" },
 		entryFees: "Rs. 700/- per group",
 		memberCount: "Team of 7",
 		date: "23/08/2024 and 24/08/2024",
@@ -568,7 +568,7 @@ const eventData = [
 		formLink: "https://forms.gle/CyZB4Wcd9ViR173s6",
 		category: "upcoming",
 		price: { pool: "To be announced", first: "NA", second: "NA" },
-		entryFees: "Rs. 80/- per person",
+		entryFees: "Rs. 60/- per person",
 		memberCount: "Team of 5",
 		date: "24/08/2024 and 25/08/2024",
 		organizers: [
