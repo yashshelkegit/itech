@@ -58,7 +58,7 @@ const Timeline = () => {
 				<GearIcon size={730} initialRotation={0} position={1} />
 				{/* <GearIcon size={340} initialRotation={30} position={2} />
 				<GearIcon size={150} initialRotation={15} position={3} /> */}
-				<h2 className="text-center md:text-4xl text-3xl font-extrabold font-mono text-gray-300 md:p-4 p-2 ">
+				<h2 className="text-center md:text-4xl text-3xl font-extrabold font-mono bg-clip-text bg-gradient-to-r text-transparent from-blue-500 to-purple-500 md:p-4 p-2 ">
 					Fest Through Tech
 				</h2>
 				<div className="timeline">

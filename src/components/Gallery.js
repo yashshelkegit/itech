@@ -66,7 +66,7 @@ const Gallery = ({ images }) => {
 		<>
 			<div className="px-4 py-8">
 				<motion.h2
-					className="text-4xl font-bold mb-8 z-50 font-mono text-gray-300 text-center"
+					className="text-4xl font-bold mb-8 z-50 font-mono bg-clip-text bg-gradient-to-r text-transparent from-blue-500 to-purple-500 text-center"
 					variants={headingVariants}
 					initial="hidden"
 					animate={headingControls}

@@ -55,7 +55,7 @@ const Sponsors = () => {
 	return (
 		<div className="w-screen md:container p-4 py-12 z-30">
 			<motion.h2
-				className=" text-gray-300 text-4xl text-center font-bold mb-8 z-50 font-mono"
+				className=" bg-clip-text bg-gradient-to-r text-transparent from-blue-500 to-purple-500 text-4xl text-center font-bold mb-8 z-50 font-mono"
 				variants={headingVariants}
 				initial="hidden"
 				animate={headingControls}
@@ -95,7 +95,10 @@ const Sponsors = () => {
 				>
 					Sponser vibrant community of over 500 students at YCCE, Nagpur
 				</motion.h2>
-				<Link to="/contact-form" className="text-blue-500 font-bold hover:underline">
+				<Link
+					to="/contact-form"
+					className="text-blue-500 font-bold hover:underline"
+				>
 					Sponser now
 				</Link>
 			</div>

@@ -75,13 +75,13 @@ const Featured = () => {
 
 	const features = [
 		{
-			icon: <FaCapsules className="text-green-500"/>,
+			icon: <FaCapsules className="text-green-200"/>,
 			title: "Blood Donation",
 			description: "Over 100+ members contributors and also got featured at Lokmat Times",
 			image: img1
 		},
 		{
-			icon: <FaCalculator className="text-green-500"/>,
+			icon: <FaCalculator className="text-green-200"/>,
 			title: "Workshops",
 			description: "Learn from leading experts in artificial intelligence",
 			image: img2
@@ -98,7 +98,7 @@ const Featured = () => {
 				className="max-w-7xl mx-auto text-center"
 			>
 				<motion.h2
-					className="text-3xl font-extrabold text-gray-300 font-mono sm:text-4xl"
+					className="text-3xl font-extrabold bg-clip-text bg-gradient-to-r text-transparent from-blue-500 to-purple-500 font-mono sm:text-4xl"
 					initial={{ y: -50 }}
 					animate={controls}
 					transition={{ type: "spring", stiffness: 100 }}
@@ -106,7 +106,7 @@ const Featured = () => {
 					Journey Through Time and Technology
 				</motion.h2>
 				<motion.p
-					className="mt-4 text-xl font-bold bg-gradient-to-r bg-clip-text text-transparent from-blue-300 to-green-500"
+					className="mt-4 text-xl font-bold text-gray-300"
 					initial={{ y: 50 }}
 					animate={controls}
 					transition={{ type: "spring", stiffness: 100 }}

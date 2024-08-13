@@ -18,7 +18,7 @@ const MediaPartner = () => {
 				transition={{ duration: 1 }}
 				className="p-6"
 			>
-				<h2 className="text-4xl text-center font-bold text-gray-300 mb-6 font-mono text-center">
+				<h2 className="text-4xl text-center font-bold mb-6 font-mono bg-clip-text bg-gradient-to-r text-transparent from-blue-500 to-purple-500">
 					Media Partner
 				</h2>
 				<div className="flex flex-col items-center bg-gray-100 p-5 rounded-md">

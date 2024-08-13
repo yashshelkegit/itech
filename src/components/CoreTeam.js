@@ -133,7 +133,7 @@ const CoreTeam = () => {
 		<motion.section ref={ref} className="bg-black py-5">
 			<div className="container mx-auto">
 				<motion.h2
-					className="text-4xl font-bold my-4 text-center text-gray-300 font-mono"
+					className="text-4xl font-bold my-4 text-center bg-clip-text bg-gradient-to-r text-transparent from-blue-500 to-purple-500 font-mono"
 					initial={{ opacity: 0, y: -50 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 1 }}

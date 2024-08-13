@@ -31,7 +31,7 @@ const GalleryPage = () => {
 	return (
 		<div className="bg-black">
 			<div className="container mx-auto px-4 py-20">
-				<h1 className="text-4xl font-bold my-12 text-gray-300 font-mono">
+				<h1 className="text-4xl font-bold my-12 bg-clip-text bg-gradient-to-r text-transparent from-blue-500 to-purple-500 font-mono">
 					Our Galactic Gallery
 				</h1>
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
