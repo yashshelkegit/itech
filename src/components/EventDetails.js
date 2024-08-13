@@ -67,10 +67,10 @@ const EventDetails = () => {
 						<p className="text-yellow-500">
 							<strong>Winning Prices 🏆:</strong> {event.price.pool}
 						</p>
-						<ul>
+						{/* <ul>
 							<li><strong>1st Price :</strong> {event.price.first}</li>
 							<li><strong>2nd Price :</strong> {event.price.second}</li>
-						</ul>
+						</ul> */}
 						<p>
 							<strong>Date :</strong> {event.date}
 						</p>

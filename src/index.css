@@ -182,12 +182,9 @@
 }
 
 .marquee-content {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     animation: marquee 15s linear infinite;
-}
-.marquee-content:hover {
-    animation: marquee;
 }
 
 @keyframes marquee {
