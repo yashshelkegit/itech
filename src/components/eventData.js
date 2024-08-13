@@ -101,7 +101,7 @@ const eventData = [
 			"Show off your web design skills in the Web Design Jam. Create a stunning website in limited time!",
 		image: img15,
 		formLink:
-			"https://docs.google.com/forms/d/1r39H9BV7rAGq25NbreR8QMhrZOHrIYaXkE1llpXF2Dg/edit",
+			"https://docs.google.com/forms/d/e/1FAIpQLScdhwlfNe5nkO3SCk5I9OsiwBQd_M4ICZiRunDpv0SYx4D2Ww/viewform",
 		category: "upcoming",
 		price: { pool: "Upto 1k", first: "1,000", second: "NA" },
 		entryFees: "70/- ",
