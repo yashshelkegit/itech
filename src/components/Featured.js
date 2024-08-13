@@ -38,7 +38,7 @@ const FeatureCard = ({ icon, title, description, delay, image }) => {
 						}}
 					/>
 				</div>
-				<div className="p-4 grid items-center">
+				<div className="p-4 grid gap-2">
 						<motion.div
 							className="text-4xl"
 							initial={{ scale: 0 }}
@@ -58,7 +58,7 @@ const FeatureCard = ({ icon, title, description, delay, image }) => {
 						>
 							{title}
 						</motion.h3>
-						<motion.p initial={{ opacity: 0 }} animate={controls}>
+						<motion.p className="text-gray-300" initial={{ opacity: 0 }} animate={controls}>
 							{description}
 						</motion.p>
 					</div>

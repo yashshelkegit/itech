@@ -13,7 +13,7 @@ const TechnicalSupportCard = ({ name, role, phone, email }) => {
 			initial={{ opacity: 0, y: 100 }}
 			animate={controls}
 			transition={{ duration: 1 }}
-			className="bg-gray-200 p-4 rounded-lg shadow-lg text-center"
+			className="bg-gray-300 p-4 rounded-lg shadow-lg text-center"
 		>
 			<h3 className="text-xl font-semibold">
 				<a href={`mailto:${email}`} className="text-black hover:underline">

@@ -21,7 +21,7 @@ const PresidentCard = ({ name, post, phone, image }) => {
 				initial={{ opacity: 0, x: 50 }}
 				animate={controls}
 				transition={{ duration: 1 }}
-				className="bg-gray-200 p-4 rounded-lg shadow-lg text-center"
+				className="bg-slate-900 p-4 rounded-lg shadow-lg text-center"
 				whileHover={{ scale: 1.01 }}
 			>
 				<img
@@ -30,11 +30,11 @@ const PresidentCard = ({ name, post, phone, image }) => {
 					className="w-32 h-32 rounded-full mx-auto mb-4 cursor-pointer object-cover"
 					onClick={toggleFullScreen}
 				/>
-				<h3 className="text-xl text-black font-semibold">{name}</h3>
-				<p className=" bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-600 font-bold">
+				<h3 className="text-xl font-semibold">{name}</h3>
+				<p className=" bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500 font-bold">
 					{post}
 				</p>
-				<p className="text-gray-500">{phone}</p>
+				<p className="text-gray-400">{phone}</p>
 			</motion.div>
 			<FullScreenImage
 				image={image}
