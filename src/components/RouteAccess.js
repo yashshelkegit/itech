@@ -28,7 +28,7 @@ const Section = ({
 				className="block p-4"
 			>
 				<motion.h2
-					className="text-3xl font-bold font-mono bg-gradient-to-r bg-clip-text text-transparent from-blue-500 to-green-300 mb-4"
+					className="text-3xl font-bold font-mono text-green-500 mb-4"
 					initial={{ x: initialX }}
 					animate={controls}
 					transition={{ duration: 1 }}
@@ -61,7 +61,7 @@ const RouteAccess = () => {
 	return (
 		<div className="container md:flex gap-5  mx-auto px-5 py-12">
 			<div>
-				<h1 className="text-4xl font-bold text-gray-300 font-mono mb-8">
+				<h1 className="text-4xl font-bold text-gray-300 font-mono mb-3">
 					Participate Now
 				</h1>
 				<Section
@@ -75,7 +75,7 @@ const RouteAccess = () => {
 				/>
 			</div>
 			<div>
-				<h1 className="text-4xl mt-16 font-bold text-gray-300 font-mono mb-8">
+				<h1 className="text-4xl mt-16 font-bold text-gray-300 font-mono mb-3">
 					Confused with Timings ?
 				</h1>
 				<Section

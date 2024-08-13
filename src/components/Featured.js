@@ -106,7 +106,7 @@ const Featured = () => {
 					Journey Through Time and Technology
 				</motion.h2>
 				<motion.p
-					className="mt-4 text-xl font-bold bg-gradient-to-r bg-clip-text text-transparent from-blue-500 to-green-500"
+					className="mt-4 text-xl font-bold bg-gradient-to-r bg-clip-text text-transparent from-blue-300 to-green-500"
 					initial={{ y: 50 }}
 					animate={controls}
 					transition={{ type: "spring", stiffness: 100 }}
