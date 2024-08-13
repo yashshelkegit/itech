@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useScrollAnimation from "../hooks/useScrollAnimation";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
 import logo1 from "../logo/1.jpeg";
@@ -36,20 +36,29 @@ const Footer = () => {
 							<FaWhatsapp />
 						</a> */}
 						<a
+							href="mailto:itechroots.it@gmail.com"
+							className="text-yellow-500"
+						>
+							<SiGmail />
+						</a>
+						<a
+							href="https://www.linkedin.com/company/ycceitechroots/"
+							className="text-blue-500"
+						>
+							<FaLinkedin />
+						</a>
+						<a
 							href="https://www.instagram.com/itechroots_14.0?igsh=MXJyYTZmc2tpdDM0"
 							className="text-pink-500"
 						>
 							<FaInstagram />
-						</a>
-						<a href="mailto:itechroots.it@gmail.com" className="text-yellow-500">
-							<SiGmail />
 						</a>
 					</div>
 					<h4 className="text-sm">IT Dept @ YCCE, Nagpur</h4>
 					<Link to="/contact-form" className="text-blue-400">
 						Contact Us
 					</Link>
-					<ViewCounter pageId="page"/>
+					<ViewCounter pageId="page" />
 				</div>
 
 				<div className="text-sm border-t pt-3 border-gray-600">

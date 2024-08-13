@@ -25,13 +25,13 @@ const eventData = [
 		formLink: "https://forms.gle/75fwPcQDXLBmqUFp6",
 		category: "upcoming",
 		price: {
-			pool: "Upto 15k (9:00 am Onwards)",
+			pool: "Upto 15k",
 			first: "10,000",
 			second: "5,000",
 		},
 		entryFees: "Rs 100/- per member",
 		memberCount: "Min 3 and Max 5 members",
-		date: "23/08/2024 (10:00 am to 5:00 pm)",
+		date: "23/08/2024 (9:00 am Onwards)",
 		organizers: [
 			{
 				name: "Rehan Khan",
@@ -252,7 +252,11 @@ const eventData = [
 		image: img6,
 		formLink: "https://forms.gle/aKYEhFeNCDwnLfCC7",
 		category: "upcoming",
-		price: { pool: "Upto 3.5k", first: "3,500", second: "Goodies (worth upto 2k)" },
+		price: {
+			pool: "Upto 3.5k",
+			first: "3,500",
+			second: "Goodies (worth upto 2k)",
+		},
 		entryFees: "700/- per group",
 		memberCount: "Team of 7",
 		date: "23/08/2024 and 24/08/2024",
