@@ -25,9 +25,9 @@ const eventData = [
 		formLink: "https://forms.gle/75fwPcQDXLBmqUFp6",
 		category: "upcoming",
 		price: {
-			pool: "Upto Rs. 15k (Tentative)",
-			first: "Rs. 10,000",
-			second: "Rs. 5,000",
+			pool: "Upto 15k (Tentative)",
+			first: "10,000",
+			second: "5,000",
 		},
 		entryFees: "Rs 100/- per member",
 		memberCount: "Min 3 and Max 5 members",
@@ -65,8 +65,8 @@ const eventData = [
 		image: img2,
 		formLink: "https://forms.gle/cd237k3iLPuK2r9g6",
 		category: "upcoming",
-		price: { pool: "Upto Rs. 1k", first: "Rs. 1,000", second: "Rs. 500" },
-		entryFees: "Rs. 70/-",
+		price: { pool: "Upto 1k", first: "1,000", second: "500" },
+		entryFees: "70/-",
 		memberCount: "individual",
 		date: "24/08/2024",
 		organizers: [
@@ -103,8 +103,8 @@ const eventData = [
 		formLink:
 			"https://docs.google.com/forms/d/1r39H9BV7rAGq25NbreR8QMhrZOHrIYaXkE1llpXF2Dg/edit",
 		category: "upcoming",
-		price: { pool: "Upto Rs. 1k", first: "Rs. 1,000", second: "NA" },
-		entryFees: "Rs. 70/- ",
+		price: { pool: "Upto 1k", first: "1,000", second: "NA" },
+		entryFees: "70/- ",
 		memberCount: "individual",
 		date: "24/08/2024",
 		organizers: [
@@ -140,8 +140,8 @@ const eventData = [
 		image: img3,
 		formLink: "https://forms.gle/f8ZiNLwv2aEECKeH9",
 		category: "upcoming",
-		price: { pool: "Upto Rs. 1k", first: "Rs. 1,000", second: "NA" },
-		entryFees: "Rs. 60/-",
+		price: { pool: "Upto 1k", first: "1,000", second: "NA" },
+		entryFees: "60/-",
 		memberCount: "individual",
 		date: "24/08/2024  (online)",
 		organizers: [
@@ -178,8 +178,8 @@ const eventData = [
 		formLink:
 			"https://docs.google.com/forms/d/1lWibHLZl_LMM4OZ9SlxgSkKvkGneO9pbT94S9IciWW4/edit",
 		category: "upcoming",
-		price: { pool: "Upto Rs. 1k", first: "Rs. 1,000", second: "NA" },
-		entryFees: "Rs. 70/-",
+		price: { pool: "Upto 1k", first: "1,000", second: "NA" },
+		entryFees: "70/-",
 		memberCount: "individual",
 		date: "23/08/2024",
 		organizers: [
@@ -215,8 +215,8 @@ const eventData = [
 		image: img5,
 		formLink: "https://forms.gle/A5DwEsWyZhLu6236A",
 		category: "upcoming",
-		price: { pool: "Upto Rs. 700", first: "Rs. 700", second: "NA" },
-		entryFees: "Rs. 50/-",
+		price: { pool: "Upto 700", first: "700", second: "NA" },
+		entryFees: "50/-",
 		memberCount: "individual",
 		date: "24/08/2024",
 		organizers: [
@@ -252,8 +252,8 @@ const eventData = [
 		image: img6,
 		formLink: "https://forms.gle/aKYEhFeNCDwnLfCC7",
 		category: "upcoming",
-		price: { pool: "Upto Rs. 3.5k", first: "Rs. 3,500", second: "Goodies (worth upto 2k)" },
-		entryFees: "Rs. 700/- per group",
+		price: { pool: "Upto 3.5k", first: "3,500", second: "Goodies (worth upto 2k)" },
+		entryFees: "700/- per group",
 		memberCount: "Team of 7",
 		date: "23/08/2024 and 24/08/2024",
 		organizers: [
@@ -304,8 +304,8 @@ const eventData = [
 		image: img7,
 		formLink: "https://forms.gle/38E8g8VJd99cWQg27",
 		category: "upcoming",
-		price: { pool: "Upto Rs. 2k", first: "Rs. 2,500", second: "NA" },
-		entryFees: "Rs. 600/- per group",
+		price: { pool: "Upto 2k", first: "2,500", second: "NA" },
+		entryFees: "600/- per group",
 		memberCount: "Team of 6",
 		date: "23/08/2024 and 24/08/2024",
 		organizers: [
@@ -341,8 +341,8 @@ const eventData = [
 		image: img8,
 		formLink: "https://forms.gle/CWZVZvC1GYWKMKFFA",
 		category: "upcoming",
-		price: { pool: "Upto Rs. 1k", first: "Rs. 1,000", second: "Rs. 500" },
-		entryFees: "Rs. 60/-",
+		price: { pool: "Upto 1k", first: "1,000", second: "500" },
+		entryFees: "60/-",
 		memberCount: "individual",
 		date: "23/08/2024",
 		organizers: [
@@ -388,8 +388,8 @@ const eventData = [
 		image: img9,
 		formLink: "https://forms.gle/dgyrvmJ35wBVBEFR9",
 		category: "upcoming",
-		price: { pool: "Upto Rs. 1k", first: "Rs. 1,200", second: "NA" },
-		entryFees: "Rs. 240/- per group",
+		price: { pool: "Upto 1k", first: "1,200", second: "NA" },
+		entryFees: "240/- per group",
 		memberCount: "Min 3 and Max 4 members",
 		date: "25/08/2024",
 		organizers: [
@@ -421,7 +421,7 @@ const eventData = [
 		formLink: "https://forms.gle/UwDuJjePkFaG7rsK7",
 		category: "upcoming",
 		price: { pool: "To be announce", first: "NA", second: "NA" },
-		entryFees: "Rs. 250/- per group",
+		entryFees: "250/- per group",
 		memberCount: "Team of 4",
 		date: "23/08/2024",
 		organizers: [
@@ -462,8 +462,8 @@ const eventData = [
 		image: img11,
 		formLink: "https://forms.gle/iig8GrqMD6st9wZh9",
 		category: "upcoming",
-		price: { pool: "Upto Rs. 1k", first: "Rs. 1,000", second: "NA" },
-		entryFees: "Rs. 50/-",
+		price: { pool: "Upto 1k", first: "1,000", second: "NA" },
+		entryFees: "50/-",
 		memberCount: "individual",
 		date: "24/08/2024",
 		organizers: [
@@ -499,8 +499,8 @@ const eventData = [
 		image: img12,
 		formLink: "https://forms.gle/W1m28xrnsrZuAfu68",
 		category: "upcoming",
-		price: { pool: "Upto Rs. 600", first: "Rs. 600", second: "NA" },
-		entryFees: "Rs. 60/-",
+		price: { pool: "Upto 600", first: "600", second: "NA" },
+		entryFees: "60/-",
 		memberCount: "individual",
 		date: "24/08/2024",
 		organizers: [
@@ -532,11 +532,11 @@ const eventData = [
 		formLink: "https://forms.google.com/mysticrhythm",
 		category: "upcoming",
 		price: {
-			pool: "Upto Rs. 1k",
-			first: "Rs. 700(dancing) and Rs. 700(singing)",
+			pool: "Upto 1k",
+			first: "700(dancing) and 700(singing)",
 			second: "NA",
 		},
-		entryFees: "Rs. 60/- per member",
+		entryFees: "60/- per member",
 		memberCount: "Max 4 members",
 		date: "24/08/2024",
 		organizers: [
@@ -568,7 +568,7 @@ const eventData = [
 		formLink: "https://forms.gle/CyZB4Wcd9ViR173s6",
 		category: "upcoming",
 		price: { pool: "To be announce", first: "NA", second: "NA" },
-		entryFees: "Rs. 60/- per person",
+		entryFees: "60/- per person",
 		memberCount: "Team of 5",
 		date: "24/08/2024 and 25/08/2024",
 		organizers: [
