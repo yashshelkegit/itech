@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 import { FaCalculator, FaCapsules } from "react-icons/fa";
 import img1 from '../images/10.jpeg'
-import img2 from '../event-pics/1.jpg'
+import img2 from '../images/11.jpeg'
 
 const FeatureCard = ({ icon, title, description, delay, image }) => {
 	const { ref, controls } = useScrollAnimation(

@@ -252,7 +252,7 @@ const eventData = [
 		image: img6,
 		formLink: "https://forms.gle/aKYEhFeNCDwnLfCC7",
 		category: "upcoming",
-		price: { pool: "Rs. 5,000", first: "Rs. 3,500", second: "Rs. 1,500" },
+		price: { pool: "Rs. 5,000", first: "Rs. 3,500", second: "Goodies" },
 		entryFees: "Rs. 700/- per group",
 		memberCount: "Team of 7",
 		date: "23/08/2024 and 24/08/2024",
