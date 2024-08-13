@@ -25,7 +25,7 @@ const eventData = [
 		formLink: "https://forms.gle/75fwPcQDXLBmqUFp6",
 		category: "upcoming",
 		price: {
-			pool: "Upto 15k (Tentative)",
+			pool: "Upto 15k (9:00 am Onwards)",
 			first: "10,000",
 			second: "5,000",
 		},

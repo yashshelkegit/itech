@@ -14,7 +14,7 @@ const timelineEvents = [
 		year: "23/08/2024",
 		title: "Coding Hackathon",
 		description:
-			"A 10-hour coding hackathon focused on innovative problem-solving.",
+			"A coding hackathon focused on innovative problem-solving.",
 	},
 	{
 		year: "23/08/2024",
