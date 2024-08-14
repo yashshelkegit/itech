@@ -45,7 +45,7 @@ const SponsorMarquee = () => {
 };
 
 const Sponsor = ({ name, logo }) => (
-	<div className="inline-flex flex-col items-center justify-center p-4 md:mx-10 mx-5 w-48">
+	<div className="inline-flex flex-col items-center justify-center p-4 md:mx-12 mx-5 w-48">
 		<img
 			src={logo}
 			alt={`${name} logo`}
