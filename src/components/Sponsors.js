@@ -1,31 +1,9 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import sponsor1 from "../sponsors/kanan.jpeg";
-import sponsor2 from "../sponsors/iquanta.png";
-import sponsor3 from "../sponsors/barcode.jpeg";
-import sponsor4 from "../sponsors/decathlon.png";
 
 import { Link } from "react-router-dom";
-
-const sponsors = [
-	{ id: 1, name: "iQuanta", logo: sponsor2 },
-	{ id: 2, name: "Kanan", logo: sponsor1 },
-	{ id: 3, name: "Barcode", logo: sponsor3 },
-	{ id: 4, name: "Decathlon", logo: sponsor4 },
-];
-
-const sponsorVariants = {
-	hidden: { opacity: 0, y: 20 },
-	visible: {
-		opacity: 1,
-		y: 0,
-		transition: {
-			duration: 0.1,
-			ease: "easeInOut",
-		},
-	},
-};
+import SponsorMarquee from "./SponsorMarquee";
 
 const headingVariants = {
 	hidden: { opacity: 0, y: -20 },
@@ -65,28 +43,7 @@ const Sponsors = () => {
 			>
 				Our Sponsors
 			</motion.h2>
-			<div className="bg-slate-900 rounded-md py-5">
-				<Marquee>
-					{sponsors.map((sponsor) => (
-						<motion.div
-							key={sponsor.id}
-							className="sponsor-item inline-block mx-8"
-							variants={sponsorVariants}
-							initial="hidden"
-							animate={controls}
-						>
-							<img
-								src={sponsor.logo}
-								alt={sponsor.name}
-								className="mb-1 h-14 md:h-24"
-							/>
-							<p className="text-center font-medium text-gray-300">
-								{sponsor.name}
-							</p>
-						</motion.div>
-					))}
-				</Marquee>
-			</div>
+			<SponsorMarquee/>
 			<div className="text-center my-4">
 				<motion.h2
 					className=" text-gray-300 text center p-3 text-md z-50 font-mono"
@@ -108,14 +65,5 @@ const Sponsors = () => {
 	);
 };
 
-const Marquee = ({ children }) => {
-	return (
-		<div className="marquee overflow-hidden whitespace-nowrap">
-			<div className="marquee-content inline-block animate-marquee">
-				{children}
-			</div>
-		</div>
-	);
-};
 
 export default Sponsors;

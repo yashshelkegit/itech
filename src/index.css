@@ -158,9 +158,9 @@ body{
 }
 
 .marquee-content {
-    /* display: flex;
-    justify-content: space-between; */
+    display: flex;
     animation: marquee 10s linear infinite;
+    border: 1px solid white;
 }
 
 @media screen and (max-width: 600px) {
@@ -190,7 +190,7 @@ body{
         left: 0%;
     }
     .marquee-content {
-        animation: marquee 7s linear infinite;
+        animation: marquee 10s linear infinite;
    }
 }
 

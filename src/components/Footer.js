@@ -54,6 +54,8 @@ const Footer = () => {
 					<Link to="/contact-form" className="text-blue-400">
 						Contact Us
 					</Link>
+
+					{/*  */}
 					<ViewCounter pageId="page" />
 				</div>
 
