@@ -9,8 +9,8 @@ import sponsor4 from "../sponsors/decathlon.png";
 import { Link } from "react-router-dom";
 
 const sponsors = [
-	{ id: 1, name: "Kanan", logo: sponsor1 },
-	{ id: 2, name: "iQuanta", logo: sponsor2 },
+	{ id: 1, name: "iQuanta", logo: sponsor2 },
+	{ id: 2, name: "Kanan", logo: sponsor1 },
 	{ id: 3, name: "Barcode", logo: sponsor3 },
 	{ id: 4, name: "Decathlon", logo: sponsor4 },
 ];
@@ -70,7 +70,7 @@ const Sponsors = () => {
 					{sponsors.map((sponsor) => (
 						<motion.div
 							key={sponsor.id}
-							className="sponsor-item inline-block mx-4"
+							className="sponsor-item inline-block mx-8"
 							variants={sponsorVariants}
 							initial="hidden"
 							animate={controls}

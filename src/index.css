@@ -23,6 +23,10 @@
 /* *{
     border: 1px solid;
 } */
+
+body{
+    background: #070707;
+}
 .gear{
     color: rgba(255, 255, 255, 0.169);
 }
@@ -147,6 +151,18 @@
     line-height: 1.4;
 }
 
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.marquee-content {
+    /* display: flex;
+    justify-content: space-between; */
+    animation: marquee 10s linear infinite;
+}
+
 @media screen and (max-width: 600px) {
     .timeline::after {
         left: 31px;
@@ -173,19 +189,11 @@
     .right {
         left: 0%;
     }
+    .marquee-content {
+        animation: marquee 7s linear infinite;
+   }
 }
 
-.marquee {
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-}
-
-.marquee-content {
-    /* display: flex;
-    justify-content: space-between; */
-    animation: marquee 15s linear infinite;
-}
 
 @keyframes marquee {
     from {
