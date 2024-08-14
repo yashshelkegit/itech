@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%PUBLIC_URL%/favicon.jpeg" />
-		<link rel="preconnect" href="https://unpkg.com">
+		<link rel="preconnect" href="https://unpkg.com" />
 		<link
 			rel="stylesheet"
 			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -17,40 +17,63 @@
 			name="description"
 			content="iTechRoots: YCCE Nagpur's annual Information Technology fest featuring cutting-edge tech showcases, coding competitions, and industry talks."
 		/>
-		<meta name="keywords" content="iTechRoots, tech fest, YCCE Nagpur, Information Technology, coding competition, tech showcase">
-		<meta name="author" content="Information Technology Department, YCCE Nagpur">
-		<meta name="robots" content="index, follow">
+		<meta
+			name="keywords"
+			content="iTechRoots, tech fest, YCCE Nagpur, Information Technology, coding competition, tech showcase"
+		/>
+		<meta
+			name="author"
+			content="Information Technology Department, YCCE Nagpur"
+		/>
+		<meta name="robots" content="index, follow" />
 
-		<link rel="canonical" href="https://www.itechroots.tech">
+		<link rel="canonical" href="https://www.itechroots.tech" />
 		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-		
+
 		<title>iTechRoots 14.0 - YCCE Nagpur's Annual IT Fest</title>
 
-
 		<script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@type": "Event",
-			"name": "iTechRoots 14.0",
-			"description": "YCCE Nagpur's annual Information Technology fest featuring cutting-edge tech showcases, coding competitions, and industry talks.",
-			"startDate": "2024-08-23",
-			"endDate": "2024-08-24",
-			"location": {
-				"@type": "Place",
-				"name": "Yeshwantrao Chavan College of Engineering",
-				"address": {
-					"@type": "PostalAddress",
-					"addressLocality": "Nagpur",
-					"addressRegion": "Maharashtra",
-					"addressCountry": "India"
+			{
+				"@context": "https://schema.org",
+				"@type": "Event",
+				"name": "iTechRoots 14.0",
+				"description": "YCCE Nagpur's annual Information Technology fest featuring cutting-edge tech showcases, coding competitions, and industry talks.",
+				"startDate": "2024-08-23",
+				"endDate": "2024-08-24",
+				"location": {
+					"@type": "Place",
+					"name": "Yeshwantrao Chavan College of Engineering",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Nagpur",
+						"addressRegion": "Maharashtra",
+						"addressCountry": "India"
+					}
+				},
+				"organizer": {
+					"@type": "Organization",
+					"name": "Information Technology Department, YCCE Nagpur",
+					"url": "https://www.itechroots.tech"
 				}
-			},
-			"organizer": {
-				"@type": "Organization",
-				"name": "Information Technology Department, YCCE Nagpur",
-				"url": "https://www.itechroots.tech"
 			}
-		}
+		</script>
+		<script type="text/javascript">
+			(function (l) {
+				if (l.search[1] === "/") {
+					var decoded = l.search
+						.slice(1)
+						.split("&")
+						.map(function (s) {
+							return s.replace(/~and~/g, "&");
+						})
+						.join("?");
+					window.history.replaceState(
+						null,
+						null,
+						l.pathname.slice(0, -1) + decoded + l.hash
+					);
+				}
+			})(window.location);
 		</script>
 	</head>
 	<body>
@@ -85,4 +108,3 @@
 		<div id="root"></div>
 	</body>
 </html> -->
-
