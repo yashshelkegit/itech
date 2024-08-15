@@ -48,16 +48,28 @@ const EventDetails = () => {
 					<p className="text-gray-400 mb-4">{event.description}</p>
 					<div className="py-4">
 						{event.category !== "past" ? (
-							<motion.a
-								href={event.formLink}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="inline-block border text-white bg-gray-700 px-4 py-2 rounded hover:bg-gray-500 transition duration-300"
-								whileHover={{ scale: 1.05 }}
-								whileTap={{ scale: 0.95 }}
-							>
-								Register Now
-							</motion.a>
+							<div className="grid gap-4 md:grid-cols-2">
+								<motion.a
+									href={event.formLink}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="inline-block border text-center text-white bg-gray-700 px-4 py-2 rounded hover:bg-gray-500 transition duration-300"
+									whileHover={{ scale: 1.02 }}
+									whileTap={{ scale: 0.95 }}
+								>
+									Register Now
+								</motion.a>
+								<motion.a
+									href={event.rulebook}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="inline-block border text-center text-white bg-gray-700 px-4 py-2 rounded hover:bg-gray-500 transition duration-300"
+									whileHover={{ scale: 1.02 }}
+									whileTap={{ scale: 0.95 }}
+								>
+									Event book
+								</motion.a>
+							</div>
 						) : (
 							<p className="text-gray-300">Sorry you are late...</p>
 						)}
