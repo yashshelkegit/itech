@@ -56,7 +56,7 @@ const Footer = () => {
 					</Link>
 
 					{/*  */}
-					{/* <ViewCounter pageId="page" /> */}
+					<ViewCounter pageId="page" />
 				</div>
 
 				{/* Copyright Statement */}
