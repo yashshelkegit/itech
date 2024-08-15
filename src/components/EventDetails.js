@@ -59,7 +59,7 @@ const EventDetails = () => {
 								>
 									Register Now
 								</motion.a>
-								<motion.a
+								{(event.rulebook === '') ?<div></div>: <motion.a
 									href={event.rulebook}
 									target="_blank"
 									rel="noopener noreferrer"
@@ -68,7 +68,7 @@ const EventDetails = () => {
 									whileTap={{ scale: 0.95 }}
 								>
 									Event book
-								</motion.a>
+								</motion.a>}
 							</div>
 						) : (
 							<p className="text-gray-300">Sorry you are late...</p>

@@ -332,6 +332,11 @@ const eventData = [
 				email: "info.gaurav@gmail.com",
 				phone: "+91 9529850206",
 			},
+			{
+				name: "Prince Yadav",
+				email: "info.gaurav@gmail.com",
+				phone: "+91 9529850206",
+			},
 		],
 		coOrganizers: [
 			{
@@ -552,7 +557,7 @@ const eventData = [
 		description:
 			"Feel the beat and move to the rhythm in this exhilarating group event.",
 		image: img13,
-		formLink: "https://forms.google.com/mysticrhythm",
+		formLink: "https://forms.gle/V5qf1R3NRXzhcNQe7",
 		rulebook: "",
 		category: "upcoming",
 		price: {
