@@ -1,5 +1,5 @@
 import React from 'react'
-import {Featured, Gallery, Sponsers, RouteAccess, FAQ, MediaPartner } from './Pages'
+import {Featured, Gallery, Sponsers, RouteAccess, FAQ, Partners } from './Pages'
 
 import img1 from "../images/1.jpeg";
 import img2 from "../images/2.jpeg";
@@ -22,7 +22,7 @@ const Home = () => {
 				<RouteAccess/>
 				<Featured/>
 				<Gallery images={images} />
-				<MediaPartner/>
+				<Partners/>
 				<Sponsers />
 				<FAQ/>
 			</div>

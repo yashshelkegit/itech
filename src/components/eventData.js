@@ -27,13 +27,13 @@ const eventData = [
 			"https://drive.google.com/file/d/1y8fbqTRZs9yOFSoX3hytvh0PLRi66LpW/view?usp=sharing",
 		category: "upcoming",
 		price: {
-			pool: "Upto 15k",
+			pool: "Upto 15k and UnStop Merch (T-shirt) to winners and finalist",
 			first: "10,000",
 			second: "5,000",
 		},
 		entryFees: "Rs 100/- per member",
 		memberCount: "Min 3 and Max 5 members",
-		date: "23/08/2024 (9:00 am Onwards)",
+		date: "23/08/2024",
 		organizers: [
 			{
 				name: "Rehan Khan",
@@ -335,7 +335,7 @@ const eventData = [
 			{
 				name: "Prince Yadav",
 				email: "info.gaurav@gmail.com",
-				phone: "+91 9529850206",
+				phone: "+91 9112445714",
 			},
 		],
 		coOrganizers: [
@@ -441,7 +441,7 @@ const eventData = [
 		formLink: "https://forms.gle/UwDuJjePkFaG7rsK7",
 		rulebook: "",
 		category: "upcoming",
-		price: { pool: "To be announce", first: "NA", second: "NA" },
+		price: { pool: "upto 6k", first: "NA", second: "NA" },
 		entryFees: "250/- per group",
 		memberCount: "Team of 4",
 		date: "23/08/2024",
@@ -597,7 +597,7 @@ const eventData = [
 		formLink: "https://forms.gle/CyZB4Wcd9ViR173s6",
 		rulebook: "",
 		category: "upcoming",
-		price: { pool: "To be announce", first: "NA", second: "NA" },
+		price: { pool: "upto 5k", first: "NA", second: "NA" },
 		entryFees: "60/- per person",
 		memberCount: "Team of 5",
 		date: "24/08/2024 and 25/08/2024",

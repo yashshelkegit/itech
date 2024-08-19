@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import lokmat from "../sponsors/lokmat.jpeg";
+// import lokmat from "../sponsors/lokmat.jpeg";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 
-const MediaPartner = () => {
+const MediaPartner = ({title, src, desc, text}) => {
 	const { ref, controls } = useScrollAnimation(
 		{ opacity: 0, x: -100 },
 		{ opacity: 1, x: 0 }
@@ -18,21 +18,21 @@ const MediaPartner = () => {
 				transition={{ duration: 1 }}
 				className="p-6"
 			>
-				<h2 className="text-4xl text-center font-bold mb-6 font-mono bg-clip-text bg-gradient-to-r text-transparent from-blue-500 to-purple-500">
-					Media Partner
+				<h2 className="text-4xl border-b border-gray-400 p-3 text-center font-bold mb-6 font-mono bg-clip-text bg-gradient-to-r text-transparent from-blue-500 to-purple-500">
+					{title}
 				</h2>
 				<div className="flex flex-col items-center bg-gray-100 p-5 rounded-md">
 					<img
-						src={lokmat}
+						src={src}
 						alt="Lokmat Times Logo"
-						className="h-auto md:w-1/2 mb-4 md:mr-6"
+						className="h-14 md:w-1/2 mb-4 md:mr-6"
 					/>
 					<div className="text-center">
 						<h3 className="text-xl font-semibold bg-gradient-to-r from-blue-700 to-green-700 bg-clip-text text-transparent mb-2">
-							Lokmat Times
+							{desc}
 						</h3>
 						<p className="text-gray-600 font-bold mb-4">
-							Proud Media partner of our Departmental fest
+							{text}
 						</p>
 					</div>
 				</div>
