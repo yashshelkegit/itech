@@ -1,8 +1,6 @@
-
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-
 
 import {
 	FaRocket,
@@ -60,11 +58,6 @@ const Navbar = () => {
 					>
 						Timeline
 					</NavItem>
-					<div className="hidden">
-						<NavItem to="/admin" currentPath={location.pathname}>
-							Admin
-						</NavItem>
-					</div>
 				</div>
 
 				{/* Mobile Menu Button */}
@@ -130,15 +123,6 @@ const Navbar = () => {
 						>
 							Timeline
 						</NavItem>
-						{/* <NavItem
-							to="/admin"
-							icon={<FaUser />}
-							mobile
-							onClick={toggleMenu}
-							currentPath={location.pathname}
-						>
-							Admin
-						</NavItem> */}
 					</div>
 				</motion.div>
 			)}

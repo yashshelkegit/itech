@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useParams, Link } from "react-router-dom";
 import eventData from "./eventData";
-import unstop from "../sponsors/unstop.webp"
 
 const EventDetails = () => {
 	const { id } = useParams();
@@ -47,23 +46,7 @@ const EventDetails = () => {
 						className="w-full h-64 object-cover rounded-lg mb-4"
 					/>
 					<p className="text-gray-400 mb-4">{event.description}</p>
-					{event.id === 1 ? (
-						<motion.div
-							initial={{ opacity: 0 }}
-							animate={{ opacity: 1 }}
-							transition={{ delay: 1, duration: 0.8 }}
-							className="flex gap-2 items-center my-auto"
-						>
-							<p className="py-4 text-sm">Powered By</p>
-							<img
-								src={unstop}
-								alt="Unstop"
-								className="sm:h-8 h-7 border rounded-full"
-							/>
-						</motion.div>
-					) : (
-						""
-					)}
+					
 					<div className="py-4">
 						{event.category !== "past" ? (
 							<div className="grid gap-4 md:grid-cols-2">
@@ -93,7 +76,7 @@ const EventDetails = () => {
 								)}
 							</div>
 						) : (
-							<p className="text-gray-300">Sorry you are late...</p>
+							<p className="text-red-500">Registration closed</p>
 						)}
 					</div>
 					<div className="mb-4 text-gray-300">

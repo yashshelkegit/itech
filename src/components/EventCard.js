@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 import { notifyParticipate } from "./notify";
-import unstop from '../sponsors/unstop.webp'
 
 const EventCard = ({ event, index }) => {
 	const { ref, controls } = useScrollAnimation(
@@ -47,29 +46,7 @@ const EventCard = ({ event, index }) => {
 						{event.category} Event
 					</p>
 					<p className="text-gray-400 mb-4">{event.description}</p>
-					{event.id === 1 ? (
-						<div className="flex absolute right-4 items-center gap-2 mb-3">
-							<div>
-									<span className="text-gray-400 bg-clip-text text-sm text-transparent bg-gradient-to-r from-gray-500 to-white">
-										powered by
-									</span>
-							</div>
-							<motion.div
-								initial={{ opacity: 0 }}
-								animate={{ opacity: 1 }}
-								transition={{ delay: 1, duration: 0.8 }}
-								className="inline-block"
-							>
-								<img
-									src={unstop}
-									alt="Unstop"
-									className="h-7 rounded-full animate-pulse"
-								/>
-							</motion.div>
-						</div>
-					) : (
-						""
-					)}
+					
 					<div className="grid">
 						<button className="text-white border-b bg-gray-800 rounded-lg p-2">
 							See Details

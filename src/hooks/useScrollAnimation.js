@@ -8,7 +8,6 @@ const useScrollAnimation = (initialProps, inViewProps) => {
 		triggerOnce: false, 
 		threshold: 0.1, 
 	});
-
 	useEffect(() => {
 		if (inView) {
 			controls.start(inViewProps);

@@ -5,7 +5,9 @@ import AnimatedButton from "./AnimatedButton";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 // import unstop from '../sponsors/unstop-blue.jpg'
-import iquanta from '../sponsors/iquanta.png'
+import iquanta from '../sponsors/iquanta.png';
+import krafton from '../sponsors/krafton.jpg';
+
 const pageVariants = {
 	initial: { opacity: 0, y: 50 },
 	in: { opacity: 1, y: 0 },
@@ -19,6 +21,7 @@ const pageTransition = {
 };
 
 const Herosection = () => {
+
 	return (
 		<div className="relative bg-black min-h-screen flex items-center justify-center overflow-hidden">
 			{/* <SvgFrame/> */}
@@ -46,19 +49,34 @@ const Herosection = () => {
 					>
 						Where the past meets the future of technology.
 					</motion.p>
-					<motion.div
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1 }}
-						transition={{ delay: 1, duration: 0.8 }}
-						className="mt-10"
-					>
-						<p className="text-gray-400 text-sm mb-2 ">Sponsored by</p>
-						<img
-							src={iquanta}
-							alt="Unstop"
-							className="h-11 mx-auto rounded-full"
-						/>
-					</motion.div>
+					<div className="flex justify-center gap-7">
+						<motion.div
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{ delay: 1, duration: 0.8 }}
+							className="mt-10"
+						>
+							<p className="text-gray-400 text-sm mb-2 ">Sponsored by</p>
+							<img
+								src={iquanta}
+								alt="Unstop"
+								className="h-11 mx-auto rounded-full"
+							/>
+						</motion.div>
+						<motion.div
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{ delay: 1, duration: 0.8 }}
+							className="mt-10"
+						>
+							<p className="text-gray-400 text-sm mb-2 ">Events by</p>
+							<img
+								src={krafton}
+								alt="krafton"
+								className="h-11 mx-auto "
+							/>
+						</motion.div>
+					</div>
 				</div>
 			</motion.div>
 			<div className="absolute inset-0 z-0">

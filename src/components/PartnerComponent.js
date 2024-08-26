@@ -21,11 +21,11 @@ const MediaPartner = ({title, src, desc, text}) => {
 				<h2 className="text-4xl border-b border-gray-400 p-3 text-center font-bold mb-6 font-mono bg-clip-text bg-gradient-to-r text-transparent from-blue-500 to-purple-500">
 					{title}
 				</h2>
-				<div className="flex flex-col items-center bg-gray-100 p-5 rounded-md">
+				<div className="flex flex-col items-center bg-gray-50 p-5 rounded-md">
 					<img
 						src={src}
 						alt="Lokmat Times Logo"
-						className="h-14 md:w-1/2 mb-4 md:mr-6"
+						className="h-16 md:w-1/2 mb-4 md:mr-6"
 					/>
 					<div className="text-center">
 						<h3 className="text-xl font-semibold bg-gradient-to-r from-blue-700 to-green-700 bg-clip-text text-transparent mb-2">
