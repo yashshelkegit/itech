@@ -532,17 +532,12 @@ const eventData = [
 				email: "info.ojas@gmail.com",
 				phone: "+91 7620186476",
 			},
+		],
+		coOrganizers: [
 			{
 				name: "Umesh Dongre",
 				email: "info.ojas@gmail.com",
 				phone: "+91 8669338207",
-			},
-		],
-		coOrganizers: [
-			{
-				name: "Sujal Burande",
-				email: "info.sujal@gmail.com",
-				phone: "+91 XXXXX XXXXX",
 			},
 			{
 				name: "Laleet Atkare",

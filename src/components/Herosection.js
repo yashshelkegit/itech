@@ -69,7 +69,7 @@ const Herosection = () => {
 							transition={{ delay: 1, duration: 0.8 }}
 							className="mt-10"
 						>
-							<p className="text-gray-400 text-sm mb-2 ">Events by</p>
+							<p className="text-gray-400 text-sm mb-2 ">Official gaming partner</p>
 							<img
 								src={krafton}
 								alt="krafton"
